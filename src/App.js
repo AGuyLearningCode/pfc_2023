@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import ItemResultadoBusqueda from './components/ItemResultadoBusqueda';
 import DatosDePelicula from './components/DatosDePelicula';
+import styles from "./App.module.css";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        
+
         // map transformat cada delemento a otra cosa usando una funcion.
 
         //const ciudades = ["san diego", "tokio", "bombay"]
@@ -37,7 +38,8 @@ function App() {
         let peliculas = data.results.map(cadena => ({
           "original_title": cadena.title,
           "release_date": cadena.release_date,
-          "id": cadena.id
+          "id": cadena.id,
+          "img": cadena.poster_path
         }));
 
         setPeliculasEncontradas(peliculas)
@@ -77,26 +79,28 @@ function App() {
   return (
     <div className="App">
       <input value={busqueda} onChange={cambioBusqueda} />
-      <button onClick={clickBoton}>Buscar</button>
+      <button onClick={clickBoton} className={styles.paco}>Buscar</button>
       <hr />
-      {
-        !peliculasEncontradas.length && <p>Pelicula no encontrada</p>
+      <div className={styles.resultados}>
+        {
+          !peliculasEncontradas.length && <p>Pelicula no encontrada</p>
 
-      }
-      
-      { !!peliculasEncontradas.length && 
-        peliculasEncontradas.map(
-          pelicula => <ItemResultadoBusqueda
-            onClick={
-              e => detallesPelicula(pelicula)
-            } 
-            key={pelicula.id}
-            title={pelicula.original_title} 
-          />
-        )
-      }
+        }
+        {!!peliculasEncontradas.length &&
+          peliculasEncontradas.map(
+            pelicula => <ItemResultadoBusqueda
+              onClick={
+                e => detallesPelicula(pelicula)
+              }
+              key={pelicula.id}
+              title={pelicula.original_title}
+              img={pelicula.img}
+            />
+          )
+        }
+      </div>
       <div className="DetallesPelicula">
-        <DatosDePelicula pelicula={pelicula}/>
+        <DatosDePelicula pelicula={pelicula} />
       </div>
     </div>
   );

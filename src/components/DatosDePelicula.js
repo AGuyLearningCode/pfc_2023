@@ -3,8 +3,7 @@ import React from 'react'
 const DatosDePelicula = (props) => {
     console.log(props.pelicula);
     return (
-        <div>
-            <p>ESTOS SON LOS DATOS DE LA PELÍCULA.</p>
+        <div id="datos-peli">
             <p><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
             <p>Título: {props.pelicula.title} &nbsp;(<i>{props.pelicula.original_title}</i>)</p>
             <p>Duración: {props.pelicula.runtime} minutos</p>

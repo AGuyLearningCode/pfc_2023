@@ -1,0 +1,10 @@
+.resultado{
+    flex-grow: 1;
+    background: green;
+    margin: 5px;
+    z-index: 1;
+}
+.resultadoTitle{
+    margin: 5px;
+    z-index: 2;
+}
