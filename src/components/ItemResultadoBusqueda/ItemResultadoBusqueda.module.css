@@ -1,10 +1,6 @@
 .resultado{
-    flex-grow: 1;
-    background: green;
+    flex-shrink: 1;
     margin: 5px;
     z-index: 1;
-}
-.resultadoTitle{
-    margin: 5px;
-    z-index: 2;
+
 }
