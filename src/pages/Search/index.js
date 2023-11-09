@@ -2,11 +2,12 @@ import React from 'react'
 import {useState} from 'react';
 import styles from './Search.module.css'
 import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
   const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
   const [busqueda, setBusqueda] = useState("")
-  
+  const navigate = useNavigate();
   const cambioBusqueda = evt => {
     const elemento = evt.currentTarget;
     const nuevoValor = elemento.value;
@@ -40,14 +41,12 @@ const Search = () => {
       <div className={styles.resultados}>
         {
           !peliculasEncontradas.length && <p>Pelicula no encontrada</p>
-
         }
         {!!peliculasEncontradas.length &&
           peliculasEncontradas.map(
             pelicula => <ItemResultadoBusqueda
               onClick={
-                e => console.log() //detallesPelicula(pelicula)
-              }
+                e => navigate(`/Info/${pelicula.id}`)               }
               key={pelicula.id}
               title={pelicula.original_title}
               img={pelicula.img}
