@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import logo from '../assets/imagenes/logo-web.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainLayout = () => {
   return (
