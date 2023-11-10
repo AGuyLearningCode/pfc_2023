@@ -4,6 +4,7 @@ import Search from "./pages/Search";
 import Info from "./pages/Info";
 import MainLayout from "./layout/MainLayout";
 import Cartelera from "./pages/Cartelera";
+import Proximamente from "./pages/Proximamente";
 function App() {
   // JSX
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path='Buscador' element={<Search />} />
             <Route path='Info/:idPelicula' element={<Info />} />
             <Route path='Cartelera' element={<Cartelera />} />
+            <Route path='Proximamente' element={<Proximamente />} />
           </Route>
         </Routes>
       </BrowserRouter>
