@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div>
       <header className="header">
-        <img src={logo} className='mt-5'/>
+        <img src={logo} className='mt-5' />
         <nav>
           <Link to="/Buscador"> Buscador</Link> |
           <Link to="/Cartelera"> Cartelera</Link> |
@@ -15,9 +15,13 @@ const MainLayout = () => {
         </nav>
       </header>
       <hr />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </div>
   )
 }
 
 export default MainLayout
+
+//NOTA:tarea pendiente hacer cartelera

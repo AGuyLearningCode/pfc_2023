@@ -4,6 +4,7 @@ import styles from './Search.module.css'
 import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
 import { useNavigate } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
+import { Button } from 'react-bootstrap';
 
 const Search = () => {
   const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
@@ -38,7 +39,7 @@ const Search = () => {
   return (
     <>
        <input value={busqueda} onChange={cambioBusqueda} />
-      <button onClick={clickBoton} className={styles.paco}>Buscar</button>
+      <Button onClick={clickBoton} className={styles.paco}>Buscar</Button>
       <hr />
       <div className={styles.resultados}>
         {
