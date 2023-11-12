@@ -3,6 +3,7 @@ import { useState } from 'react';
 import DatosDePelicula from '../../components/DatosDePelicula';
 import { useParams } from 'react-router-dom';
 import { getURL } from '../../helpers/fetchHelpers';
+
 const Info = () => {
 
   const { idPelicula } = useParams();

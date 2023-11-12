@@ -1,13 +1,32 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Navigate, Outlet, useNavigate } from 'react-router-dom'
 import logo from '../assets/imagenes/logo-web.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Search from '../pages/Search';
 
 const MainLayout = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <header className="header">
-        <img src={logo} className='mt-5' />
+        
+        <Link
+          to="/Buscador"
+          img={logo}
+          onClick={
+            e => (
+              navigate(
+                `/Buscador`
+              )
+            )
+          }
+        >
+          <img
+            src={logo}
+            className='logo-header'
+          />
+        </Link>
+
         <nav>
           <Link to="/Buscador"> Buscador</Link> |
           <Link to="/Cartelera"> Cartelera</Link> |
@@ -23,5 +42,3 @@ const MainLayout = () => {
 }
 
 export default MainLayout
-
-//NOTA:tarea pendiente hacer cartelera

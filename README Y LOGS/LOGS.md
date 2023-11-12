@@ -1,0 +1,285 @@
+# ESTE DOCUMENTO FUE DISEÑADO PARA SER VISUALIZADO A PANTALLA COMPLETA.
+# Por favor, lea el documento antes de usar el servicio o reportar errores.
+# AUTOR: Martín García Ramos FECHA: 12/11/2023
+
+<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
+
+#               %%%%        %%%%%%%%%%    %%%%%%%#********           ********        *****           ************  ****************** *************** ****************   
+#              %%%%%%          %%%%%        %%%#    *******         *******          ******         ****      ***  **    *****    ***  ******     ***   *****    ******  
+#             %%%%%%%%         %%%%%%      %%%%     ********       ********         ********       *****      ***  **    *****    ***   *****       *   *****    ******  
+#             %%%%%%%%          %%%%%%     %%%      *********     *********        *********       *******               *****          *****    **     *****    *****   
+#            %%%  %%%%%          %%%%%%   %%%       *** ******   *** ******        *** ******       *************        *****          ***********     ************     
+#           %%%   %%%%%%          %%%%%  %%%        ***  ****** ***  ******       ***   ******        ************       *****          ***********     ************     
+#          %%%%%%%%%%%%%%          %%%%%%%%         ***   ********   ******      **************              *****       *****          *****    **     *****  ******    
+#         %%%%      %%%%%%         %%%%%%%%         ***    *******   ******     ***       ******   ***       *****       *****          *****       *   *****   ******   
+#        %%%%        %%%%%%         %%%%%%          ***     *****    ******    ****       ******   ****     *****        *****         ******      **   *****    ******* 
+#       %%%%%%%    %%%%%%%%%%        %%%%         *******    ***   *****************     ********* ************        **********     *************** **********   ******
+
+#                    _____                        _                   _                        _             _     _                      _ __                 
+#                   |_   _|   _    __ _  ___  ___| |_ ___  _ __    __| | ___    ___ ___  _ __ | |_ ___ _ __ (_) __| | ___     ___ _ __   | /_/_ __   ___  __ _ 
+#                     | || | | |  / _` |/ _ \/ __| __/ _ \| '__|  / _` |/ _ \  / __/ _ \| '_ \| __/ _ \ '_ \| |/ _` |/ _ \   / _ \ '_ \  | | | '_ \ / _ \/ _` |
+#                     | || |_| | | (_| |  __/\__ \ || (_) | |    | (_| |  __/ | (_| (_) | | | | ||  __/ | | | | (_| | (_) | |  __/ | | | | | | | | |  __/ (_| |
+#                     |_| \__,_|  \__, |\___||___/\__\___/|_|     \__,_|\___|  \___\___/|_| |_|\__\___|_| |_|_|\__,_|\___/   \___|_| |_| |_|_|_| |_|\___|\__,_|
+#                                 |___/                                                                                                                        
+
+
+#                        +——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————+
+#                        |  ██╗      ██████╗  ██████╗ ███████╗    ██████╗ ███████╗    ██████╗ ██████╗  ██████╗ ██╗   ██╗███████╗ ██████╗████████╗ ██████╗   |
+#                        |  ██║     ██╔═══██╗██╔════╝ ██╔════╝    ██╔══██╗██╔════╝    ██╔══██╗██╔══██╗██╔═══██╗╚██╗ ██╔╝██╔════╝██╔════╝╚══██╔══╝██╔═══██╗  |
+#                        |  ██║     ██║   ██║██║  ███╗███████╗    ██║  ██║█████╗      ██████╔╝██████╔╝██║   ██║ ╚████╔╝ █████╗  ██║        ██║   ██║   ██║  |
+#                        |  ██║     ██║   ██║██║   ██║╚════██║    ██║  ██║██╔══╝      ██╔═══╝ ██╔══██╗██║   ██║  ╚██╔╝  ██╔══╝  ██║        ██║   ██║   ██║  |
+#                        |  ███████╗╚██████╔╝╚██████╔╝███████║    ██████╔╝███████╗    ██║     ██║  ██║╚██████╔╝   ██║   ███████╗╚██████╗   ██║   ╚██████╔╝  |
+#                        |  ╚══════╝ ╚═════╝  ╚═════╝ ╚══════╝    ╚═════╝ ╚══════╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝   |
+#                        +——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————+
+
+
+    En el presente documento se irán documentando todos los cambios que se realicen de ahora en adelante hasta la entrega.
+
+    Debido a la naturaleza irrugular de los hechos y la implicación directa en el desarrollo que tuvo la actividad en las prácticas con respecto al proyecto(Cursos de
+    conocimiento y demás contenido), hasta la Blueline, se reportarán también las actividades de las prácticas que afectan al proyecto directa o indirectamente.  
+
+#   <SEPTIEMBRE>
+#   ============
+#       (69) Lunes 25/09/2023:
+*           ·   Revisión de Prueba técnica
+            ·   Videos introducción: SCRUM
+#       (68) Martes 26/09/2023:
+*           ·   Corrección Prueba técnica
+            ·   Primera daily
+            ·   Instalar y configurar recursos.
+            ·   Aprender Github de nuevo.
+#       (67) Miercoles 27/09/2023:
+*           ·   Daily diaria.
+            ·   Busqueda de cursos de nivelación hacia React
+#       (66) Jueves 28/09/2023:
+*           ·   Daily diaria.
+            ·   Curso CSS: 5%
+#       (65) Viernes 29/09/2023:
+*           ·   Daily diaria.
+            ·   Asistencia a presentación de compañeros de Ciencia de Datos.
+            ·   Curso CSS: 10%
+    
+#   (64) Sábado 30/09/2023:
+
+#   </SEPTIEMBRE>
+#   =============
+
+#   <OCTUBRE>
+#   =========
+#       (63) Domingo 1/11/2023:
+    
+#       (62) Lunes 2/10/2023:
+*           ·   Apuntar avance de PFC/Prácticas.
+            ·   Daily diaria.
+            ·   Curso CSS: 35%
+#       (61) Martes 3/10/2023:
+*           ·   Apuntar avance de PFC/Prácticas.
+            ·   Daily diaria.
+            ·   Hacer presentación para Merlin.
+#       (60) Miércoles 4/10/2023:
+*           ·   Apuntar avance de PFC/Prácticas
+            ·   Daily diaria.
+            ·   Terminé presentación para Merlin.
+            ·   Curso CSS: 37%.
+#       (59) Jueves 5/10/2023:
+*           ·   BAJA POR ENFERMEDAD
+#       (58) Viernes 6/10/2023:
+*           ·   BAJA POR ENFERMEDAD
+    
+#       (57) Sábado 7/10/2023:
+*           ·   BAJA POR ENFERMEDAD
+#       (56) Domingo 8/10/2023:
+*           ·   BAJA POR ENFERMEDAD
+    
+#       (55) Lunes 9/10/2023:
+*           ·   Daily diaria.
+            ·   Curso CSS: Finalización.
+#       (54) Martes 10/10/2023:
+*           ·   Daily diaria.
+            ·   Curso Javascript: 5%
+#       (53) Miercoles 11/10/2023:
+*           ·   Daily diaria.
+            ·   Curso Javascript: 10%
+#       (52) Jueves 12/10/2023:
+*           ·   FESTIVO
+#       (51) Viernes 13/10/2023:
+*           ·   Presentación compañeros.
+            ·   Daily diaria.
+            ·   Curso JS: 15%
+            ·   Configuración e instalación de programas en ordenador provisional.
+    
+#       (50) Sábado 14/10/2023:
+#       (49) Domingo 15/10/2023:
+    
+#       (48) Lunes 16/10/2023:
+*           ·   Daily diaria.
+            ·   Curso JS: 20%
+            ·   Cancelación de PFC original    <----------------------------------------------------------------------------------------Punto de quiebre
+            ·   Replanteamiento de proyecto    
+#       (47) Martes 17/10/2023:
+*           ·   Daily
+            ·   Curso JS: 25%
+#       (46) Miércoles 18/10/2023:
+*           ·   Daily
+            ·   Curso JS: 30% 
+#       (45) Jueves 19/10/2023:
+*           ·   Daily
+            ·   Curso JS: 35% y congelación de curso por el momento.
+#       (44) Viernes 20/10/2023:
+*           ·   Presentación propia
+            ·   Daily diaria.
+            ·   Curso React: INICIO     <-----------------------------------------------------------------------------------------------Punto de quiebre
+#       (43) Sábado 21/10/2023:
+#       (42) Domingo 22/10/2023:
+
+#       (41) Lunes 23/10/2023:
+*           ·   Daily diaria.
+            ·   Replanteamiento de PFC con Integración en curso de REACT de las prácticas      <----------------------------------------Punto de quiebre
+#       (40) Martes 24/10/2023:
+*           ·   Daily diaria.
+            ·   Cambio de curso de React
+#       (39) Miércoles 25/10/2023:
+*           ·   Daily diaria.
+            ·   Resolución de todos los problemas de instalación y configuración de React
+#       (38) Jueves26/10/2023:
+*           ·   Daily diaria.
+            ·   Curso React: 5%
+#       (37) Viernes 27/10/2023:
+*           ·   Daily diaria.
+            ·   Curso React: 10%
+#       (36) Sábado 28/10/2023:
+#       (35) Domingo 29/10/2023:
+
+#       (34) Lunes 30/10/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >10[Video 35]
+#       (33) Martes 31/10/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >10[Video 47]
+
+#   </OCTUBRE>
+#   ==========
+#   <NOVIEMBRE>
+#   ===========
+
+#       (32) Miercoles 1/11/2023:
+*           ·   FESTIVO
+#       (31) Jueves 2/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >15%[Video 65](+18 videos)
+#       (30) Viernes 3/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >15%[Video 80](+15 videos)
+
+#       (29) Sábado 4/11/2023:
+#       (28) Domingo 5/11/2023:
+
+#       (27) Lunes 6/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >20% [Video 81] (+1 videos) {Revisé los últimos 20 vídeos para finalización de ejercicio del curso}
+#       (26) Martes 7/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >25% [Video 92] (+11 videos)
+#       (25) Miércoles 8/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >30% [Video 113](+21 videos)
+#       (24) Jueves 9/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >15% [Video 115](+2 videos)
+#       (23) Viernes 10/11/2023:
+*           ·   Daily diaria.
+            ·   Curso React: >30% [Video 117](+3 videos)
+
+#       (22) Sábado 11/11/2023:
+#       (21) Domingo 12/11/2023:
+            ·   Creación de LOGS
+            ·   Creación de BUGS CONOCIDOS
+            ·   El Logotipo del layout de la app ahora es clicable y redirige a la web principal de /Buscador.
+            ·   Diagrama PERT Realizado.
+            ·   Diagrama GANT Realizado.
+            ·   Primera versión del programa entregada.
+            ·    >>>>>>> BLUELINE <<<<<<<
+
+<!--    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    A PARTIR DE AHORA SE LOGEARÁN ESTRICTAMENTE SOLO LOS LOGS DE DESARROLLO DE CÓDIGO    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   -->
+
+#       (20) Lunes 13/11/2023:
+#       (19) Martes 14/11/2023:
+#       (18) Miércoles 15/11/2023:
+#       (17) Jueves 16/11/2023:
+#       (16) Viernes 17/11/2023:
+
+#       (15) Sábado 18/11/2023:
+#       (14) Domingo 19/11/2023:
+
+#       (13) Lunes 20/11/2023:
+#       (12) Martes 21/11/2023:
+#       (11) Miercoles 22/11/2023:
+#       (10) Jueves 23/11/2023:
+#        (9) Viernes 24/11/2023:
+
+#        (8) Sábado 25/11/2023:
+#        (7) Domingo 26/11/2023:
+
+#        (6) Lunes 27/11/2023:
+#        (5) Martes 28/11/2023:
+#        (4) Miércoles 29/11/2023:
+#        (3) Jueves 30/11/2023:
+
+#   </NOVIEMBRE>
+#   ============
+
+#   <DICIEMBRE>
+#   ===========
+#       (2) Viernes 01/11/2023:
+
+#       (1) Sábado 02/11/2023:
+#       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<
+
+#   </DICIEMBRE>
+#   ============
+
+
+<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
+
+    PLANTEAMIENTO DE PROYECTO:
+    A   Brainstorming
+    B   Planificación
+    C   Previa
+    D       Fase Peliculas
+    D.1         Página Base:
+    D.1.a           Creación de web inicial HTML: /Buscador
+    D.1.b           Creación de estilos CSS para web inicial: /Buscador
+    D.1.c           Implementar API para llamarla cuando se realice una búsqueda
+    D.1.d           Implementar estilos CSS para la lista de resultados de la búsqueda.
+    D.2         Página info:
+    D.2.a           Creación de subsección HTML: Informacion-item
+    D.2.b           Creación de estilos CSS para Información-item
+    D.2.c           Adaptar el API para Información-item
+    D.3         Página Cartelera:
+    D.3.a           Creación de sección adyacente HTML: Cartelera
+    D.3.b           Creación de estilos CSS para Cartelera
+    D.3.c           Adaptar API para llamarla cuando se muestre el listado.
+    D.3.d           Adaptar estilos CSS para la lista de resultados.
+    D.4         Página Próximamente:
+    D.4.a           Creación de sección adyacente HTML: Próximamente
+    D.4.b           Creación de estilos CSS para Próximamente
+    D.4.c           Adaptar API para llamarla cuando se muestre el listado.
+    D.4.d           Adaptar estilos CSS para la lista de resultados.
+
+    E       Fase Series
+    E.1         Página Base:
+    E.1.a           Adaptar API para detectar series.
+    E.1.b           Implementar filtros para separar series de películas.
+    E.2         Página info:
+    E.2.a           Adaptar/crear subsección HTML: Informacion-item para que soporte series
+    E.2.b           Adaptar el API para Información-item
+    E.2.c           Adaptar de estilos CSS de Información-item
+    E.3         Página Cartelera:
+    E.3.a           Cambio de nombre a: Novedades
+    E.3.b           Adaptación de estilos CSS
+    E.3.c           Adaptar API para trackear también series.
+    E.3.d           Adaptar estilos CSS para la lista de resultados.
+    E.4         Página Próximamente:
+    E.4.a           Adaptar API para trackear también series.
+    E.4.b           Adaptar estilos CSS para la lista de resultados.
+        

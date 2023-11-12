@@ -2,5 +2,8 @@
     flex-shrink: 1;
     margin: 5px;
     z-index: 1;
+}
 
+.datos-peli{
+    margin:20px;
 }

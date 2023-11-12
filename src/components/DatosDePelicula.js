@@ -4,8 +4,12 @@ const DatosDePelicula = (props) => {
     console.log(props.pelicula);
     return (
         <div id="datos-peli">
-            <p><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
+            <p className="background"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
+            <img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} />
             <p>Título: {props.pelicula.title} &nbsp;(<i>{props.pelicula.original_title}</i>)</p>
+            <p>Género: {`###################################`}</p>
+            <p>País:   {`###################################`}</p>
+            <p>Idioma: {`###################################`}</p>
             <p>Duración: {props.pelicula.runtime} minutos</p>
             <p>Año: {props.pelicula.release_date}</p>
             <p>Sinopsis: {props.pelicula.overview}</p>

@@ -12,19 +12,21 @@ const Proximamente = () => {
     useEffect(() => {
         getURL("movie/upcoming").then(resultado => {
             setProxima(resultado.results);
-        })
+        },[]);
     });
 
     return (
-        <div>
-            <h1>Esta es la sección de próximos estrenos</h1>
+        // <div className={styles.resultado}>
+        <div className="resultados">
+            <h1>Próximamente en cartelera:</h1>
             {
                 proxima.map(
                     pr => (
                         <ItemResultadoBusqueda
+                            key={pr.id}
                             img={pr.poster_path}
                             onClick={
-                                pr=>(
+                                pro=>(
                                     navigate(`/info/${pr.id}`)
                                 )
                             }

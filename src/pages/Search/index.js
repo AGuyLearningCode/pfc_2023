@@ -38,7 +38,7 @@ const Search = () => {
 
   return (
     <>
-       <input value={busqueda} onChange={cambioBusqueda} />
+      <input value={busqueda} onChange={cambioBusqueda} />
       <Button onClick={clickBoton} className={styles.paco}>Buscar</Button>
       <hr />
       <div className={styles.resultados}>
@@ -49,7 +49,8 @@ const Search = () => {
           peliculasEncontradas.map(
             pelicula => <ItemResultadoBusqueda
               onClick={
-                e => navigate(`/Info/${pelicula.id}`)               }
+                e => navigate(`/Info/${pelicula.id}`)
+              }
               key={pelicula.id}
               title={pelicula.original_title}
               img={pelicula.img}

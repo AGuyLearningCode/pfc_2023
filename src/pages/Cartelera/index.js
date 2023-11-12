@@ -15,17 +15,13 @@ const Cartelera = () => {
             setPeliculas(resultado.results);
         });
     }, [])
-
-
-
-
+    
     return (
         <div>
-            <h1>Esta es la cartelera</h1>
-
+            <h1>En cartelera:</h1>
+            <br/>
+            <br/>
             {peliculas.map(p => <ItemResultadoBusqueda img={p.poster_path} onClick={e => (navigate(`/Info/${p.id}`))} />)}
-
-
         </div>
     )
 }
