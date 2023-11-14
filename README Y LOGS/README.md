@@ -1,6 +1,6 @@
 # ESTE DOCUMENTO FUE DISEÑADO PARA SER VISUALIZADO A PANTALLA COMPLETA.
 # Por favor, lea el documento antes de usar el servicio o reportar errores.
-# AUTOR: Martín García Ramos FECHA: 12/11/2023
+# AUTOR: Martín García Ramos | Fecha de creación: 12/11/2023 | Última Actualización: 14/11/2023
 
 <888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
 
@@ -618,10 +618,10 @@ PC=Pendiente de completar / C=Completado
 
             Según quien sea la entidad que gestione el dominio desde donde se envían las cookies y trate los datos que se obtengan se pueden distinguir dos tipos:
 
-                ·   COOKIES PROPIAS: Aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el
+                ·   COOKIES PROPIAS: Aquellas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el
                     servicio solicitado por el usuario.
         
-                ·   COOKIES DE TERCEROS: Aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra
+                ·   COOKIES DE TERCEROS: Aquellas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra
                     entidad que trata los datos obtenidos través de las cookies.
         
                     En el caso de que las cookies sean instaladas desde un equipo o dominio gestionado por el propio editor pero la información que se recoja mediante éstas sea
@@ -635,7 +635,7 @@ PC=Pendiente de completar / C=Completado
                 ·   COOKIES PERSISTENTES: Los datos siguen almacenados en el terminal y pueden ser accedidos y tratados durante un periodo definido por el responsable de la
                     cookie, y que puede ir de unos minutos a varios años.
 
-                    Por último, existe otra clasificación con cinco tipos de cookies según la finalidad para la que se traten los datos obtenidos:
+            Por último, existe otra clasificación con cinco tipos de cookies según la finalidad para la que se traten los datos obtenidos:
 
                 ·   COOKIES TÉCNICAS: Aquellas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes
                     opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso
@@ -688,11 +688,15 @@ PC=Pendiente de completar / C=Completado
 
             A continuación se identifican las cookies que están siendo utilizadas en este portal así como su tipología y función:
 
-                Cookies de sesión
-                Cookies técnicas
-                Cookies de personalización
-                Cookies publicitarias
-                Cookies de redes sociales externas
+                · Cookies de sesión
+                
+                · Cookies técnicas
+                
+                · Cookies de personalización
+                
+                · Cookies publicitarias
+
+                · Cookies de redes sociales externas
 
 #       Aceptación de la Política de cookies
 
@@ -701,9 +705,11 @@ PC=Pendiente de completar / C=Completado
 
             Ante esta información es posible llevar a cabo las siguientes acciones:
 
-                Aceptar cookies. No se volverá a visualizar este aviso al acceder a cualquier página del portal durante la presente sesión.
-                Cerrar. Se oculta el aviso en la presente página.
-                Modificar su configuración.
+                · Aceptar cookies. No se volverá a visualizar este aviso al acceder a cualquier página del portal durante la presente sesión.
+                
+                · Cerrar. Se oculta el aviso en la presente página.
+                
+                · Modificar su configuración.
         
 #       Última Actualización: 11/11/2023
 
