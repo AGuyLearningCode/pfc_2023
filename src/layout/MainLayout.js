@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, Navigate, Outlet, useNavigate } from 'react-router-dom'
 import logo from '../assets/imagenes/logo-web.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Search from '../pages/Search';
 
 const MainLayout = () => {
   const navigate = useNavigate();

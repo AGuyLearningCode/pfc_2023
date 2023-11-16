@@ -7,9 +7,9 @@ const DatosDePelicula = (props) => {
             <p className="background"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
             <img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} />
             <p>Título: {props.pelicula.title} &nbsp;(<i>{props.pelicula.original_title}</i>)</p>
-            <p>Género: {`###################################`}</p>
-            <p>País:   {`###################################`}</p>
-            <p>Idioma: {`###################################`}</p>
+            <p>Género:</p> <ul>{props.pelicula.genres && props.pelicula.genres.map(e => {return <li key={e.id}>{e.name}</li>})}</ul>
+            <p>País:</p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e=>{return <li key={e.iso_3166_1}>{e.name}</li>})}</ul>
+            <p>Idioma:</p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e=>{return <li key={e.english_name}>{e.name}</li>})}</ul>
             <p>Duración: {props.pelicula.runtime} minutos</p>
             <p>Año: {props.pelicula.release_date}</p>
             <p>Sinopsis: {props.pelicula.overview}</p>
@@ -18,6 +18,7 @@ const DatosDePelicula = (props) => {
             <p>Coste: ${new Intl.NumberFormat().format(props.pelicula.budget)}</p>
             <p>Recaudación: ${new Intl.NumberFormat().format(props.pelicula.revenue)}</p>
             <p>Beneficios: ${new Intl.NumberFormat().format(props.pelicula.revenue-props.pelicula.budget) }</p>
+            <details><summary>Actores</summary><ul>{props.actores.cast && props.actores.cast.map(e=>{return <li key={e.cast_id}>{e.name}</li>})}</ul></details>
         </div>
     )
 }

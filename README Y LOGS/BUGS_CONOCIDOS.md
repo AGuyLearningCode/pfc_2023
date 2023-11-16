@@ -2,7 +2,6 @@
 # Por favor, lea el documento antes de usar el servicio o reportar errores.
 # AUTOR: Martín García Ramos FECHA: 12/11/2023
 
-<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
 
 #               %%%%        %%%%%%%%%%    %%%%%%%#********           ********        *****           ************  ****************** *************** ****************   
 #              %%%%%%          %%%%%        %%%#    *******         *******          ******         ****      ***  **    *****    ***  ******     ***   *****    ******  
@@ -53,42 +52,7 @@
                         flushSyncCallbacks	@	react-dom.development.js:12042
                         (anónimo)	@	react-dom.development.js:25651
         
-#        <↓> INFORMACIÓN DE RESULTADO: Falta por mostrar el GÉNERO, DIRECTOR Y ELENCO DE ACTORES
 #        <↓> ITEM-RESULTADO: Si la API no tiene imagen usar una imagen por defecto.
-#        <↑> ERROR en consola de navegador:
-*         |
-          +---> Warning: Each child in a list should have a unique "key" prop.
-                    Check the render method of `Cartelera`. See https://reactjs.org/link/warning-keys for more information.
-                        at ItemResultadoBusqueda (http://localhost:3000/static/js/bundle.js:427:20)
-                        at Cartelera (http://localhost:3000/static/js/bundle.js:776:84)
-                        at RenderedRoute (http://localhost:3000/static/js/bundle.js:39949:5)
-                        at Outlet (http://localhost:3000/static/js/bundle.js:40488:26)
-                        at main
-                        at div
-                        at MainLayout (http://localhost:3000/static/js/bundle.js:631:81)
-                        at RenderedRoute (http://localhost:3000/static/js/bundle.js:39949:5)
-                        at Routes (http://localhost:3000/static/js/bundle.js:40571:5)
-                        at Router (http://localhost:3000/static/js/bundle.js:40509:15)
-                        at BrowserRouter (http://localhost:3000/static/js/bundle.js:38569:5)
-                        at div
-                        at App
-                    printWarning @ react-jsx-dev-runtime.development.js:87
-                    error @ react-jsx-dev-runtime.development.js:61
-                    validateExplicitKey @ react-jsx-dev-runtime.development.js:1078
-                    validateChildKeys @ react-jsx-dev-runtime.development.js:1105
-                    jsxWithValidation @ react-jsx-dev-runtime.development.js:1266
-                    Cartelera @ index.js:19
-                    renderWithHooks @ react-dom.development.js:16305
-                    updateFunctionComponent @ react-dom.development.js:19588
-                    beginWork @ react-dom.development.js:21601
-                    beginWork$1 @ react-dom.development.js:27426
-                    performUnitOfWork @ react-dom.development.js:26557
-                    workLoopSync @ react-dom.development.js:26466
-                    renderRootSync @ react-dom.development.js:26434
-                    performConcurrentWorkOnRoot @ react-dom.development.js:25738
-                    workLoop @ scheduler.development.js:266
-                    flushWork @ scheduler.development.js:239
-                    performWorkUntilDeadline @ scheduler.development.js:533
                 
 #        <↑> ERROR en consola de navegador: 
 *         |

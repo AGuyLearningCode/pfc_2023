@@ -2,7 +2,6 @@
 # Por favor, lea el documento antes de usar el servicio o reportar errores.
 # AUTOR: Martín García Ramos FECHA: 12/11/2023
 
-<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
 
 #               %%%%        %%%%%%%%%%    %%%%%%%#********           ********        *****           ************  ****************** *************** ****************   
 #              %%%%%%          %%%%%        %%%#    *******         *******          ******         ****      ***  **    *****    ***  ******     ***   *****    ******  
@@ -159,6 +158,7 @@
 
 #   </OCTUBRE>
 #   ==========
+
 #   <NOVIEMBRE>
 #   ===========
 
@@ -191,8 +191,9 @@
             ·   Curso React: >30% [Video 117](+3 videos)
 
 #       (22) Sábado 11/11/2023:
+*           ·   Creación de README.md
 #       (21) Domingo 12/11/2023:
-            ·   Creación de LOGS
+*           ·   Creación de LOGS
             ·   Creación de BUGS CONOCIDOS
             ·   El Logotipo del layout de la app ahora es clicable y redirige a la web principal de /Buscador.
             ·   Diagrama PERT Realizado.
@@ -202,9 +203,15 @@
 <!--    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    A PARTIR DE AHORA SE LOGEARÁN ESTRICTAMENTE SOLO LOS LOGS DE DESARROLLO DE CÓDIGO    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   -->
 
 #       (20) Lunes 13/11/2023:
-            ·   Corrección pdf entrega.
+*           ·   Corrección pdf entrega.
 #       (19) Martes 14/11/2023:
+*           ·   Revisión y corrección de documentación: Readme, Logs y Bugs. Corrección de errores.   
+            ·   Reinstalación de programas.
 #       (18) Miércoles 15/11/2023:
+*           ·   Implementación de actores.
+            ·   Errores arreglados:
+                > Se ha arreglado el error que se generaba en consola por no usar keys con el identificador del objeto.
+                > Se han corregido los parámetros de Género, País y Idioma, ahora se muestran correctamente.
 #       (17) Jueves 16/11/2023:
 #       (16) Viernes 17/11/2023:
 

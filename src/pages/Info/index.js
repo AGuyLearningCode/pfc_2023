@@ -15,10 +15,22 @@ const Info = () => {
     })
   }, [idPelicula])
 
+  const[actores,setActores]=useState({});
+  useEffect(()=>{
+    getURL(`movie/${idPelicula}/credits`).then((data) =>{
+      setActores(data);
+    })
+  },[idPelicula])
+
+// https://api.themoviedb.org/3/movie/{movie_id}/credits
+
+
+
+
   return (
     <div>
       <div className="DetallesPelicula">
-        <DatosDePelicula pelicula={pelicula} />
+        <DatosDePelicula pelicula={pelicula} actores={actores}/>
       </div>
     </div>
   )
