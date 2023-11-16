@@ -5,23 +5,38 @@ import { getURL } from '../../helpers/fetchHelpers';
 
 const Info = () => {
 
-  const { idPelicula } = useParams();
+  const { tipo, idPelicula } = useParams();
 
   const [pelicula, setPelicula] = useState({});
   useEffect(() => {
-    getURL(`movie/${idPelicula}`).then((data) => {
-      setPelicula(data);
-    })
+    if (tipo === "p") {
+      getURL(`movie/${idPelicula}`).then((data) => {
+        setPelicula(data);
+      })
+    }else if(tipo==="s"){
+      getURL(`tv/${idPelicula}`).then((data) => {
+        setPelicula(data);
+      })
+    }
+
+
   }, [idPelicula])
 
-  const[actores,setActores]=useState({});
-  useEffect(()=>{
-    getURL(`movie/${idPelicula}/credits`).then((data) =>{
-      setActores(data);
-    })
-  },[idPelicula])
+  const [actores, setActores] = useState({});
+  useEffect(() => {
+    if (tipo==="p"){
+      getURL(`movie/${idPelicula}/credits`).then((data) => {
+        setActores(data);
+      })
+    }else if(tipo ==="s"){
+      getURL(`tv/${idPelicula}/credits`).then((data) => {
+        setActores(data);
+      })
+    }
+    
+  }, [idPelicula])
 
-// https://api.themoviedb.org/3/movie/{movie_id}/credits
+  // https://api.themoviedb.org/3/movie/{movie_id}/credits
 
 
 
@@ -29,7 +44,7 @@ const Info = () => {
   return (
     <div>
       <div className="DetallesPelicula">
-        <DatosDePelicula pelicula={pelicula} actores={actores}/>
+        <DatosDePelicula pelicula={pelicula} actores={actores} tipo={tipo}/>
       </div>
     </div>
   )

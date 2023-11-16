@@ -215,6 +215,7 @@
 #       (17) Jueves 16/11/2023:
 *           ·   Ahora al pulsar enter en el buscador, se efectua la búsqueda sin necesidad de hacer click en el botón.
             ·   Ahora el buscador permite buscar por películas o por series.
+            ·   Ahora al mostrar datos, se muestran o de serie o de película según proceda.
 #       (16) Viernes 17/11/2023:
 
 #       (15) Sábado 18/11/2023:
