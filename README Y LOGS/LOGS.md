@@ -205,7 +205,7 @@
 #       (20) Lunes 13/11/2023:
 *           ·   Corrección pdf entrega.
 #       (19) Martes 14/11/2023:
-*           ·   Revisión y corrección de documentación: Readme, Logs y Bugs. Corrección de errores.   
+*           ·   Revisión y corrección de documentación: Readme, Logs y Bugs. Corrección de errores.
             ·   Reinstalación de programas.
 #       (18) Miércoles 15/11/2023:
 *           ·   Implementación de actores.
@@ -213,6 +213,7 @@
                 > Se ha arreglado el error que se generaba en consola por no usar keys con el identificador del objeto.
                 > Se han corregido los parámetros de Género, País y Idioma, ahora se muestran correctamente.
 #       (17) Jueves 16/11/2023:
+*           ·   Ahora al pulsar enter en el buscador, se efectua la búsqueda sin necesidad de hacer click en el botón.
 #       (16) Viernes 17/11/2023:
 
 #       (15) Sábado 18/11/2023:

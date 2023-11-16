@@ -16,7 +16,7 @@ const Search = () => {
     setBusqueda(nuevoValor);
   }
 
-  const clickBoton = () => {
+  const clickBotonSearch = () => {
     const params = {
       query: busqueda,
       include_adult: false,
@@ -36,10 +36,16 @@ const Search = () => {
       })
   }
 
+  const eventoIntroBusqueda = (evt) => {
+    if(evt.keyCode == 13) {
+      clickBotonSearch()
+    }
+  }
+
   return (
     <>
-      <input value={busqueda} onChange={cambioBusqueda} />
-      <Button onClick={clickBoton} className={styles.paco}>Buscar</Button>
+      <input value={busqueda} onChange={cambioBusqueda} onKeyDown={ eventoIntroBusqueda } />
+      <Button onClick={clickBotonSearch} className={styles.paco}>Buscar</Button>
       <hr />
       <div className={styles.resultados}>
         {
