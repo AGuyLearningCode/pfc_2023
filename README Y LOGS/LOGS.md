@@ -221,7 +221,8 @@
 #       (15) Sábado 18/11/2023:
 #       (14) Domingo 19/11/2023:
 *           ·   Creación de pantalla de información de la serie.
-
+            ·   Título del item en la pantalla info en función de los props de serie o película.
+            ·   Implementación de las series en la sección de Cartelera.
 #       (13) Lunes 20/11/2023:
 #       (12) Martes 21/11/2023:
 #       (11) Miercoles 22/11/2023:
