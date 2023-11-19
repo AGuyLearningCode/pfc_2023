@@ -224,6 +224,7 @@
             ·   Título del item en la pantalla info en función de los props de serie o película.
             ·   Implementación de las series en la sección de Cartelera.
             ·   Implementación de las series en la sección de Próximamente.
+            ·   Parche de resultados en Próximamente: Ahora los resultados que no tienen wallpaper muestran su título en su lugar.
 #       (13) Lunes 20/11/2023:
 #       (12) Martes 21/11/2023:
 #       (11) Miercoles 22/11/2023:

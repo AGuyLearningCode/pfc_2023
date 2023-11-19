@@ -24,6 +24,7 @@ const Proximamente = () => {
                 sort_by: "first_air_date.asc",
                 "first_air_date.gte": cadenaFecha
             }).then(resultado => {
+                console.log(resultado.results);
                 setProxima(resultado.results);
             });
         }
@@ -47,6 +48,7 @@ const Proximamente = () => {
                         <ItemResultadoBusqueda
                             key={pr.id}
                             img={pr.poster_path}
+                            title={tipo === "p" ? pr.title: pr.name}
                             onClick={
                                 pro=>(
                                     navigate(`/info/${tipo}/${pr.id}`)
