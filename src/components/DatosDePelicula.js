@@ -6,10 +6,10 @@ const DatosDePelicula = (props) => {
         <div id="datos-peli">
             <p className="background"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
             <img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} />
-            <p>Título: {props.pelicula.title} &nbsp;(<i>{props.pelicula.original_title}</i>)</p>
-            <p>Género:</p> <ul>{props.pelicula.genres && props.pelicula.genres.map(e => {return <li key={e.id}>{e.name}</li>})}</ul>
-            <p>País:</p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e=>{return <li key={e.iso_3166_1}>{e.name}</li>})}</ul>
-            <p>Idioma:</p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e=>{return <li key={e.english_name}>{e.name}</li>})}</ul>
+            <p>Título: { props.tipo === "p" ? props.pelicula.title : props.pelicula.name } &nbsp;(<i>{ props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name }</i>)</p>
+            <p>Género: </p> <ul>{props.pelicula.genres && props.pelicula.genres.map(e => {return <li key={e.id}>{e.name}</li>})}</ul>
+            <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e=>{return <li key={e.iso_3166_1}>{e.name}</li>})}</ul>
+            <p>Idioma: </p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e=>{return <li key={e.english_name}>{e.name}</li>})}</ul>
             <p>Duración: {props.pelicula.runtime} minutos</p>
             <p>Año: {props.pelicula.release_date}</p>
             <p>Sinopsis: {props.pelicula.overview}</p>

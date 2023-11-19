@@ -220,6 +220,7 @@
 
 #       (15) Sábado 18/11/2023:
 #       (14) Domingo 19/11/2023:
+*           ·   Creación de pantalla de información de la serie.
 
 #       (13) Lunes 20/11/2023:
 #       (12) Martes 21/11/2023:
