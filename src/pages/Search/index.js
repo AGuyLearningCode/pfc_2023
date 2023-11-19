@@ -50,7 +50,7 @@ const Search = () => {
       getURL(`search/tv`, params)
       .then(data => {
         let series = data.results.map(cadena => ({
-          "original_title": cadena.title,
+          "original_title": cadena.name,
           "release_date": cadena.release_date,
           "id": cadena.id,
           "img": cadena.poster_path
@@ -84,13 +84,13 @@ const Search = () => {
   
         {!!(resultadoFinal.length)&&
           resultadoFinal.map(
-            pelicula => <ItemResultadoBusqueda
+            item => <ItemResultadoBusqueda
               onClick={
-                e => navigate(`/Info/${tipo === "pelicula" ? "p": "s"}/${pelicula.id}`)
+                e => navigate(`/Info/${tipo === "pelicula" ? "p": "s"}/${item.id}`)
               }
-              key={pelicula.id}
-              title={pelicula.original_title}
-              img={pelicula.img}
+              key={item.id}
+              title={item.original_title}
+              img={item.img}
             />
           )
         }
