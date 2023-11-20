@@ -114,10 +114,12 @@
 *           ·   Daily diaria.
             ·   Curso JS: 20%
             ·   Cancelación de PFC original    <----------------------------------------------------------------------------------------Punto de quiebre
-            ·   Replanteamiento de proyecto    
+            ·   Replanteamiento de proyecto: Investigué apis del tiempo y crear archivos base    
 #       (47) Martes 17/10/2023:
 *           ·   Daily
             ·   Curso JS: 25%
+            ·   Seguí investigando apis del tiempo gratuitas
+            ·   Empecé a vincular el APIRest.
 #       (46) Miércoles 18/10/2023:
 *           ·   Daily
             ·   Curso JS: 30% 
@@ -129,6 +131,7 @@
             ·   Daily diaria.
             ·   Curso React: INICIO     <-----------------------------------------------------------------------------------------------Punto de quiebre
 #       (43) Sábado 21/10/2023:
+*           ·   Hice que los datos del json recibido de la api se mostraran por pantalla.
 #       (42) Domingo 22/10/2023:
 
 #       (41) Lunes 23/10/2023:
@@ -227,6 +230,7 @@
             ·   Parche de resultados en Próximamente: Ahora los resultados que no tienen wallpaper muestran su título en su lugar.
             ·   Parche de resultados en Buscador: Ahora los resultados que no tienen wallpaper muestran su título en su lugar.
 #       (13) Lunes 20/11/2023:
+*           ·   Creación de la imagen placeholder para los items que no tienen wallpapers.
 #       (12) Martes 21/11/2023:
 #       (11) Miercoles 22/11/2023:
 #       (10) Jueves 23/11/2023:
