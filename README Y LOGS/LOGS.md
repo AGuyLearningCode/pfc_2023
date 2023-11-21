@@ -231,6 +231,10 @@
             ·   Parche de resultados en Buscador: Ahora los resultados que no tienen wallpaper muestran su título en su lugar.
 #       (13) Lunes 20/11/2023:
 *           ·   Creación de la imagen placeholder para los items que no tienen wallpapers.
+            ·   Creación de la imagen de degradado para oscurecer el wallpaper en la lista de resultados.
+            ·   Implementación de soporte para series y películas en los props del componente info de item.
+            ·   Creación de la carpeta: Listas.
+            ·   Creación del componente Listas: index.js en la carpeta Listas, para la sección de Listas.
 #       (12) Martes 21/11/2023:
 #       (11) Miercoles 22/11/2023:
 #       (10) Jueves 23/11/2023:
@@ -256,6 +260,3 @@
 
 #   </DICIEMBRE>
 #   ============
-
-
-<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>

@@ -17,6 +17,7 @@ function App() {
             <Route path='Info/:tipo/:idPelicula' element={<Info />} />
             <Route path='Cartelera' element={<Cartelera />} />
             <Route path='Proximamente' element={<Proximamente />} />
+            <Route path='Listas' element={""} />
           </Route>
         </Routes>
       </BrowserRouter>

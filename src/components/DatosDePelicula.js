@@ -1,24 +1,67 @@
 import React from 'react'
 
 const DatosDePelicula = (props) => {
+    if (Object.keys(props.pelicula).length === 0) {
+        return <></>
+    }
+
+
     console.log(props.pelicula);
     return (
         <div id="datos-peli">
-            <p className="background"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} /></p>
+            <p className="blackdrop_path"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.backdrop_path} /></p>
             <img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} />
-            <p>Título: { props.tipo === "p" ? props.pelicula.title : props.pelicula.name } &nbsp;(<i>{ props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name }</i>)</p>
-            <p>Género: </p> <ul>{props.pelicula.genres && props.pelicula.genres.map(e => {return <li key={e.id}>{e.name}</li>})}</ul>
-            <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e=>{return <li key={e.iso_3166_1}>{e.name}</li>})}</ul>
-            <p>Idioma: </p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e=>{return <li key={e.english_name}>{e.name}</li>})}</ul>
-            <p>Duración: {props.pelicula.runtime} minutos</p>
-            <p>Año: {props.pelicula.release_date}</p>
-            <p>Sinopsis: {props.pelicula.overview}</p>
+            <p>Título: {props.tipo === "p" ? props.pelicula.title : props.pelicula.name} &nbsp;(<i>{props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name}</i>)</p>
+            <p>Año: {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date}</p>
+            {props.tipo==="s" && <p>Años de emisión: Del {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date} hasta el {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.last_air_date}</p>}
+            {/* PENDIENTE DE ARREGLAR */}
+            {/* <p>Creador: {props.tipo ==="p" ? props.pelicula.directed: props.pelicula.created_by}</p> */}
+            {/* VALORES ARREGLADOS */}
+            <p>Género: </p> <ul>{props.pelicula.genres.map(e => { return <li key={e.id}>{e.name}</li> })}</ul>
+            <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <li key={e.iso_3166_1}>{e.name}</li> })}</ul>
+            <p>Idioma: </p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e => { return <li key={e.english_name}>{e.name}</li> })}</ul>
+            {props.tipo === "p" && (
+                <p>Duración: {props.pelicula.runtime} minutos</p>
+            )}
             <p>Valoración: {props.pelicula.vote_average}/10</p>
             <p>Popularidad: {props.pelicula.popularity}</p>
-            <p>Coste: ${new Intl.NumberFormat().format(props.pelicula.budget)}</p>
-            <p>Recaudación: ${new Intl.NumberFormat().format(props.pelicula.revenue)}</p>
-            <p>Beneficios: ${new Intl.NumberFormat().format(props.pelicula.revenue-props.pelicula.budget) }</p>
-            <details><summary>Actores</summary><ul>{props.actores.cast && props.actores.cast.map(e=>{return <li key={e.cast_id}>{e.name}</li>})}</ul></details>
+            <p>Sinopsis: { props.pelicula.overview.length}</p>
+            <details>
+                <summary>Actores</summary>
+                <ul>
+                    {props.actores.cast && props.actores.cast.map(
+                        e => {
+                            return <li key={e.cast_id}>
+                                    {e.name}
+                                </li>
+                        }
+                    )}
+                </ul>
+            </details>
+            {props.tipo === "p" &&
+            <>
+                <p>Coste: ${new Intl.NumberFormat().format(props.pelicula.budget)}</p>
+                <p>Recaudación: ${new Intl.NumberFormat().format(props.pelicula.revenue)}</p>
+                <p>Beneficios: ${new Intl.NumberFormat().format(props.pelicula.revenue - props.pelicula.budget)}</p>
+            </>  
+            }
+            {props.tipo === "s" && (
+                <>
+                    <p>Temporadas: {props.pelicula.number_of_seasons}</p>
+                    <p>Episodios: {props.pelicula.number_of_episodes}</p>
+                    <p>Duración media de episodio: {props.pelicula.episode_run_time} minutos</p>
+                    <details>
+                        <summary>
+                            Temporadas:
+                        </summary>
+                        <ul>
+                            {props.pelicula.seasons.map(e=>{return <li key={e.season_number}>{e.name} ({e.episode_count} episodios)</li> })}
+                        </ul>
+                    </details>
+                    <br/>
+                </>
+            )}
+            
         </div>
     )
 }
