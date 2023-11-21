@@ -237,6 +237,8 @@
             ·   Creación de la carpeta: Listas.
             ·   Creación del componente Listas: index.js en la carpeta Listas, para la sección de Listas.
 #       (12) Martes 21/11/2023:
+*           ·   Implementar correctamente los directores(Caso Películas) o creadores(Caso Series) del item.
+            ·   Creación de nuevas imágenes de background y placeholder.
 #       (11) Miercoles 22/11/2023:
 #       (10) Jueves 23/11/2023:
 #        (9) Viernes 24/11/2023:

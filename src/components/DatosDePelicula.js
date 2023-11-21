@@ -14,8 +14,17 @@ const DatosDePelicula = (props) => {
             <p>Título: {props.tipo === "p" ? props.pelicula.title : props.pelicula.name} &nbsp;(<i>{props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name}</i>)</p>
             <p>Año: {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date}</p>
             {props.tipo==="s" && <p>Años de emisión: Del {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date} hasta el {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.last_air_date}</p>}
-            {/* PENDIENTE DE ARREGLAR */}
-            {/* <p>Creador: {props.tipo ==="p" ? props.pelicula.directed: props.pelicula.created_by}</p> */}
+            
+            <p>Creador: {
+                props.tipo ==="p" ? 
+                    (props.actores.crew &&  props.actores.crew.filter(a => a.job === "Director").map(e =>  e.name).join(", "))
+                :
+                    props.pelicula.created_by.map(p => p.name).join(", ")
+            }</p>
+            
+            
+            
+            
             {/* VALORES ARREGLADOS */}
             <p>Género: </p> <ul>{props.pelicula.genres.map(e => { return <li key={e.id}>{e.name}</li> })}</ul>
             <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <li key={e.iso_3166_1}>{e.name}</li> })}</ul>
@@ -25,7 +34,10 @@ const DatosDePelicula = (props) => {
             )}
             <p>Valoración: {props.pelicula.vote_average}/10</p>
             <p>Popularidad: {props.pelicula.popularity}</p>
-            <p>Sinopsis: { props.pelicula.overview.length}</p>
+
+            <p>
+            {props.pelicula.overview.length>0 ? `Sinopsis: ${props.pelicula.overview}` : "Sinopsis: No hay sinopsis en español."}
+            </p>
             <details>
                 <summary>Actores</summary>
                 <ul>
