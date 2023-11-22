@@ -1,4 +1,4 @@
-.search{
+.proximamente{
     color: white;
     margin-left: 25px;
 }
@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     
-    /* background-image: url('./../../assets/imagenes/Background.png'); */
+    background-image: url('./../../assets/imagenes/Background.png');
     background-repeat: repeat-y;
     background-size: 100%;
     

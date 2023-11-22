@@ -1,0 +1,41 @@
+
+.datosdepelicula{
+    background-image: url('./../../assets/imagenes/Background.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin-top:-20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.blackdrop {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blackdrop img{
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.poster img{
+    display: block;
+    height: 500px;
+}
+
+/* .poster{
+    display: block;
+    height: 50px;
+    width: 50px;
+} */
+
+.titulo{
+    font-family:'Verdana', Arial, sans-serif;
+}
