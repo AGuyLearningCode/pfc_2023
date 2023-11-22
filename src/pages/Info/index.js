@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import DatosDePelicula from '../../components/DatosDePelicula';
 import { useParams } from 'react-router-dom';
 import { getURL } from '../../helpers/fetchHelpers';
+import styles from './info.module.css';
 
 const Info = () => {
 
@@ -43,7 +44,7 @@ const Info = () => {
 
   return (
     <div>
-      <div className="DetallesPelicula">
+      <div className={styles.info}>
         <DatosDePelicula pelicula={pelicula} actores={actores} tipo={tipo}/>
       </div>
     </div>

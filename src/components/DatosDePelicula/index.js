@@ -1,29 +1,45 @@
 import React from 'react'
+import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png'
+import styles from './datosdepelicula.module.css';
 
 const DatosDePelicula = (props) => {
     if (Object.keys(props.pelicula).length === 0) {
         return <></>
     }
 
-
     console.log(props.pelicula);
     return (
-        <div id="datos-peli">
-            <p className="blackdrop_path"><img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.backdrop_path} /></p>
-            <img src={"https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path} />
-            <p>Título: {props.tipo === "p" ? props.pelicula.title : props.pelicula.name} &nbsp;(<i>{props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name}</i>)</p>
-            <p>Año: {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date}</p>
-            {props.tipo==="s" && <p>Años de emisión: Del {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date} hasta el {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.last_air_date}</p>}
+        <div className={styles.datosdepelicula}id="datos-peli">
             
-            <p>Creador: {
+            {/* IMÁGENES */}
+            <div className={styles.blackdrop}>
+                <img src={props.pelicula.backdrop_path ? "https://image.tmdb.org/t/p/original/" + props.pelicula.backdrop_path : itemplaceholder}/>
+            </div>
+            <div className={styles.poster}>
+                <img src={props.pelicula.poster_path ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path : itemplaceholder}/>
+            </div>
+            {/* DATOS */}
+            <div className="titulo">
+                <h1 className="titulo_nombre">{props.tipo === "p" ? props.pelicula.title : props.pelicula.name} &nbsp;(<i>{props.tipo === "p" ? props.pelicula.original_title : props.pelicula.original_name}</i>)</h1>
+                <h1 className="titulo_ano">[{props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date}]</h1>
+            </div>
+            {props.tipo === "s" && 
+                <p>Años de emisión: Del {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date} hasta el {props.tipo === "p" ? props.pelicula.release_date : props.pelicula.last_air_date}</p>}
+            {/* <h2>Creador: {
                 props.tipo ==="p" ? 
                     (props.actores.crew &&  props.actores.crew.filter(a => a.job === "Director").map(e =>  e.name).join(", "))
                 :
                     props.pelicula.created_by.map(p => p.name).join(", ")
-            }</p>
-            
-            
-            
+            }</h2> */}
+
+            <h2> {
+                props.tipo === "p" ? 
+                    (props.actores.crew && props.actores.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
+                :
+                    props.pelicula.created_by.map(p => `Creador: ${p.name}`).join(", ")
+            }</h2>
+
+
             
             {/* VALORES ARREGLADOS */}
             <p>Género: </p> <ul>{props.pelicula.genres.map(e => { return <li key={e.id}>{e.name}</li> })}</ul>

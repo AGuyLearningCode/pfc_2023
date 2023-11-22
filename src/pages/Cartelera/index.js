@@ -4,6 +4,7 @@ import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
 import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import styles from './cartelera.module.css';
 
 const Cartelera = () => {
 
@@ -29,7 +30,7 @@ const Cartelera = () => {
     });
     
     return (
-        <div>
+        <div className={styles.cartelera}>
             <h1>{tipo==="p" && `En cartelera`}{tipo==="s" && 'En Emisión'}</h1>
             <label><input type="radio" value="p" checked={tipo=="p"} onChange={cambioTipo}></input> Películas </label> &nbsp;
             <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>

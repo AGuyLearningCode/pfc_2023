@@ -3,7 +3,7 @@ import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda'
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
-
+import styles from './proximamente.module.css';
 const Proximamente = () => {
 
     const [proxima, setProxima] = useState([]);
@@ -38,10 +38,12 @@ const Proximamente = () => {
 
     return (
         // <div className={styles.resultado}>
-        <div className="resultados">
+        <div className={styles.proximamente}>
             <h1>Próximos estrenos</h1>
             <label><input type="radio" value="p" checked={tipo=="p"} onChange={cambioTipo}></input> Películas </label> &nbsp;
             <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>
+            <br/>
+            <br/>
             {
                 proxima.map(
                     pr => (

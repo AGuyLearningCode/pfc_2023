@@ -29,7 +29,8 @@ const MainLayout = () => {
         <nav>
           <Link to="/Buscador"> Buscador</Link> |
           <Link to="/Cartelera"> Cartelera</Link> |
-          <Link to="/Proximamente"> Proximamente</Link>
+          <Link to="/Proximamente"> Proximamente</Link> | 
+          <Link to="/Listas"> Listas</Link>
         </nav>
       </header>
       <hr />

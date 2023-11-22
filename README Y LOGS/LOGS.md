@@ -240,6 +240,11 @@
 *           ·   Implementar correctamente los directores(Caso Películas) o creadores(Caso Series) del item.
             ·   Creación de nuevas imágenes de background y placeholder.
 #       (11) Miercoles 22/11/2023:
+*           ·   Creados los archivos CSS correspondientes a todos los componentes de la aplicación.
+            ·   Cambio de fondo de aplicación.
+            ·   Cambio de color y familia de fuentes de todos los componentes.
+            ·   Reajuste de margenes.
+            ·   Reajuste de imágenes de info-item.
 #       (10) Jueves 23/11/2023:
 #        (9) Viernes 24/11/2023:
 

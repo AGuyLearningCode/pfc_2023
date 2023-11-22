@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {useState} from 'react';
-import styles from './Search.module.css'
+import styles from './search.module.css'
 import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
 import { useNavigate } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
@@ -73,15 +73,17 @@ const Search = () => {
   }
 
   return (
-    <>
+    <div className={styles.search}>
+      <h1>Buscador</h1>
       <input value={busqueda} onChange={cambioBusqueda} onKeyDown={ eventoIntroBusqueda } />
       <Button onClick={clickBotonSearch} className={styles.paco}>Buscar</Button>
       <br />
       <input type="radio" name="tipo" value="pelicula" checked={tipo==="pelicula"} onChange={eventoCambiarTipo}></input> <label>Pelicula </label>  &nbsp;
       <input type="radio" name="tipo" value="serie" checked={tipo==="serie"} onChange={eventoCambiarTipo}></input> <label>Serie</label>
-      <hr />
+      
+      
       <div className={styles.resultados}>
-  
+        
         {!!(resultadoFinal.length)&&
           resultadoFinal.map(
             item => <ItemResultadoBusqueda
@@ -95,7 +97,7 @@ const Search = () => {
           )
         }
       </div>
-    </>
+    </div>
   )
 }
 export default Search
