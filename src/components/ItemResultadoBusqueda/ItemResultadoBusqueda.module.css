@@ -10,10 +10,20 @@
 .imagenplaceholder{
     width: 300px;
     height: 450px;
+    position: relative;
 
 }
 
 .imagenplaceholder img{
     max-width: 100%;
 
+}
+
+.tituloPelicula{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    left:0;
+    right:0;
+    color: white;
 }
