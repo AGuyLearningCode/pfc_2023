@@ -7,3 +7,13 @@
 .datos-peli{
     margin:20px;
 }
+.imagenplaceholder{
+    width: 300px;
+    height: 450px;
+
+}
+
+.imagenplaceholder img{
+    max-width: 100%;
+
+}

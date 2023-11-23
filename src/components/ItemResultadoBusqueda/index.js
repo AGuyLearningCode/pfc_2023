@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./ItemResultadoBusqueda.module.css"
-
+import placeholder from '../../assets/imagenes/Item-placeholder_3.png'
 const ItemResultadoBusqueda = (props) => {
   return (
     <div className={styles.resultado} onClick={ props.onClick }>
@@ -13,7 +13,10 @@ const ItemResultadoBusqueda = (props) => {
 
 
         {props.img===null &&
-          <h5>{props.title}</h5>
+        <div className={styles.imagenplaceholder}>
+          <img src={placeholder}/>
+        </div>
+          
         }
     </div>
   );
