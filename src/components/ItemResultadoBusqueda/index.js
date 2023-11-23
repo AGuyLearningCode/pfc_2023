@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./ItemResultadoBusqueda.module.css"
 import placeholder from '../../assets/imagenes/Item-placeholder_3.png'
+import degradado from '../../assets/imagenes/item-degradado.png'
 const ItemResultadoBusqueda = (props) => {
   return (
     <div className={styles.resultado} onClick={ props.onClick }>
@@ -19,7 +20,9 @@ const ItemResultadoBusqueda = (props) => {
         
           
         }
-
+        <div className={styles.degradadoPelicula}>
+          <img src={degradado}/>
+        </div>
         <div className={styles.tituloPelicula}>
           <h1>{props.title}</h1>
         </div>

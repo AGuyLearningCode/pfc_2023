@@ -27,3 +27,14 @@
     right:0;
     color: white;
 }
+
+
+.degradadoPelicula{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    left:0;
+    right:0;
+    color: white;
+    top:0;
+}
