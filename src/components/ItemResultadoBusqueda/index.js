@@ -26,7 +26,10 @@ const ItemResultadoBusqueda = (props) => {
         <div className={styles.tituloPelicula}>
           <h1>{props.title}</h1>
         </div>
+        <div className={styles.anoDePublicacion}>
+          <h2>{props.pelicula && (props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date)}</h2>
         </div>
+      </div>
     </div>
   );
 }
