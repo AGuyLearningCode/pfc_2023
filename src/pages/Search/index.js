@@ -51,7 +51,7 @@ const Search = () => {
       .then(data => {
         let series = data.results.map(cadena => ({
           "original_title": cadena.name,
-          "release_date": cadena.release_date,
+          "release_date": cadena.first_air_date,
           "id": cadena.id,
           "img": cadena.poster_path
         }));
@@ -93,6 +93,7 @@ const Search = () => {
               key={item.id}
               title={item.original_title}
               img={item.img}
+              date={item.release_date}
             />
           )
         }
