@@ -246,8 +246,15 @@
             ·   Reajuste de margenes.
             ·   Reajuste de imágenes de info-item.
 #       (10) Jueves 23/11/2023:
+*           ·   Implementación de imagenes placeholder en buscador.
+            ·   Mejora en encuadre de página de resultados en búsqueda.
 #        (9) Viernes 24/11/2023:
-
+*           ·   Darle estilos a los títulos en los resultados del buscador.
+            ·   Implementado el año del resultado en el objeto resultante de la búsqueda.
+            
+            ·   Implementación del buscador en la barra layout superior.
+            ·   Definición de sección Listas.
+            ·   Implementación de funcionalidad de agregar a lista en info-item.
 #        (8) Sábado 25/11/2023:
 #        (7) Domingo 26/11/2023:
 
