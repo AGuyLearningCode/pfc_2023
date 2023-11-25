@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
 import { Button } from 'react-bootstrap';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
+import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 
 
 const Search = () => {
@@ -37,24 +38,14 @@ const Search = () => {
     if (tipo === "pelicula") {
       getURL(`search/movie`, params)
         .then(data => {
-          let peliculas = data.results.map(cadena => ({
-            "original_title": cadena.title,
-            "release_date": cadena.release_date,
-            "id": cadena.id,
-            "img": cadena.poster_path
-          }));
+          let peliculas = data.results.map(mapPelicula);
           setPeliculasEncontradas(peliculas);
           setSeriesEncontradas([]);
         })
     } else if (tipo === "serie") {
       getURL(`search/tv`, params)
         .then(data => {
-          let series = data.results.map(cadena => ({
-            "original_title": cadena.name,
-            "release_date": cadena.first_air_date,
-            "id": cadena.id,
-            "img": cadena.poster_path
-          }));
+          let series = data.results.map(mapSerie);
           setSeriesEncontradas(series);
           setPeliculasEncontradas([]);
         })

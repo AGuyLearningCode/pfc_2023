@@ -5,7 +5,8 @@ import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import styles from './cartelera.module.css';
-
+import ListadoPeliculas from '../../components/ListadoPeliculas';
+import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 const Cartelera = () => {
 
     const [peliculas, setPeliculas] = useState([]);
@@ -15,11 +16,11 @@ const Cartelera = () => {
     useEffect(() => {
         if (tipo==="p"){
             getURL("movie/now_playing").then(resultado => {
-                setPeliculas(resultado.results);
+                setPeliculas(resultado.results.map(mapPelicula));
             });
         }else if(tipo==="s"){
             getURL("tv/on_the_air").then(resultado => {
-                setPeliculas(resultado.results);
+                setPeliculas(resultado.results.map(mapSerie));
             });
         }
         
@@ -36,10 +37,7 @@ const Cartelera = () => {
             <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>
             <br/>
             <br/>
-            {peliculas.map(p => <ItemResultadoBusqueda 
-            key={p.id}
-            img={p.poster_path} 
-            onClick={e => (navigate(`/Info/${tipo}/${p.id}`))} />)}
+            <ListadoPeliculas peliculas={peliculas} tipo={tipo==="p" ? "peliculas" : "series"}></ListadoPeliculas>
         </div>
     )
 }
