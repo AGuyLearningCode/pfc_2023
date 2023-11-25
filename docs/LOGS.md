@@ -258,6 +258,7 @@
             ·   Reajuste de título de sección en Cartelera y Próximamente.
             ·   Corrección de errores en consola y supresión de reportes de depuración en consola.
             ·   Creado el componente de ListadoDePelículas para ser reutilizado en las diferentes páginas.
+            ·   Adaptado el Listado de Películas para la sección de Cartelera.
 #        (7) Domingo 26/11/2023:
 
 #        (6) Lunes 27/11/2023:

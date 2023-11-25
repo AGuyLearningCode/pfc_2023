@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import styles from './search.module.css'
+import styles from './search.module.css';
 import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
 import { useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
@@ -8,17 +8,13 @@ import { Button } from 'react-bootstrap';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
 import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 
-
 const Search = () => {
   const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
   const [seriesEncontradas, setSeriesEncontradas] = useState([])
   const [busqueda, setBusqueda] = useState("")
 
-  
-
   const { tipo, consulta } = useParams();
   const [resultadoFinal, setResultadoFinal] = useState([]);
-  
 
   useEffect(() => {
     if (peliculasEncontradas.length) {
