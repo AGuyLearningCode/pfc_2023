@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import styles from './mainlayout.module.css'
 
 
 const MainLayout = () => {
@@ -39,42 +40,45 @@ const MainLayout = () => {
     <div>
       <header className="header">
 
-        
+
         <Navbar expand="lg">
           <Container>
             <Navbar.Brand href="/">
-          <img
-            src={logo}
-            className='logo-header'
-          />
-        </Navbar.Brand>
+              <img
+                src={logo}
+                className='logo-header'
+              />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
+              <Form inline>
+                <InputGroup>
+
+                  <Form.Control
+                    placeholder="Buscar..."
+                    aria-label="Buscar"
+                    aria-describedby="basic-addon1"
+                    value={busqueda} onChange={cambioBusqueda} onKeyDown={eventoIntroBusqueda}
+                  />
+                  <InputGroup.Text id="basic-addon1" onClick={clickBotonSearch} className='cursor-pointer'>🔍</InputGroup.Text>
+                </InputGroup>
+                <InputGroup>
+                  &nbsp;&nbsp;&nbsp;
+                  <Form.Check type="radio" label="Peliculas" value="pelicula" checked={tipo === "pelicula"} onChange={eventoCambiarTipo} />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo} />
+                </InputGroup>
+              </Form>
+              <Nav className={styles.whiteLink}>
                 <Nav.Link href="/Cartelera">Cartelera</Nav.Link>
                 <Nav.Link href="/Proximamente">Proximamente</Nav.Link>
                 <Nav.Link href="/Listas">Listas</Nav.Link>
-                <Form inline>
-        <InputGroup>
-          
-          <Form.Control
-            placeholder="Buscar..."
-            aria-label="Buscar"
-            aria-describedby="basic-addon1"
-            value={busqueda} onChange={cambioBusqueda} onKeyDown={eventoIntroBusqueda}
-          />
-          <InputGroup.Text id="basic-addon1" onClick={clickBotonSearch} className='cursor-pointer'>🔍</InputGroup.Text>
-        </InputGroup>
-        <InputGroup>
-          <Form.Check type="radio" label="Peliculas" value="pelicula" checked={tipo === "pelicula"} onChange={eventoCambiarTipo} />
-          <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo}/>
-        </InputGroup>
-      </Form>
+
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        
+
       </header>
       <hr />
       <main>

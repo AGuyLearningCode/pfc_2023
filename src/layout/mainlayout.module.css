@@ -1,0 +1,6 @@
+.whiteLink a{
+    color:white;
+}
+.whiteLink a:hover{
+    color: red;
+}

@@ -254,6 +254,7 @@
 #        (8) Sábado 25/11/2023:
 *           ·   Implementación del buscador en la barra layout superior.
             ·   Layout adaptado a bootstrap.
+            ·   Reestructuración de la barra superior.
 #        (7) Domingo 26/11/2023:
 
 #        (6) Lunes 27/11/2023:
