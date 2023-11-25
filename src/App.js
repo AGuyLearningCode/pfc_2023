@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route path="/" element={<Navigate to="Buscador" />} />
+            <Route path="/" element={<Navigate to="Cartelera" />} />
             <Route path='Buscador/:tipo/:consulta' element={<Search />} />
             <Route path='Info/:tipo/:idPelicula' element={<Info />} />
             <Route path='Cartelera' element={<Cartelera />} />

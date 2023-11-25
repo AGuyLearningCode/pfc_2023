@@ -253,6 +253,7 @@
             ·   Implementado el año del resultado en el objeto resultante de la búsqueda.
 #        (8) Sábado 25/11/2023:
 *           ·   Implementación del buscador en la barra layout superior.
+            ·   Layout adaptado a bootstrap.
 #        (7) Domingo 26/11/2023:
 
 #        (6) Lunes 27/11/2023:
