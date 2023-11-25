@@ -36,7 +36,10 @@ const Cartelera = () => {
             <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>
             <br/>
             <br/>
-            {peliculas.map(p => <ItemResultadoBusqueda img={p.poster_path} onClick={e => (navigate(`/Info/${tipo}/${p.id}`))} />)}
+            {peliculas.map(p => <ItemResultadoBusqueda 
+            key={p.id}
+            img={p.poster_path} 
+            onClick={e => (navigate(`/Info/${tipo}/${p.id}`))} />)}
         </div>
     )
 }

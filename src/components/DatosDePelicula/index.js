@@ -7,7 +7,6 @@ const DatosDePelicula = (props) => {
         return <></>
     }
 
-    console.log(props.pelicula);
     return (
         <div className={styles.datosdepelicula}id="datos-peli">
             
