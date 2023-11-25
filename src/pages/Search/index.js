@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import {useState} from 'react';
 import styles from './search.module.css'
 import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
 import { Button } from 'react-bootstrap';
 
@@ -10,13 +10,10 @@ const Search = () => {
   const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
   const [seriesEncontradas, setSeriesEncontradas]=useState([])
   const [busqueda, setBusqueda] = useState("")
+  
   const navigate = useNavigate();
-  const cambioBusqueda = evt => {
-    const elemento = evt.currentTarget;
-    const nuevoValor = elemento.value;
-    setBusqueda(nuevoValor);
-  }
-  const [tipo,setTipo]=useState("pelicula");
+  
+  const {tipo,consulta}=useParams();
   const [resultadoFinal,setResultadoFinal]=useState([]);
 
   useEffect(()=>{
@@ -27,9 +24,9 @@ const Search = () => {
     }
   }, [seriesEncontradas,peliculasEncontradas])
 
-  const clickBotonSearch = () => {
+  useEffect (() => {
     const params = {
-      query: busqueda,
+      query: consulta,
       include_adult: false,
       page:1
     }
@@ -60,27 +57,14 @@ const Search = () => {
       })
     }
     
-  }
+  },[tipo, consulta]);
 
-  const eventoIntroBusqueda = (evt) => {
-    if(evt.keyCode == 13) {
-      clickBotonSearch()
-    }
-  }
+  
 
-  const eventoCambiarTipo = (evt) => {
-    setTipo(evt.target.value);
-  }
+  
 
   return (
     <div className={styles.search}>
-      <h1>Buscador</h1>
-      <input value={busqueda} onChange={cambioBusqueda} onKeyDown={ eventoIntroBusqueda } />
-      <Button onClick={clickBotonSearch} className={styles.paco}>Buscar</Button>
-      <br />
-      <input type="radio" name="tipo" value="pelicula" checked={tipo==="pelicula"} onChange={eventoCambiarTipo}></input> <label>Pelicula </label>  &nbsp;
-      <input type="radio" name="tipo" value="serie" checked={tipo==="serie"} onChange={eventoCambiarTipo}></input> <label>Serie</label>
-      
       
       <div className={styles.resultados}>
         

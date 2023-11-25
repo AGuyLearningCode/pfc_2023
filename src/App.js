@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Navigate to="Buscador" />} />
-            <Route path='Buscador' element={<Search />} />
+            <Route path='Buscador/:tipo/:consulta' element={<Search />} />
             <Route path='Info/:tipo/:idPelicula' element={<Info />} />
             <Route path='Cartelera' element={<Cartelera />} />
             <Route path='Proximamente' element={<Proximamente />} />
