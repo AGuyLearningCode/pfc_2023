@@ -255,6 +255,7 @@
 *           ·   Implementación del buscador en la barra layout superior.
             ·   Layout adaptado a bootstrap.
             ·   Reestructuración de la barra superior.
+            ·   Reajuste de título de sección en Cartelera y Próximamente.
 #        (7) Domingo 26/11/2023:
 
 #        (6) Lunes 27/11/2023:
