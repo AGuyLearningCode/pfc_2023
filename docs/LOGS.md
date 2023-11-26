@@ -260,7 +260,8 @@
             ·   Creado el componente de ListadoDePelículas para ser reutilizado en las diferentes páginas.
             ·   Adaptado el Listado de Películas para la sección de Cartelera.
 #        (7) Domingo 26/11/2023:
-
+*           ·   Se ha parcheado el error de consola que demandaba tener dos logos de 192 y 512 px respectivamente, haciendo
+                las respectivas imágenes e implementándolas.
 #        (6) Lunes 27/11/2023:
 #        (5) Martes 28/11/2023:
 #        (4) Miércoles 29/11/2023:
