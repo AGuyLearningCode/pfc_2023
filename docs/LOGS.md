@@ -262,6 +262,8 @@
 #        (7) Domingo 26/11/2023:
 *           ·   Se ha parcheado el error de consola que demandaba tener dos logos de 192 y 512 px respectivamente, haciendo
                 las respectivas imágenes e implementándolas.
+            ·   Se ha actualizado el reporte de bugs haciendo un testeo de la aplicación.
+            ·   Se han borrado archivos residuales.
 #        (6) Lunes 27/11/2023:
 #        (5) Martes 28/11/2023:
 #        (4) Miércoles 29/11/2023:

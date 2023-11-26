@@ -1,6 +1,6 @@
 # ESTE DOCUMENTO FUE DISEÑADO PARA SER VISUALIZADO A PANTALLA COMPLETA.
 # Por favor, lea el documento antes de usar el servicio o reportar errores.
-# AUTOR: Martín García Ramos FECHA: 12/11/2023
+# AUTOR: Martín García Ramos FECHA DE CREACIÓN ORIGINAL: 12/11/2023
 
 
 #               %%%%        %%%%%%%%%%    %%%%%%%#********           ********        *****           ************  ****************** *************** ****************   
@@ -32,11 +32,26 @@
 #                                +——————————————————————————————————————————————————————————————————————————————————————————————————————————————————+
 
 
-    BUGS Conocidos descripción según escala de gravedad o comportamiento (Alta: ↑ Media: = Baja: ↓  Reversión de cambio: ← Actualización: →):
+    A continuación se muestran bugs conocidos así como tareas pendientes de hacer en un proceso ya iniciado.
 
-#        <→> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
-#        <↓> ERROR en consola de navegador: 
-*         |
-          |---> Error while trying to use the following icon from the Manifest: http://localhost:3000/logo192.png (Download error or resource isn't a valid image)
+    Descripción según escala de gravedad o comportamiento (Alta: ↑ Media: = Baja: ↓  Reversión de cambio: ← Actualización: →):
 
-<888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888>
+#       <↑> WARNING-ERROR: Cuando se efectua una busqueda vacia en la barra superior, indistintamente de si se seleccionó previamente película o serie.
+*           |
+            +-> No routes matched location "/Buscador/serie/"
+                    at Routes (http://localhost:3000/static/js/bundle.js:47852:5)
+                    at Router (http://localhost:3000/static/js/bundle.js:47790:15)
+                    at BrowserRouter (http://localhost:3000/static/js/bundle.js:45850:5)
+                    at div
+                    at App
+
+#       <↓> DEBBUGING CONSOLE REPORT: En próximamente cuando se seleccionan las series, se emite un array con todos los datos a cargar:
+*           |
+            +-> (20) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+
+#       <→> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
+#       <↓> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
+#       <=> Revisar listado de cast en info-item para que solo muestre los actores.
+#       <=> Definición de sección Listas.
+#       <=> Implementación de funcionalidad de agregar a lista en info-item.
+#       <=> Actualizar estilo de README y documentación adjunta según parámetros de la memoria del pfc.
