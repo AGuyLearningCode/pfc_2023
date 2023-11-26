@@ -24,7 +24,6 @@ const Proximamente = () => {
                 sort_by: "first_air_date.asc",
                 "first_air_date.gte": cadenaFecha
             }).then(resultado => {
-                console.log(resultado.results);
                 setProxima(resultado.results);
             });
         }

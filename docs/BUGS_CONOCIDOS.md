@@ -36,11 +36,7 @@
 
     Descripción según escala de gravedad o comportamiento (Alta: ↑ Media: = Baja: ↓  Reversión de cambio: ← Actualización: →):
 
-#       <↓> DEBBUGING CONSOLE REPORT: En próximamente cuando se seleccionan las series, se emite un array con todos los datos a cargar:
-*           |
-            +-> (20) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
-
-#       <→> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
+#       <↑> Aplicar ListadoPeliculas a Próximamente.
 #       <↓> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
 #       <=> Revisar listado de cast en info-item para que solo muestre los actores.
 #       <=> Definición de sección Listas.
