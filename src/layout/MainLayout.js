@@ -53,14 +53,15 @@ const MainLayout = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Form>
                 <InputGroup>
-
+                  {/* {busqueda.length>0 && ( */}
                   <Form.Control
                     placeholder="Buscar..."
                     aria-label="Buscar"
                     aria-describedby="basic-addon1"
-                    value={busqueda} onChange={cambioBusqueda} onKeyDown={eventoIntroBusqueda}
+                    value={busqueda} onChange={cambioBusqueda} onKeyDown={busqueda.length>0 ? eventoIntroBusqueda : undefined}
                   />
-                  <InputGroup.Text id="basic-addon1" onClick={clickBotonSearch} className='cursor-pointer'>🔍</InputGroup.Text>
+                  <InputGroup.Text id="basic-addon1" onClick={busqueda.length>0 ? clickBotonSearch : undefined} className='cursor-pointer'>🔍</InputGroup.Text>
+                  {/*})}*/}
                 </InputGroup>
                 <InputGroup>
                   &nbsp;&nbsp;&nbsp;

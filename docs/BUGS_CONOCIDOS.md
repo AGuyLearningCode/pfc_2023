@@ -36,15 +36,6 @@
 
     Descripción según escala de gravedad o comportamiento (Alta: ↑ Media: = Baja: ↓  Reversión de cambio: ← Actualización: →):
 
-#       <↑> WARNING-ERROR: Cuando se efectua una busqueda vacia en la barra superior, indistintamente de si se seleccionó previamente película o serie.
-*           |
-            +-> No routes matched location "/Buscador/serie/"
-                    at Routes (http://localhost:3000/static/js/bundle.js:47852:5)
-                    at Router (http://localhost:3000/static/js/bundle.js:47790:15)
-                    at BrowserRouter (http://localhost:3000/static/js/bundle.js:45850:5)
-                    at div
-                    at App
-
 #       <↓> DEBBUGING CONSOLE REPORT: En próximamente cuando se seleccionan las series, se emite un array con todos los datos a cargar:
 *           |
             +-> (20) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]

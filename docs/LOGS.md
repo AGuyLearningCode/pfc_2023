@@ -264,19 +264,20 @@
                 las respectivas imágenes e implementándolas.
             ·   Se ha actualizado el reporte de bugs haciendo un testeo de la aplicación.
             ·   Se han borrado archivos residuales.
-#        (6) Lunes 27/11/2023:
-#        (5) Martes 28/11/2023:
-#        (4) Miércoles 29/11/2023:
-#        (3) Jueves 30/11/2023:
+            ·   Se ha corregido el WARNING-ERROR que saltaba cuando realizabas una búsqueda sin haber escrito nada.
+#        (6) Lunes 27/11/2023: 
+#        (5) Martes 28/11/2023: 
+#        (4) Miércoles 29/11/2023: 
+#        (3) Jueves 30/11/2023: 
 
 #   </NOVIEMBRE>
 #   ============
 
 #   <DICIEMBRE>
 #   ===========
-#       (2) Viernes 01/11/2023:
+#       (2) Viernes 01/11/2023: 
 
-#       (1) Sábado 02/11/2023:
+#       (1) Sábado 02/11/2023: 
 #       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<
 
 #   </DICIEMBRE>
