@@ -1,11 +1,11 @@
 import React from 'react'
-import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda'
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
 import { mapPelicula, mapSerieProximamente } from '../../helpers/mapHelpers';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
+
 const Proximamente = () => {
 
     const [proxima, setProxima] = useState([]);

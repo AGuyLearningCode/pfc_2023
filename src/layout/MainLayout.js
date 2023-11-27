@@ -41,7 +41,7 @@ const MainLayout = () => {
       <header className="header">
 
 
-        <Navbar expand="lg">
+        <Navbar expand="lg" className='w-100'>
           <Container>
             <Navbar.Brand href="/">
               <img
@@ -50,7 +50,7 @@ const MainLayout = () => {
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" className={ styles.menuExpandido }>
               <Form>
                 <InputGroup>
                   {/* {busqueda.length>0 && ( */}
