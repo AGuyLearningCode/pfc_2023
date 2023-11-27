@@ -266,6 +266,7 @@
             ·   Se han borrado archivos residuales.
             ·   Se ha corregido el WARNING-ERROR que saltaba cuando realizabas una búsqueda sin haber escrito nada.
 #        (6) Lunes 27/11/2023: 
+*           ·   Parcheado el error al cargar info-item al hacer click en el resultado de ListadoPelicula.
 #        (5) Martes 28/11/2023: 
 #        (4) Miércoles 29/11/2023: 
 #        (3) Jueves 30/11/2023: 

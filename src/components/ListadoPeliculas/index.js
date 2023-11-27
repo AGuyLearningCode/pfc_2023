@@ -12,7 +12,7 @@ const ListadoPeliculas = (props) => {
                 props.peliculas.map(
                     item => <ItemResultadoBusqueda
                         onClick={
-                            e => navigate(`/Info/${props.tipo === "pelicula" ? "p" : "s"}/${item.id}`)
+                            e => navigate(`/Info/${props.tipo === "peliculas" ? "p" : "s"}/${item.id}`)
                         }
                         key={item.id}
                         title={item.original_title}

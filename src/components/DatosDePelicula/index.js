@@ -35,13 +35,13 @@ const DatosDePelicula = (props) => {
                 props.tipo === "p" ? 
                     (props.actores.crew && props.actores.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
                 :
-                    props.pelicula.created_by.map(p => `Creador: ${p.name}`).join(", ")
+                    props.pelicula.created_by && props.pelicula.created_by.map(p => `Creador: ${p.name}`).join(", ")
             }</h2>
 
 
             
             {/* VALORES ARREGLADOS */}
-            <p>Género: </p> <ul>{props.pelicula.genres.map(e => { return <li key={e.id}>{e.name}</li> })}</ul>
+            <p>Género: </p> <ul>{props.pelicula.genres && props.pelicula.genres.map(e => { return <li key={e.id}>{e.name}</li> })}</ul>
             <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <li key={e.iso_3166_1}>{e.name}</li> })}</ul>
             <p>Idioma: </p> <ul>{props.pelicula.spoken_languages && props.pelicula.spoken_languages.map(e => { return <li key={e.english_name}>{e.name}</li> })}</ul>
             {props.tipo === "p" && (
@@ -51,7 +51,7 @@ const DatosDePelicula = (props) => {
             <p>Popularidad: {props.pelicula.popularity}</p>
 
             <p>
-            {props.pelicula.overview.length>0 ? `Sinopsis: ${props.pelicula.overview}` : "Sinopsis: No hay sinopsis en español."}
+            { props.pelicula.overview && props.pelicula.overview.length>0 ? `Sinopsis: ${props.pelicula.overview}` : "Sinopsis: No hay sinopsis en español."}
             </p>
             <details>
                 <summary>Actores</summary>
@@ -82,7 +82,7 @@ const DatosDePelicula = (props) => {
                             Temporadas:
                         </summary>
                         <ul>
-                            {props.pelicula.seasons.map(e=>{return <li key={e.season_number}>{e.name} ({e.episode_count} episodios)</li> })}
+                            {props.pelicula.seasons && props.pelicula.seasons.map(e=>{return <li key={e.season_number}>{e.name} ({e.episode_count} episodios)</li> })}
                         </ul>
                     </details>
                     <br/>
