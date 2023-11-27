@@ -4,33 +4,35 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
+import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
+import ListadoPeliculas from '../../components/ListadoPeliculas';
 const Proximamente = () => {
 
     const [proxima, setProxima] = useState([]);
     const navigate = useNavigate();
-    const [tipo,setTipo]=useState(`p`);
+    const [tipo, setTipo] = useState(`p`);
 
     useEffect(() => {
-        if(tipo==="p"){
+        if (tipo === "p") {
             getURL("movie/upcoming").then(resultado => {
-                setProxima(resultado.results);
+                setProxima(resultado.results.map(mapPelicula));
             });
-        }else if(tipo==="s"){
+        } else if (tipo === "s") {
             const fechaActual = new Date();
-            const timeStampManana = fechaActual.getTime()+1000*60*60*24;
+            const timeStampManana = fechaActual.getTime() + 1000 * 60 * 60 * 24;
             const fechaManana = new Date(timeStampManana);
-            const cadenaFecha = `${fechaManana.getFullYear()}-${fechaManana.getMonth()+1}-${fechaManana.getDate()}`;
+            const cadenaFecha = `${fechaManana.getFullYear()}-${fechaManana.getMonth() + 1}-${fechaManana.getDate()}`;
             getURL(`discover/tv`, {
                 sort_by: "first_air_date.asc",
                 "first_air_date.gte": cadenaFecha
             }).then(resultado => {
-                setProxima(resultado.results);
+                setProxima(resultado.results.map(mapSerie));
             });
         }
-        
+
     }, [tipo]);
 
-    const cambioTipo=(evt=>{
+    const cambioTipo = (evt => {
         setTipo(evt.target.value);
     });
 
@@ -38,27 +40,12 @@ const Proximamente = () => {
     return (
         // <div className={styles.resultado}>
         <div className={styles.proximamente}>
-            <h1>Próximos estrenos</h1>
-            <label><input type="radio" value="p" checked={tipo=="p"} onChange={cambioTipo}></input> Películas </label> &nbsp;
-            <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>
-            <br/>
-            <br/>
-            {
-                proxima.map(
-                    pr => (
-                        <ItemResultadoBusqueda
-                            key={pr.id}
-                            img={pr.poster_path}
-                            title={tipo === "p" ? pr.title: pr.name}
-                            onClick={
-                                pro=>(
-                                    navigate(`/info/${tipo}/${pr.id}`)
-                                )
-                            }
-                        />
-                    )
-                )
-            }
+            <h1>Próximamente</h1>
+            <label><input type="radio" value="p" checked={tipo == "p"} onChange={cambioTipo}></input> Películas </label> &nbsp;
+            <label><input type="radio" value="s" checked={tipo == "s"} onChange={cambioTipo}></input> Series</label>
+            <br />
+            <br />
+            <ListadoPeliculas peliculas={proxima} tipo={tipo === "p" ? "peliculas" : "series"}></ListadoPeliculas>
         </div>
     )
 }
