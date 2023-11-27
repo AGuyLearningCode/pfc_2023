@@ -18,6 +18,7 @@ const ListadoPeliculas = (props) => {
                         title={item.original_title}
                         img={item.img}
                         date={item.release_date}
+                        dateFormat={props.dateFormat}
                     />
                 )
             }

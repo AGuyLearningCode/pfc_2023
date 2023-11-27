@@ -56,7 +56,7 @@ const Search = () => {
   return (
 
 
-    <ListadoPeliculas peliculas={resultadoFinal} tipo={tipo} />
+    <ListadoPeliculas peliculas={resultadoFinal} tipo={tipo} dateFormat="year" />
 
   )
 }

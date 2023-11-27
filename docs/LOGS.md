@@ -268,6 +268,9 @@
 #        (6) Lunes 27/11/2023: 
 *           ·   Parcheado el error al cargar info-item al hacer click en el resultado de ListadoPelicula.
             ·   Implementado el ListadoPeliculas en la sección de Próximamente.
+            ·   Se ha invertido la fecha de los resultados ahora tienen este formato: DD/MM/AA
+            ·   Se ha implementado un filtro con el que, cuando se buscan películas aparece solo
+            el año(1992). Pero cuando se accede a Cartelera o a Próximamente, se muestra la fecha completa (DD/MM/AA).
 #        (5) Martes 28/11/2023: 
 #        (4) Miércoles 29/11/2023: 
 #        (3) Jueves 30/11/2023: 
