@@ -12,4 +12,12 @@ const mapSerie = (serie) =>({
     "img": serie.poster_path
 })
 
-export {mapPelicula, mapSerie};
+
+const mapSerieProximamente = (serie) =>({
+  "original_title": serie.name,
+  "release_date": serie.next_episode_to_air.air_date,
+  "id": serie.id,
+  "img": serie.poster_path
+})
+
+export {mapPelicula, mapSerie, mapSerieProximamente };

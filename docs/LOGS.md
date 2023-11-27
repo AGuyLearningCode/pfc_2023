@@ -271,6 +271,7 @@
             ·   Se ha invertido la fecha de los resultados ahora tienen este formato: DD/MM/AA
             ·   Se ha implementado un filtro con el que, cuando se buscan películas aparece solo
             el año(1992). Pero cuando se accede a Cartelera o a Próximamente, se muestra la fecha completa (DD/MM/AA).
+            ·   Ahora la fecha de los resultados de las series en la sección de Próximamente, muestra, el día, mes y año del próximo capítulo a emitir.
 #        (5) Martes 28/11/2023: 
 #        (4) Miércoles 29/11/2023: 
 #        (3) Jueves 30/11/2023: 

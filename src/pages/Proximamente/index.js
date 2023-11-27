@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
-import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
+import { mapPelicula, mapSerieProximamente } from '../../helpers/mapHelpers';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
 const Proximamente = () => {
 
@@ -26,7 +26,9 @@ const Proximamente = () => {
                 sort_by: "first_air_date.asc",
                 "first_air_date.gte": cadenaFecha
             }).then(resultado => {
-                setProxima(resultado.results.map(mapSerie));
+                return Promise.all(resultado.results.map(serie => getURL(`tv/${serie.id}`))  )                
+            }).then(resultado => {
+                setProxima(resultado.map(mapSerieProximamente));
             });
         }
 
