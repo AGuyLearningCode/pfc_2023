@@ -5,9 +5,18 @@
     color: red;
 }
 
-.menuExpandido {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #333
-  }
+@media screen and (width < 992px) {
+    .menuExpandido {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        background-color: #333
+      }
+}
+
+@media screen and (width >= 992px) {
+    .menuExpandido {
+        justify-content: space-around;
+      }
+}

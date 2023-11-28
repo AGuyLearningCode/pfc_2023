@@ -42,7 +42,7 @@ const MainLayout = () => {
 
 
         <Navbar expand="lg" className='w-100'>
-          <Container>
+
             <Navbar.Brand href="/">
               <img
                 src={logo}
@@ -77,9 +77,8 @@ const MainLayout = () => {
 
               </Nav>
             </Navbar.Collapse>
-          </Container>
-        </Navbar>
 
+        </Navbar>
       </header>
       <hr />
       <main>

@@ -276,6 +276,7 @@
 #        (5) Martes 28/11/2023:
 *           ·
             ·   Arreglado problema de enlace en ListadoPeliculas: Ahora cuando se busca una película al hacer click en el resultado se redirecciona correctamente a su info-item component.
+            ·   Arreglado el problema del responsive del layout. Ahora se muestra bien tanto en pantallas móviles como en pantallas grandes.
 #        (4) Miércoles 29/11/2023: 
 #        (3) Jueves 30/11/2023: 
 
