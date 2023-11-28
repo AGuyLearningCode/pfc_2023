@@ -8,13 +8,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import styles from './mainlayout.module.css'
+import { Col, Row } from 'react-bootstrap';
 
 
 const MainLayout = () => {
   // VARIABLES DE ESTADO
   const navigate = useNavigate();
   const [busqueda, setBusqueda] = useState("");
-  const [tipo, setTipo] = useState("pelicula");
+  const [tipo, setTipo] = useState("peliculas");
   // FUNCIONES
   const cambioBusqueda = evt => {
     const elemento = evt.currentTarget;
@@ -39,8 +40,7 @@ const MainLayout = () => {
   return (
     <div>
       <header className="header">
-        <Navbar expand="lg">
-          <Container>
+        <Navbar expand="lg" className='w-100'>
             <Navbar.Brand href="/">
               <img
                 src={logo}
@@ -48,8 +48,10 @@ const MainLayout = () => {
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" className={ styles.menuExpandido }>
               <Form>
+                <Row>
+                  <Col xs={12} lg={6} >
                 <InputGroup>
                   {/* {busqueda.length>0 && ( */}
                   <Form.Control
@@ -61,12 +63,20 @@ const MainLayout = () => {
                   <InputGroup.Text id="basic-addon1" onClick={busqueda.length>0 ? clickBotonSearch : undefined} className='cursor-pointer'>🔍</InputGroup.Text>
                   {/*})}*/}
                 </InputGroup>
+                </Col>
+                <Col xs={12} lg={6}>
                 <InputGroup>
-                  &nbsp;&nbsp;&nbsp;
-                  <Form.Check type="radio" label="Peliculas" value="pelicula" checked={tipo === "pelicula"} onChange={eventoCambiarTipo} />
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Row>
+                  <Col xs={6} lg={12} >
+                  <Form.Check type="radio" label="Peliculas" value="peliculas" checked={tipo === "peliculas"} onChange={eventoCambiarTipo} />
+                  </Col>
+                  <Col xs={6} lg={12} >
                   <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo} />
+                  </Col>
+                  </Row>
                 </InputGroup>
+                </Col>
+                </Row>
               </Form>
               <Nav className={styles.whiteLink}>
                 <Nav.Link href="/Cartelera">Cartelera</Nav.Link>
@@ -75,9 +85,8 @@ const MainLayout = () => {
 
               </Nav>
             </Navbar.Collapse>
-          </Container>
-        </Navbar>
 
+        </Navbar>
       </header>
       <hr />
       <main>
