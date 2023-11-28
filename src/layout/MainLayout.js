@@ -14,7 +14,7 @@ const MainLayout = () => {
   // VARIABLES DE ESTADO
   const navigate = useNavigate();
   const [busqueda, setBusqueda] = useState("");
-  const [tipo, setTipo] = useState("pelicula");
+  const [tipo, setTipo] = useState("peliculas");
   // FUNCIONES
   const cambioBusqueda = evt => {
     const elemento = evt.currentTarget;
@@ -65,7 +65,7 @@ const MainLayout = () => {
                 </InputGroup>
                 <InputGroup>
                   &nbsp;&nbsp;&nbsp;
-                  <Form.Check type="radio" label="Peliculas" value="pelicula" checked={tipo === "pelicula"} onChange={eventoCambiarTipo} />
+                  <Form.Check type="radio" label="Peliculas" value="peliculas" checked={tipo === "peliculas"} onChange={eventoCambiarTipo} />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo} />
                 </InputGroup>

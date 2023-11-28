@@ -273,7 +273,9 @@
             el año(1992). Pero cuando se accede a Cartelera o a Próximamente, se muestra la fecha completa (DD/MM/AA).
             ·   Ahora la fecha de los resultados de las series en la sección de Próximamente, muestra, el día, mes y año del próximo capítulo a emitir.
             ·   Reajuste de posición del layout en responsive cuando la aplicación es visionada desde móvil.
-#        (5) Martes 28/11/2023: 
+#        (5) Martes 28/11/2023:
+*           ·
+            ·   Arreglado problema de enlace en ListadoPeliculas: Ahora cuando se busca una película al hacer click en el resultado se redirecciona correctamente a su info-item component.
 #        (4) Miércoles 29/11/2023: 
 #        (3) Jueves 30/11/2023: 
 

@@ -31,7 +31,7 @@ const Search = () => {
       page: 1
     }
 
-    if (tipo === "pelicula") {
+    if (tipo === "peliculas") {
       getURL(`search/movie`, params)
         .then(data => {
           let peliculas = data.results.map(mapPelicula);
