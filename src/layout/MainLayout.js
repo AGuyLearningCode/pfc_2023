@@ -39,8 +39,6 @@ const MainLayout = () => {
   return (
     <div>
       <header className="header">
-
-
         <Navbar expand="lg">
           <Container>
             <Navbar.Brand href="/">
