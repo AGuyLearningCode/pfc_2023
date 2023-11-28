@@ -11,9 +11,10 @@ const DatosDePelicula = (props) => {
         <div className={styles.datosdepelicula} id="datos-peli">
 
             {/* IMÁGENES */}
-            <div className={styles.blackdrop}>
+            <div className={styles.backdrop}>
                 <img src={props.pelicula.backdrop_path ? "https://image.tmdb.org/t/p/original/" + props.pelicula.backdrop_path : itemplaceholder} />
             </div>
+            <div className={styles.adelante}>
             <div className={styles.poster}>
                 <img src={props.pelicula.poster_path ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path : itemplaceholder} />
             </div>
@@ -128,7 +129,7 @@ const DatosDePelicula = (props) => {
                     <br />
                 </>
             )}
-
+            </div>
         </div>
     )
 }
