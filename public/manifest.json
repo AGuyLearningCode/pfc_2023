@@ -3,19 +3,20 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "AVMaster_Imagotipo_64.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "../src/assets/imagenes"
     },
     {
       "src": "AVMaster_Imagotipo_192.png",
-      "type": "../src/assets/imagenes",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "../src/assets/imagenes"
+      
     },
     {
       "src": "AVMaster_Imagotipo_512.png",
-      "type": "../src/assets/imagenes",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "../src/assets/imagenes"
     }
   ],
   "start_url": ".",
