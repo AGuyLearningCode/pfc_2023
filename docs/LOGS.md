@@ -279,8 +279,22 @@
             ·   Arreglado el problema del responsive del layout. Ahora se muestra bien tanto en pantallas móviles como en pantallas grandes.
             ·   Ajuste de posición de los radio-button de películas y Series en el layout.
             ·   Corrección de la imagen blackdrop en info-item, ahora se muestra correctamente permitiendo a los demás valores mostrarse por encima de ella.
-#        (4) Miércoles 29/11/2023: 
+#        (4) Miércoles 29/11/2023:
+*           ·   Instalación de Chart.js
+            ·   Implementación de gráfico para datos económicos
+            ·   Creación de espacio para trailer.
+            ·   Reestructuración completa de info-item para poder implementar Bootstrap, diseño adaptativo(Responsive desing).
 #        (3) Jueves 30/11/2023: 
+*           ·   Reimplementación de estilos css.
+            ·   Implementación de gráfico para datos de valoración, popularidad.
+            ·   Creación de boton: Agregar a lista
+            ·   Creación de botón desplegable: "Marcar cómo" con las opciones de:
+                ·   Siguiendo
+                ·   Vista
+                ·   Descartada
+                ·   Pendiente
+                ·   Desmarcar
+            ·   Creación de botón favoritos con signo de Estrella checkeable.
 
 #   </NOVIEMBRE>
 #   ============
