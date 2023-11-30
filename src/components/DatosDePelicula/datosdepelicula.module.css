@@ -49,17 +49,13 @@
 .colDer{
     background: rgb(236, 225, 225);
     border-radius: 5px;
+    padding: 25px;
+    margin-top: 20px;
 
-    scale: 30%;
 
-    margin-top: 45%;
-    margin-left: 100%;
-    margin-right: 3%;
-    padding: 3%;
 }
 /* caso de películas */
 .graficoEconomico{
     background-color: rgb(224, 224, 224);
     border-radius: 50px;
 }
-

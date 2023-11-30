@@ -148,10 +148,90 @@ const DatosDePelicula = (props) => {
                         </div>
                     </Col>
                     <Col lg={9}>
-                        <h1>adios</h1>
+                        <div className={styles.colDer}>
+                    <Row>
+                            <div className={styles.titulo}>
+                                <h1 className="titulo_nombre">{
+                                    props.tipo === "p" ?
+                                        props.pelicula.title
+                                        :
+                                        props.pelicula.name
+                                } &nbsp;(<i>{
+                                    props.tipo === "p" ?
+                                        props.pelicula.original_title
+                                        :
+                                        props.pelicula.original_name
+                                }</i>)</h1>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div className={styles.ano}>
+                                <h1 className="titulo_ano">
+                                    [{props.tipo === "p" ? props.pelicula.release_date : props.pelicula.first_air_date}]
+                                </h1>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div className={styles.director}>
+                                <h2> {
+                                    props.tipo === "p" ?
+                                        (props.actores.crew && props.actores.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
+                                        :
+                                        props.pelicula.created_by && props.pelicula.created_by.map(p => `Creador: ${p.name}`).join(", ")
+                                }</h2>
+                            </div>
+                        </Row>
+                        <Row>
+                            <p>
+                                {props.pelicula.overview && props.pelicula.overview.length > 0 ?
+                                    `Sinopsis: ${props.pelicula.overview}`
+                                    :
+                                    "Sinopsis: No hay sinopsis en español."
+                                }
+                            </p>
+                        </Row>
+                        <Row>
+                            <details>
+                                <summary>Actores</summary>
+                                <ul>
+                                    {props.actores.cast && props.actores.cast.map(
+                                        e => {
+                                            return <li key={e.cast_id}>
+                                                {e.name}
+                                            </li>
+                                        }
+                                    )}
+                                </ul>
+                            </details>
+                        </Row>
+                        <Row>
+                            {props.tipo === "s" && (
+                                <>
+                                    <p>Temporadas: {props.pelicula.number_of_seasons}</p>
+                                    <p>Episodios: {props.pelicula.number_of_episodes}</p>
+                                    <p>Duración media de episodio: {props.pelicula.episode_run_time} minutos</p>
+                                    <details>
+                                        <summary>
+                                            Temporadas:
+                                        </summary>
+                                        <ul>
+                                            {props.pelicula.seasons && props.pelicula.seasons.map(e => { return <li key={e.season_number}>{e.name} ({e.episode_count} episodios)</li> })}
+                                        </ul>
+                                    </details>
+                                    <br />
+                                </>
+                            )}
+                        </Row>
+                        </div>
+                        {/* <Row>
+                            <div className={styles.trailer}>
+                                PENDIENTE DE INTEGRAR TRAILERS DESDE API
+                            </div>
+                        </Row> */}
                     </Col>
                 </Row>
             </Container>
+            <br></br>
         </div>
     )
 }
