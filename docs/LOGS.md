@@ -294,6 +294,7 @@
 #       (2) Viernes 01/11/2023: 
 *           ·   Implementación de gráfico para datos de valoración, popularidad.
             ·   Implementacion de componente de filtrado de pais que devuelve el emoji de la bandera. 
+            ·   Implementación de botón de Favoritos, junto a función que registra en el LocalStorage un listado de las series y películas que están puestas como favoritas.
 #       (1) Sábado 02/11/2023: 
 #       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<
 

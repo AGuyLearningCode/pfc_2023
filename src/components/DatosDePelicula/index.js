@@ -3,8 +3,8 @@ import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png';
 import styles from './datosdepelicula.module.css';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend, } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
-import { Col, Container, Row } from 'react-bootstrap';
-import { banderaPais } from '../../helpers/banderasPaises';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { ListasManager } from '../../helpers/ListasManager';
 import BanderaPais from '../BanderaPais';
 
 ChartJS.register(
@@ -42,6 +42,7 @@ const DatosDePelicula = (props) => {
     const longitudCorona = 2 * Math.PI * radio;
     const valoracionDasharray = `${(valoracion / 10) * longitudCorona} ${longitudCorona}`;
     const popularidadDasharray = `${(popularidad / 200) * longitudCorona} ${longitudCorona}`;
+    const [esFavorita, setEsFavorita] = useState(false)
 
     // FUNCIONES:
     useEffect(() => {
@@ -62,6 +63,28 @@ const DatosDePelicula = (props) => {
             ],
         });
     }, [props.pelicula]);
+
+    const toggleFavorito = (evt) => {
+        const listaManager = new ListasManager();
+        const favorito = {tipo: props.tipo, id: props.pelicula.id}
+        if(!esFavorita){
+            listaManager.insertarFavorito(favorito)
+        } else {
+            listaManager.eliminarFavorito(favorito)
+        }
+       
+        setEsFavorita(!esFavorita)
+    }
+
+    useEffect(() => {
+        if(!props.pelicula){
+            return;
+        }
+        const listaManager = new ListasManager();
+        const favorito = {tipo: props.tipo, id: props.pelicula.id}
+        setEsFavorita(listaManager.esFavorito(favorito))
+    }, [props.pelicula])
+
 
     if (Object.keys(props.pelicula).length === 0) {
         return <></>
@@ -92,6 +115,7 @@ const DatosDePelicula = (props) => {
                         <div className={styles.colIzq}>
                             <Row>
                                 <Col>
+                                <Button onClick={ toggleFavorito } >{esFavorita ? "FAVORITA": "NO FAVORITA"}</Button>
                                     <h1 className={styles.tituloGraficos}>Valoración:</h1>
                                     <div className={styles.coronaCircular}>
                                         <svg className={styles.coronaSvg} width="100" height="100">
@@ -228,7 +252,6 @@ const DatosDePelicula = (props) => {
                         </Row>
                         <Row>
                             {props.tipo === "s" &&
-                            
                                 props.pelicula.status==="Returning Series" ? "En emision" : "Ya Terminada"
                             }
                         </Row>
@@ -265,7 +288,7 @@ const DatosDePelicula = (props) => {
                                     props.tipo === "p" ?
                                         (props.actores.crew && props.actores.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
                                         :
-                                        props.pelicula.created_by && props.pelicula.created_by.map(p => `Creador: ${p.name}`).join(", ")
+                                        props.pelicula.created_by && `Creador: ${props.pelicula.created_by.map(p => `${p.name}`).join(", ")}`
                                 }</h2>
                             </div>
                         </Row>
