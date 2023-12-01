@@ -231,6 +231,7 @@ const DatosDePelicula = (props) => {
                     </Col>
                 </Row>
             </Container>
+            {/* PLACEHOLDER DE FOOTER: */}
             <br></br>
         </div>
     )
