@@ -175,18 +175,6 @@ const DatosDePelicula = (props) => {
                                 </div>
                             </Col>
                         </Row>
-                        {/* <Row> */}
-                        {/* VALORACIÓN */}
-                        {/* <div className={styles.valoracion}> */}
-                        {/* <p>Valoración: {props.pelicula.vote_average}/10</p> */}
-                        {/* </div> */}
-                        {/* </Row> */}
-                        {/* <Row> */}
-                        {/* POPULARIDAD */}
-                        {/* <div className="mt-4"> */}
-                        {/* <p>Popularidad: {props.pelicula.popularity}</p> */}
-                        {/* </div> */}
-                        {/* </Row> */}
                         <Row>
                             {/* GENERO */}
                             <div className="mt-4">
@@ -238,11 +226,12 @@ const DatosDePelicula = (props) => {
                                 </div>
                             }
                         </Row>
-                        {/* <Row>
-                            PENDIENTE IMPLEMENTAR EL STATUS DE LA SERIE:
-                            https://api.themoviedb.org/3/tv/456?language=es
-                            "status": "Returning Series",
-                        </Row> */}
+                        <Row>
+                            {props.tipo === "s" &&
+                            
+                                props.pelicula.status==="Returning Series" ? "En emision" : "Ya Terminada"
+                            }
+                        </Row>
 
                     </div>
                 </Col >
