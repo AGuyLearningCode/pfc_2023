@@ -4,6 +4,8 @@ import styles from './datosdepelicula.module.css';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend, } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 import { Col, Container, Row } from 'react-bootstrap';
+import { banderaPais } from '../../helpers/banderasPaises';
+import BanderaPais from '../BanderaPais';
 
 ChartJS.register(
     RadialLinearScale,
@@ -39,7 +41,7 @@ const DatosDePelicula = (props) => {
     const radio = 40;
     const longitudCorona = 2 * Math.PI * radio;
     const valoracionDasharray = `${(valoracion / 10) * longitudCorona} ${longitudCorona}`;
-    const popularidadDasharray = `${(popularidad / 1000) * longitudCorona} ${longitudCorona}`;
+    const popularidadDasharray = `${(popularidad / 200) * longitudCorona} ${longitudCorona}`;
 
     // FUNCIONES:
     useEffect(() => {
@@ -133,7 +135,7 @@ const DatosDePelicula = (props) => {
                                     <div className={styles.coronaCircular}>
                                         <svg className={styles.coronaSvg} width="100" height="100">
                                             {/* Corona para la popularidad */}
-                                            {popularidad > 100000 ?
+                                            {popularidad < 100 ?
                                                 (<>
                                                     <circle
                                                         className={styles.coronaPopularidad}
@@ -147,7 +149,7 @@ const DatosDePelicula = (props) => {
 
                                                     {/* Texto en el centro */}
                                                     <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {popularidad}
+                                                        {Math.round(popularidad * 100) / 100}
                                                     </text>
                                                 </>
                                                 )
@@ -165,7 +167,7 @@ const DatosDePelicula = (props) => {
 
                                                     {/* Texto en el centro */}
                                                     < text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {popularidad}
+                                                        {Math.round(popularidad * 100) /100}
                                                     </text>
                                                 </>)
                                             }
@@ -194,7 +196,7 @@ const DatosDePelicula = (props) => {
                         <Row>
                             {/* PAIS */}
                             <div className="mt-4">
-                                <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <li key={e.iso_3166_1}>{e.name}</li> })}</ul>
+                                <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <BanderaPais pais={e} key={e.iso_3166_1} /> })}</ul>
                             </div>
                         </Row>
                         <Row>

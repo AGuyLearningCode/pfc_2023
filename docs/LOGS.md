@@ -293,7 +293,7 @@
 #   ===========
 #       (2) Viernes 01/11/2023: 
 *           ·   Implementación de gráfico para datos de valoración, popularidad.
-
+            ·   Implementacion de componente de filtrado de pais que devuelve el emoji de la bandera. 
 #       (1) Sábado 02/11/2023: 
 #       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<
 
