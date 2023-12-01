@@ -286,22 +286,13 @@
             ·   Reestructuración completa de info-item para poder implementar Bootstrap, diseño adaptativo(Responsive desing).
 #        (3) Jueves 30/11/2023: 
 *           ·   Reimplementación de estilos css.
-            ·   Implementación de gráfico para datos de valoración, popularidad.
-            ·   Creación de boton: Agregar a lista
-            ·   Creación de botón desplegable: "Marcar cómo" con las opciones de:
-                ·   Siguiendo
-                ·   Vista
-                ·   Descartada
-                ·   Pendiente
-                ·   Desmarcar
-            ·   Creación de botón favoritos con signo de Estrella checkeable.
-
 #   </NOVIEMBRE>
 #   ============
 
 #   <DICIEMBRE>
 #   ===========
 #       (2) Viernes 01/11/2023: 
+*           ·   Implementación de gráfico para datos de valoración, popularidad.
 
 #       (1) Sábado 02/11/2023: 
 #       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<

@@ -60,3 +60,49 @@
     background-color: rgb(224, 224, 224);
     border-radius: 50px;
 }
+
+
+/* prueba */
+
+
+.coronaCircular {
+    fill: none;
+    margin-left: 20%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: all 5000ms;
+  }
+  
+  .coronaSvg {
+    position: absolute;
+  }
+  
+  .coronaValoracion {
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+  }
+  
+  .coronaPopularidad {
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+  }
+  
+  text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .tituloGraficos{
+    display:flex;
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 16%;
+  }
+
+  .prueba{
+    color: #309e0e;
+    color: #ff0000;
+  }
