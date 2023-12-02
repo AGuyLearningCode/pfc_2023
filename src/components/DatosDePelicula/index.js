@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png';
+import estrella from '../../assets/imagenes/estrella.png';
+import favorito from '../../assets/imagenes/favorito.png';
 import styles from './datosdepelicula.module.css';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend, } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
@@ -66,22 +68,22 @@ const DatosDePelicula = (props) => {
 
     const toggleFavorito = (evt) => {
         const listaManager = new ListasManager();
-        const favorito = {tipo: props.tipo, id: props.pelicula.id}
-        if(!esFavorita){
+        const favorito = { tipo: props.tipo, id: props.pelicula.id }
+        if (!esFavorita) {
             listaManager.insertarFavorito(favorito)
         } else {
             listaManager.eliminarFavorito(favorito)
         }
-       
+
         setEsFavorita(!esFavorita)
     }
 
     useEffect(() => {
-        if(!props.pelicula){
+        if (!props.pelicula) {
             return;
         }
         const listaManager = new ListasManager();
-        const favorito = {tipo: props.tipo, id: props.pelicula.id}
+        const favorito = { tipo: props.tipo, id: props.pelicula.id }
         setEsFavorita(listaManager.esFavorito(favorito))
     }, [props.pelicula])
 
@@ -108,93 +110,103 @@ const DatosDePelicula = (props) => {
                             position: "relative"
                         }
                     } >
-                        {/* POSTER */}
-                        <div className={styles.poster}>
-                            <img src={props.pelicula.poster_path ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path : itemplaceholder} />
-                        </div>
+                        <Row>
+                            {/* POSTER */}
+                            <div className={styles.poster}>
+                                <img src={props.pelicula.poster_path ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + props.pelicula.poster_path : itemplaceholder} />
+                            </div>
+                            
+                        </Row>
                         <div className={styles.colIzq}>
-                            <Row>
-                                <Col>
-                                <Button onClick={ toggleFavorito } >{esFavorita ? "FAVORITA": "NO FAVORITA"}</Button>
-                                    <h1 className={styles.tituloGraficos}>Valoración:</h1>
-                                    <div className={styles.coronaCircular}>
-                                        <svg className={styles.coronaSvg} width="100" height="100">
-                                            {/* Corona para la valoración */}
-                                            {valoracion < 5 ?
-                                                (<>
-                                                    <circle
-                                                        className={styles.coronaValoracion}
-                                                        r={radio}
-                                                        cx="50%"
-                                                        cy="50%"
-                                                        stroke="#ff0000" //ROJO
-                                                        strokeWidth="20"
-                                                        strokeDasharray={valoracionDasharray}
-                                                    />
-                                                    <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {valoracion}
-                                                    </text>
-                                                </>)
-                                                :
-                                                (<>
-                                                    <circle
-                                                        className={styles.coronaValoracion}
-                                                        r={radio}
-                                                        cx="50%"
-                                                        cy="50%"
-                                                        stroke="#309e0e" //VERDE
-                                                        strokeWidth="20"
-                                                        strokeDasharray={valoracionDasharray}
-                                                    />
-                                                    <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {valoracion}
-                                                    </text>
-                                                </>)
-                                            }
-                                        </svg>
-                                    </div>
-                                </Col>
-                                <Col>
-                                    <h1 className={styles.tituloGraficos}>Popularidad:</h1>
-                                    <div className={styles.coronaCircular}>
-                                        <svg className={styles.coronaSvg} width="100" height="100">
-                                            {/* Corona para la popularidad */}
-                                            {popularidad < 100 ?
-                                                (<>
-                                                    <circle
-                                                        className={styles.coronaPopularidad}
-                                                        r={radio}
-                                                        cx="50%"
-                                                        cy="50%"
-                                                        stroke="#ff0000" //ROJO
-                                                        strokeWidth="20"
-                                                        strokeDasharray={popularidadDasharray}
-                                                    />
+                        <Row>
+                            <Button onClick={toggleFavorito} className={styles.favLocation}>{
+                                esFavorita ?
+                                    <img src={estrella} className={styles.icon}></img>
+                                    :
+                                    <img src={favorito} className={styles.icon}></img>
+                            }</Button>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <h1 className={styles.tituloGraficos}>Valoración:</h1>
+                                <div className={styles.coronaCircular}>
+                                    <svg className={styles.coronaSvg} width="100" height="100">
+                                        {/* Corona para la valoración */}
+                                        {valoracion < 5 ?
+                                            (<>
+                                                <circle
+                                                    className={styles.coronaValoracion}
+                                                    r={radio}
+                                                    cx="50%"
+                                                    cy="50%"
+                                                    stroke="#ff0000" //ROJO
+                                                    strokeWidth="20"
+                                                    strokeDasharray={valoracionDasharray}
+                                                />
+                                                <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
+                                                    {valoracion}
+                                                </text>
+                                            </>)
+                                            :
+                                            (<>
+                                                <circle
+                                                    className={styles.coronaValoracion}
+                                                    r={radio}
+                                                    cx="50%"
+                                                    cy="50%"
+                                                    stroke="#309e0e" //VERDE
+                                                    strokeWidth="20"
+                                                    strokeDasharray={valoracionDasharray}
+                                                />
+                                                <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
+                                                    {valoracion}
+                                                </text>
+                                            </>)
+                                        }
+                                    </svg>
+                                </div>
+                            </Col>
+                            <Col>
+                                <h1 className={styles.tituloGraficos}>Popularidad:</h1>
+                                <div className={styles.coronaCircular}>
+                                    <svg className={styles.coronaSvg} width="100" height="100">
+                                        {/* Corona para la popularidad */}
+                                        {popularidad < 100 ?
+                                            (<>
+                                                <circle
+                                                    className={styles.coronaPopularidad}
+                                                    r={radio}
+                                                    cx="50%"
+                                                    cy="50%"
+                                                    stroke="#ff0000" //ROJO
+                                                    strokeWidth="20"
+                                                    strokeDasharray={popularidadDasharray}
+                                                />
 
-                                                    {/* Texto en el centro */}
-                                                    <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {Math.round(popularidad * 100) / 100}
-                                                    </text>
-                                                </>
-                                                )
-                                                :
-                                                (<>
-                                                    <circle
-                                                        className={styles.coronaPopularidad}
-                                                        r={radio}
-                                                        cx="50%"
-                                                        cy="50%"
-                                                        stroke="#309e0e" //VERDE
-                                                        strokeWidth="20"
-                                                        strokeDasharray={popularidadDasharray}
-                                                    />
+                                                {/* Texto en el centro */}
+                                                <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
+                                                    {Math.round(popularidad * 100) / 100}
+                                                </text>
+                                            </>
+                                            )
+                                            :
+                                            (<>
+                                                <circle
+                                                    className={styles.coronaPopularidad}
+                                                    r={radio}
+                                                    cx="50%"
+                                                    cy="50%"
+                                                    stroke="#309e0e" //VERDE
+                                                    strokeWidth="20"
+                                                    strokeDasharray={popularidadDasharray}
+                                                />
 
-                                                    {/* Texto en el centro */}
-                                                    < text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
-                                                        {Math.round(popularidad * 100) /100}
-                                                    </text>
-                                                </>)
-                                            }
+                                                {/* Texto en el centro */}
+                                                < text x="50%" y="50%" textAnchor="middle" dy="0.3em" fill="#000" fontSize="16">
+                                                    {Math.round(popularidad * 100) / 100}
+                                                </text>
+                                            </>)
+                                        }
                                     </svg>
                                 </div>
                             </Col>
@@ -252,14 +264,16 @@ const DatosDePelicula = (props) => {
                         </Row>
                         <Row>
                             {props.tipo === "s" &&
-                                props.pelicula.status==="Returning Series" ? "En emision" : "Ya Terminada"
+                                props.pelicula.status === "Returning Series" ? "En emision" : "Ya Terminada"
                             }
                         </Row>
 
                     </div>
                 </Col >
                 <Col lg={9}>
+
                     <div className={styles.colDer}>
+
                         <Row>
                             <div className={styles.titulo}>
                                 <h1 className="titulo_nombre">{

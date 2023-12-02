@@ -27,9 +27,13 @@
     width: 100%;
 }
 
+.poster {
+  position: relative;
+}
+
 .poster img {
     display: block;
-    position: relative;
+    
 
     height:500px;
     border-radius: 10px;
@@ -39,7 +43,7 @@
     margin-right: auto;
     scale: 90%;
     transition: all 300ms;
-    z-index: 5;
+    
 }
 .poster img:hover {
     scale: 95%;
@@ -52,7 +56,7 @@
     border-radius: 5px;
     padding: 25px;
     margin-top: 20px;
-
+    position: relative;
 
 }
 /* caso de películas */
@@ -102,7 +106,19 @@
     margin-left: 16%;
   }
 
-  .prueba{
-    color: #309e0e;
-    color: #ff0000;
-  }
+.favLocation {
+  position: relative;
+  height: 60px;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+
