@@ -298,6 +298,9 @@
             ·   Descarga e implementación de imágenes para el botón de favoritos.
             ·   Mejora del botón de Favoritos, implementandolo en la parte superior de la columna izquierda.
 #       (1) Sábado 02/11/2023: 
+*           ·   Creación de nuevo directorio en assets/imagenes: Banderas.
+            ·   Descarga de imagenes de banderas de cada uno de los paises del mundo, para ser visualizadas en el filtro de la sección: Listas.
+            ·   Ampliado el diccionario de paises. Ahora los paises tienen icono y bandera que pueden ser llamados de manera específica.
 #       (0) Domingo 03/11/2023:  >>>>>>> REDLINE <<<<<<<
 
 #   </DICIEMBRE>
