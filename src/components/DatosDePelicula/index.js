@@ -321,7 +321,7 @@ const DatosDePelicula = (props) => {
                                 <ul>
                                     {props.actores.cast && props.actores.cast.map(
                                         e => {
-                                            return <li key={e.cast_id}>
+                                            return <li key={e.id}>
                                                 {e.name}
                                             </li>
                                         }
