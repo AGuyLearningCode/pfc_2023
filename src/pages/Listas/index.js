@@ -22,8 +22,10 @@ const Listas = () => {
         <div className={styles.listas}>
             <h1>Listas</h1>
             <ul>
-                { favoritos.map(f => <li key={f.id}><img src={f.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + f.poster : itemplaceholder} />{f.tipo}{f.nombre} <Button onClick={() => eliminarFavorito(f)}>Eliminar</Button></li> )  }
-                
+                { favoritos.filter(f => f.tipo === "p").map(f => <li key={f.id}><img src={f.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + f.poster : itemplaceholder} />{f.tipo}{f.nombre} <Button onClick={() => eliminarFavorito(f)}>Eliminar</Button></li> )  }
+            </ul>
+            <ul>
+                { favoritos.filter(f => f.tipo === "s").map(f => <li key={f.id}><img src={f.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + f.poster : itemplaceholder} />{f.tipo}{f.nombre} <Button onClick={() => eliminarFavorito(f)}>Eliminar</Button></li> )  }
             </ul>
             
         </div>
