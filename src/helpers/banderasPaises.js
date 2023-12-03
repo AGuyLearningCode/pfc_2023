@@ -1,3 +1,6 @@
+import banderaEstadosUnidos from '../assets/imagenes/banderas/United_States.svg.png'
+
+
 export const banderaPais = {
     "Afghanistan":{
         "icono": "🇦🇫",
@@ -277,7 +280,7 @@ export const banderaPais = {
     },
     "United States of America":{
         "icono": "🇺🇸",
-        "bandera": "../assets/imagenes/banderas/United_States.svg.png"
+        "bandera": banderaEstadosUnidos
     },
     "Estonia":{
         "icono": "🇪🇪",
