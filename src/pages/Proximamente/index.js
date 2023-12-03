@@ -21,7 +21,7 @@ const Proximamente = () => {
             const fechaActual = new Date();
             const timeStampManana = fechaActual.getTime() + 1000 * 60 * 60 * 24;
             const fechaManana = new Date(timeStampManana);
-            const cadenaFecha = `${fechaManana.getFullYear()}-${fechaManana.getMonth() + 1}-${fechaManana.getDate()}`;
+            const cadenaFecha = `${fechaManana.getFullYear()}-${`${fechaManana.getMonth() + 1}`.padStart(2,"0")}-${ `${fechaManana.getDate()}`.padStart(2,"0")}`;
             getURL(`discover/tv`, {
                 sort_by: "first_air_date.asc",
                 "first_air_date.gte": cadenaFecha

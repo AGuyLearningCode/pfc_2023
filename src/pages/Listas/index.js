@@ -56,10 +56,9 @@ const Listas = () => {
 
 
     return (
-        // <div className={styles.resultado}>
         <div className={styles.listas}>
-            <h1>Listas</h1>
-            <div>
+            <h1>Películas Favoritas</h1>
+            <div className={styles.menuSelector}>
                 {
                     filtrosPeliculas.map(f => <React.Fragment key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosPeliculas.includes(f.id)}
                         onChange={() => cambiarFiltroPelicula(f.id)}></input> {f.name}</React.Fragment>)
@@ -68,8 +67,9 @@ const Listas = () => {
             <div className="d-flex flex-wrap">
                 {favoritos.filter(f => f.tipo === "p").filter(p => filtrosActivosPeliculas.length === 0 || filtrosActivosPeliculas.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <ItemFavorito favorito={f} eliminarFavorito={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
             </div>
-
-            <div>
+            <br/>
+            <h1>Series Favoritas</h1>
+            <div className={styles.menuSelector}>
                 {
                     filtrosSeries.map(f => <React.Fragment key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosSeries.includes(f.id)}
                         onChange={() => cambiarFiltroSeries(f.id)}></input> {f.name}</React.Fragment>)
