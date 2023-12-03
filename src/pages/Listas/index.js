@@ -5,6 +5,7 @@ import { ListasManager } from '../../helpers/ListasManager';
 import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import ItemFavorito from '../../components/ItemFavorito';
 
 const Listas = () => {
     const listasManager = new ListasManager();
@@ -65,9 +66,7 @@ const Listas = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favoritos.filter(f => f.tipo === "p").filter(p => filtrosActivosPeliculas.length === 0 || filtrosActivosPeliculas.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <div key={f.id}>
-                    <Link to={`/Info/p/${f.id}`}> <img src={f.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + f.poster : itemplaceholder} />{f.tipo}{f.nombre}
-                        <Button onClick={() => eliminarFavorito(f)}>Eliminar</Button></Link></div>)}
+                {favoritos.filter(f => f.tipo === "p").filter(p => filtrosActivosPeliculas.length === 0 || filtrosActivosPeliculas.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <ItemFavorito favorito={f} eliminarFavorito={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
             </div>
 
             <div>
@@ -77,11 +76,7 @@ const Listas = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favoritos.filter(f => f.tipo === "s").filter(p => filtrosActivosSeries.length === 0 || filtrosActivosSeries.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <div key={f.id}>
-                    <Link to={`/Info/s/${f.id}`}><img src={f.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + f.poster : itemplaceholder} />{f.tipo}{f.nombre}
-                        <Button onClick={() => eliminarFavorito(f)}>Eliminar</Button>
-                    </Link>
-                </div>)}
+                {favoritos.filter(f => f.tipo === "s").filter(p => filtrosActivosSeries.length === 0 || filtrosActivosSeries.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <ItemFavorito favorito={f} eliminarFavorito={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
             </div>
 
         </div>
