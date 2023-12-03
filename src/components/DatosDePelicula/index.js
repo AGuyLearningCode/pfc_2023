@@ -68,7 +68,8 @@ const DatosDePelicula = (props) => {
 
     const toggleFavorito = (evt) => {
         const listaManager = new ListasManager();
-        const favorito = { tipo: props.tipo, id: props.pelicula.id, nombre: props.pelicula.title || props.pelicula.name, poster: props.pelicula.poster_path }
+        const favorito = { tipo: props.tipo, id: props.pelicula.id, nombre: props.pelicula.title || props.pelicula.name,
+             poster: props.pelicula.poster_path, generos: props.pelicula.genres }
         if (!esFavorita) {
             listaManager.insertarFavorito(favorito)
         } else {
