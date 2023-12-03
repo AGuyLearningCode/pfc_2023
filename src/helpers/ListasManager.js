@@ -2,7 +2,7 @@ const LISTA_FAVORITOS_KEY = "favs"
 
 class ListasManager{
 
-    #getFavoritos() {
+    getFavoritos() {
         const listaFavoritos = localStorage[LISTA_FAVORITOS_KEY]
         if(!listaFavoritos){
             return [];
@@ -11,7 +11,7 @@ class ListasManager{
     }
 
     esFavorito(favorito) {
-        const favoritos = this.#getFavoritos();
+        const favoritos = this.getFavoritos();
         const listaFiltrada = favoritos.filter(p => p.id === favorito.id && p.tipo === favorito.tipo)
         return listaFiltrada.length > 0
     }
@@ -21,7 +21,7 @@ class ListasManager{
         if(this.esFavorito(favorito)){
             return
         }
-        const favoritos = this.#getFavoritos()
+        const favoritos = this.getFavoritos()
         favoritos.push(favorito)
         localStorage[LISTA_FAVORITOS_KEY] = JSON.stringify(favoritos)
     }
@@ -30,7 +30,7 @@ class ListasManager{
         if(!this.esFavorito(favorito)){
             return
         }
-        const favoritos = this.#getFavoritos().filter(p => p.tipo != favorito.tipo || p.id != favorito.id)
+        const favoritos = this.getFavoritos().filter(p => p.tipo != favorito.tipo || p.id != favorito.id)
         localStorage[LISTA_FAVORITOS_KEY] = JSON.stringify(favoritos)
     }
 }

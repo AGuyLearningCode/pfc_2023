@@ -7,7 +7,6 @@ const ListadoPeliculas = (props) => {
     const navigate = useNavigate();
     return (
         <div className={styles.resultados}>
-
             {!!(props.peliculas) &&
                 props.peliculas.map(
                     item => <ItemResultadoBusqueda
