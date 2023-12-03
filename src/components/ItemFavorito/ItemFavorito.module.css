@@ -13,3 +13,8 @@
 img{
 
 }
+
+.noDeco {
+    text-decoration: none;
+    color: white;
+}

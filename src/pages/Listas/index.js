@@ -60,8 +60,8 @@ const Listas = () => {
             <h1>Películas Favoritas</h1>
             <div className={styles.menuSelector}>
                 {
-                    filtrosPeliculas.map(f => <React.Fragment key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosPeliculas.includes(f.id)}
-                        onChange={() => cambiarFiltroPelicula(f.id)}></input> {f.name}</React.Fragment>)
+                    filtrosPeliculas.map(f => <div key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosPeliculas.includes(f.id)}
+                        onChange={() => cambiarFiltroPelicula(f.id)}></input> {f.name}</div>)
                 }
             </div>
             <div className="d-flex flex-wrap">
@@ -71,8 +71,8 @@ const Listas = () => {
             <h1>Series Favoritas</h1>
             <div className={styles.menuSelector}>
                 {
-                    filtrosSeries.map(f => <React.Fragment key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosSeries.includes(f.id)}
-                        onChange={() => cambiarFiltroSeries(f.id)}></input> {f.name}</React.Fragment>)
+                    filtrosSeries.map(f => <div key={f.id}><input type="checkbox" value={f.id} checked={filtrosActivosSeries.includes(f.id)}
+                        onChange={() => cambiarFiltroSeries(f.id)}></input> {f.name}</div>)
                 }
             </div>
             <div className="d-flex flex-wrap">
