@@ -36,9 +36,4 @@
 
     Descripción según escala de gravedad o comportamiento (Alta: ↑ Media: = Baja: ↓  Reversión de cambio: ← Actualización: →):
 
-#       <↑> Aplicar ListadoPeliculas a Próximamente.
-#       <↓> Buscador: Está pendiente de establecerle mejores estilos css, para margen y maquetación general.
-#       <=> Revisar listado de cast en info-item para que solo muestre los actores.
-#       <=> Definición de sección Listas.
-#       <=> Implementación de funcionalidad de agregar a lista en info-item.
-#       <=> Actualizar estilo de README y documentación adjunta según parámetros de la memoria del pfc.
+*   TODOS LOS BUGS Y ACTIVIDADES QUE SE HABÍA PROPUESTO REALIZAR SE HAN IMPLEMENTADO DE MANERA SATISFACTORIA SIN ERRORES.
