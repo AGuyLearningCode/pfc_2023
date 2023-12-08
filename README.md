@@ -1,14 +1,14 @@
-<h1 align="center">![AVMASTER](C:/../src/assets/imagenes/logo-web.png)</h1>
+![logo-web](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/f19092db-7f22-4def-a6d9-d3c1c0b0647c)
+<p align="center">
+  <img></img>
+</p>
 
 ## Descripción
-Breve descripción del proyecto y su propósito.
-Tabla de Contenidos
+En la aplicación podrás buscar la serie o la película que desees, así como ver la cartelera o los próximos lanzamientos, además de por supuesto también poder ver su información a detalle, pudiendo crear tus propias listas.
 
-***
 ## Tabla de Contenidos
 - [Descripción](#descripción)
 - [Tabla de Contenidos](#tabla-de-contenidos)
-- [Uso](#uso)
 - [Contribuir](#contribuir)
 - [Licencia](#licencia)
 - [Estado del Proyecto](#estado-del-proyecto)
@@ -50,28 +50,26 @@ Tabla de Contenidos
   - [Última Actualización: 11/11/2023](#última-actualización-11112023-1)
 - [Agradecimientos](#agradecimientos)
 
-***
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-***
-## Uso
-En la aplicación podrás buscar la serie o la película que desees, así como ver la cartelera o los próximos lanzamientos, además de por supuesto también poder ver su información a detalle, pudiendo crear tus propias listas.
-***
+
+
+
 ## Contribuir
 Actualmente no se permite contribuciones de terceros.
-***
+
 ## Licencia
 Este proyecto está bajo la [Nombre de la Licencia]. Ver el archivo [LICENSE](LICENSE) para más detalles.
-***
-## Estado del Proyecto
-- **Versión:** 1.0.0
-- **Estado:** TERMINADO
-***
-## Capturas de Pantalla
-![Captura de Pantalla 1](screenshots/screenshot1.png)
 
-***
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-***
+## Estado del Proyecto
+- **Versión:** 1.0.a
+- **Estado:** TERMINADO
+
+## Capturas de Pantalla
+
+![Screenshot_378](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/333c76e0-2e6b-48fa-93ef-c2f6a296224e)
+![FireShot Capture 008 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/818a4124-f112-4e9b-94eb-d8d76b08b94e)
+![FireShot Capture 007 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/77ad37ee-40fd-434e-9e40-03abe1589bf0)
+![FireShot Capture 006 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/d879ac01-3a31-4bd8-8801-3efeb9621dea)
+![Screenshot_379](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/950d9eec-84fa-4466-bc45-bee07f0f5b01)
 
 ## 1.- Descripción general del proyecto
 AVMaster, es un proyecto web que busca gestionar de manera automática todo el contenido audiovisual que desees consultar, de ahí su nombre "AudioVisual Master".
@@ -83,13 +81,13 @@ Con frecuencia, para ver series, películas, documentales, etc...Dependemos de p
 Con esa idea nace AVMaster, como un medio de gestión descentralizado, que le permite al usuario hacer cómodas consultas sobre su contenido favorito permitiéndole guardar, gestionar y administrar aquel contenido que ha visto de aquel que no, así como enterarse rápidamente de las novedades o incluso de los próximos lanzamientos.
 
 El objetivo es que puedas llevar un conteo de todas tus series, películas, documentales, libros e incluso videojuegos quedando un registro en el tiempo en tu propio sistema de un modo accesible e intuitivo.
-***
+
 ## 2.- Estado del proyecto
 En esta primera iteración del proyecto, solo se trata de una pequeña muestra funcional que funciona más como un producto mínimo viable, que como uno final.El objetivo aquí, es que se muestre un primer acercamiento al funcionamiento en la sección de películas, permitiéndose buscar una película o serie, y ver sus datos o consultar listados básicos de novedades o próximos lanzamientos.
 
 La idea es ir expandiendo el proyecto todo lo que se pueda en las próximas semanas para conseguir implementar funcionalidades como la listas de favoritos y vistos o, si da tiempo, implementar la posibilidad de trackear también videojuegos.
 
-***
+
 ## 3.- Requisitos del entorno de desarrollo para la integración
 Tener instalado React con Bootstrap y Chart.js de React
 ***
