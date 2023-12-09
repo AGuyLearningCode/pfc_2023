@@ -1,4 +1,4 @@
-    ![logo-web](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/f19092db-7f22-4def-a6d9-d3c1c0b0647c)
+![logo-web](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/f19092db-7f22-4def-a6d9-d3c1c0b0647c)
 
 ## Tabla de Contenidos
 - [Tabla de Contenidos](#tabla-de-contenidos)
