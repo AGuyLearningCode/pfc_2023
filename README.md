@@ -1,35 +1,30 @@
 ![logo-web](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/f19092db-7f22-4def-a6d9-d3c1c0b0647c)
-<p align="center">
-  <img></img>
-</p>
-
-## Descripción
-En la aplicación podrás buscar la serie o la película que desees, así como ver la cartelera o los próximos lanzamientos, además de por supuesto también poder ver su información a detalle, pudiendo crear tus propias listas.
 
 ## Tabla de Contenidos
-- [Descripción](#descripción)
 - [Tabla de Contenidos](#tabla-de-contenidos)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
-- [Estado del Proyecto](#estado-del-proyecto)
-- [Capturas de Pantalla](#capturas-de-pantalla)
-- [1.- Descripción general del proyecto](#1--descripción-general-del-proyecto)
-- [2.- Estado del proyecto](#2--estado-del-proyecto)
-- [3.- Requisitos del entorno de desarrollo para la integración](#3--requisitos-del-entorno-de-desarrollo-para-la-integración)
-- [4.- Guía de la instalación y funcionamiento](#4--guía-de-la-instalación-y-funcionamiento)
-- [5.- Tecnologías utilizadas](#5--tecnologías-utilizadas)
-- [6.- Logs](#6--logs)
-- [7.- Bugs conocidos y posibles correciones](#7--bugs-conocidos-y-posibles-correciones)
-- [8.- F.A.Q.](#8--faq)
-- [9.- Información sobre derechos de autor y licencias](#9--información-sobre-derechos-de-autor-y-licencias)
-- [9.1 Términos de Uso](#91-términos-de-uso)
+- [1.- Resumen](#1--resumen)
+  - [1.1- Descripción](#11--descripción)
+  - [1.2- Contribuir](#12--contribuir)
+  - [1.3- Licencia](#13--licencia)
+  - [1.4- Estado del Proyecto](#14--estado-del-proyecto)
+- [2.- Capturas de Pantalla](#2--capturas-de-pantalla)
+- [3.- Descripción general del proyecto](#3--descripción-general-del-proyecto)
+- [4.- Estado del proyecto](#4--estado-del-proyecto)
+- [5.- Requisitos del entorno de desarrollo para la integración](#5--requisitos-del-entorno-de-desarrollo-para-la-integración)
+- [6.- Guía de la instalación y funcionamiento](#6--guía-de-la-instalación-y-funcionamiento)
+- [7.- Tecnologías utilizadas](#7--tecnologías-utilizadas)
+- [8.- Logs](#8--logs)
+- [9.- Bugs conocidos y posibles correciones](#9--bugs-conocidos-y-posibles-correciones)
+- [10.- F.A.Q.](#10--faq)
+- [11.- Información sobre derechos de autor](#11--información-sobre-derechos-de-autor)
+- [11.1 Términos de Uso](#111-términos-de-uso)
   - [Aceptación de los Términos del Servicio y Normas de la Comunidad que a continuación se detallan:](#aceptación-de-los-términos-del-servicio-y-normas-de-la-comunidad-que-a-continuación-se-detallan)
   - [Normas de la Comunidad](#normas-de-la-comunidad)
   - [Propiedad intelectual e industrial del Sitio Web](#propiedad-intelectual-e-industrial-del-sitio-web)
   - [Propiedad Intelectual de los Archivos de Usuarios](#propiedad-intelectual-de-los-archivos-de-usuarios)
   - [Copyright / Propiedad intelectual](#copyright--propiedad-intelectual)
   - [Exclusión de responsabilidad](#exclusión-de-responsabilidad)
-- [9.2 Política de privacidad](#92-política-de-privacidad)
+- [11.2 Política de privacidad](#112-política-de-privacidad)
   - [Advertencia para menores de edad](#advertencia-para-menores-de-edad)
   - [Legitimación para el tratamiento de tus datos](#legitimación-para-el-tratamiento-de-tus-datos)
   - [Datos recabados](#datos-recabados)
@@ -38,40 +33,50 @@ En la aplicación podrás buscar la serie o la película que desees, así como v
   - [¿A qué destinatarios se comunicarán tus datos?](#a-qué-destinatarios-se-comunicarán-tus-datos)
   - [¿Cuáles son tus derechos?](#cuáles-son-tus-derechos)
   - [Última Actualización: 11/11/2023](#última-actualización-11112023)
-- [9.3 Datos legales y contacto](#93-datos-legales-y-contacto)
+- [11.3 Datos legales y contacto](#113-datos-legales-y-contacto)
   - [Presencia en redes sociales externas:](#presencia-en-redes-sociales-externas)
   - [Dirección fiscal:](#dirección-fiscal)
-- [9.4 Política de coockies](#94-política-de-coockies)
+- [11.4 Política de coockies](#114-política-de-coockies)
   - [¿Qué son las cookies?](#qué-son-las-cookies)
   - [Tipos de cookies](#tipos-de-cookies)
   - [Desactivación y eliminación de cookies](#desactivación-y-eliminación-de-cookies)
   - [Cookies utilizadas](#cookies-utilizadas)
   - [Aceptación de la Política de cookies](#aceptación-de-la-política-de-cookies)
   - [Última Actualización: 11/11/2023](#última-actualización-11112023-1)
-- [Agradecimientos](#agradecimientos)
+  - [Datos del proyecto](#datos-del-proyecto)
+  - [Datos de autor](#datos-de-autor)
 
+## 1.- Resumen
 
+### 1.1- Descripción
+En la aplicación podrás buscar la serie o la película que desees, así como ver la cartelera o los próximos lanzamientos, además de por supuesto también poder ver su información a detalle, pudiendo crear tus propias listas.
 
-
-## Contribuir
+### 1.2- Contribuir
 Actualmente no se permite contribuciones de terceros.
 
-## Licencia
-Este proyecto está bajo la [Nombre de la Licencia]. Ver el archivo [LICENSE](LICENSE) para más detalles.
+### 1.3- Licencia
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-## Estado del Proyecto
-- **Versión:** 1.0.a
-- **Estado:** TERMINADO
+Esta licencia permite a los reutilizadores copiar y distribuir el material en cualquier medio o formato únicamente en forma no adaptada, únicamente con fines no comerciales y siempre que se otorgue la atribución al creador. CC BY-NC-ND incluye los siguientes elementos:
 
-## Capturas de Pantalla
+>   **BY:** El crédito debe ser otorgado al creador.
+>   **NC:** Sólo se permiten usos no comerciales de la obra.
+>   **ND:** No se permiten derivados ni adaptaciones de la obra.
 
+### 1.4- Estado del Proyecto
+
+[![Generic badge](https://img.shields.io/badge/ESTADO:-COMPLETADO-<COLOR>.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/VERSIÓN:-1.0.a-<COLOR>.svg)](https://shields.io/)
+
+
+## 2.- Capturas de Pantalla
 ![Screenshot_378](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/333c76e0-2e6b-48fa-93ef-c2f6a296224e)
 ![FireShot Capture 008 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/818a4124-f112-4e9b-94eb-d8d76b08b94e)
 ![FireShot Capture 007 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/77ad37ee-40fd-434e-9e40-03abe1589bf0)
 ![FireShot Capture 006 -  - 192 168 2 148](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/d879ac01-3a31-4bd8-8801-3efeb9621dea)
 ![Screenshot_379](https://github.com/AGuyLearningCode/pfc_2023/assets/113421777/950d9eec-84fa-4466-bc45-bee07f0f5b01)
 
-## 1.- Descripción general del proyecto
+
+## 3.- Descripción general del proyecto
 AVMaster, es un proyecto web que busca gestionar de manera automática todo el contenido audiovisual que desees consultar, de ahí su nombre "AudioVisual Master".
 
 La idea tras el proyecto es la de tener un buscador web y/o/u gestor ágil y flexible que le permita al usuario poder llevar un conteo del contenido que va viendo sin depender de terceros.
@@ -82,46 +87,40 @@ Con esa idea nace AVMaster, como un medio de gestión descentralizado, que le pe
 
 El objetivo es que puedas llevar un conteo de todas tus series, películas, documentales, libros e incluso videojuegos quedando un registro en el tiempo en tu propio sistema de un modo accesible e intuitivo.
 
-## 2.- Estado del proyecto
-En esta primera iteración del proyecto, solo se trata de una pequeña muestra funcional que funciona más como un producto mínimo viable, que como uno final.El objetivo aquí, es que se muestre un primer acercamiento al funcionamiento en la sección de películas, permitiéndose buscar una película o serie, y ver sus datos o consultar listados básicos de novedades o próximos lanzamientos.
+## 4.- Estado del proyecto
+En esta primera iteración del proyecto, solo se trata de una pequeña muestra funcional que funciona más como un producto mínimo viable, que como uno final.
 
-La idea es ir expandiendo el proyecto todo lo que se pueda en las próximas semanas para conseguir implementar funcionalidades como la listas de favoritos y vistos o, si da tiempo, implementar la posibilidad de trackear también videojuegos.
+El objetivo aquí, es que se muestre un primer acercamiento al funcionamiento en la sección de películas, permitiéndose buscar una película o serie, y ver sus datos o consultar listados básicos de novedades o próximos lanzamientos.
 
-
-## 3.- Requisitos del entorno de desarrollo para la integración
+## 5.- Requisitos del entorno de desarrollo para la integración
 Tener instalado React con Bootstrap y Chart.js de React
-***
-## 4.- Guía de la instalación y funcionamiento
-***
-## 5.- Tecnologías utilizadas
+
+## 6.- Guía de la instalación y funcionamiento
+Antes de empezar, verifica que tienes la última versión de React instalada en tu ordenador, de lo contrario instalala en tu ordenador.
+Una vez instalado, desde el terminal posicionate en la carpeta del proyecto.
+Ejecuta el comando: "npm start" para iniciar el servidor de React.
+Automáticamente se abrirá tu navegador y se cargará la plataforma con la dirección: http://localhost:3000/Cartelera
+
+## 7.- Tecnologías utilizadas
 Las tecnologías que se están usando para desarrollar AVMaster se listan a continuación:
-   
-    > Visual Studio Code
-    > HTML
-    > CSS
-    > Javascript
-    > React
-    > BootStrap + Librerías
 
-    > Github
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-***
-## 6.- Logs
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-Por su naturaleza dinámica y volátil, los logs han sido reubicados en el documento adjunto: LOGS.md
+## 8.- Logs
 
-***
-## 7.- Bugs conocidos y posibles correciones
+Por su naturaleza dinámica y volátil, los logs han sido reubicados en el documento adjunto: **LOGS.md**
 
-Por su naturaleza dinámica y volátil, los bugs han sido reubicados en el documento adjunto: BUGS_CONOCIDOS.md
+## 9.- Bugs conocidos y posibles correciones
 
-***
-## 8.- F.A.Q.
+Por su naturaleza dinámica y volátil, los bugs han sido reubicados en el documento adjunto: **BUGS_CONOCIDOS.md**
+
+## 10.- F.A.Q.
 
 Actualmente aún no se han recibido preguntas por parte de la comunidad.
 
-***
-## 9.- Información sobre derechos de autor y licencias
+## 11.- Información sobre derechos de autor
 
 Índice:
 
@@ -130,7 +129,7 @@ Actualmente aún no se han recibido preguntas por parte de la comunidad.
     3.- Datos legales y Contacto
     4.- Política de cookies
 
-## 9.1 Términos de Uso
+## 11.1 Términos de Uso
 
 NOTA: Los términos de uso ya quedan listos por si en el futuro se establece una versión web que permita usuarios, etc...
 
@@ -214,7 +213,7 @@ AVMaster no comparte ni hace propios, de manera enumerativa pero no limitativa, 
 
 El Sitio Web no permite las actividades infractoras de los derechos de autor en su Sitio Web, y AVMaster tiene la potestad de borrar todos los contenidos y envíos de usuario que infrinjan estos derechos. El Sitio Web se reserva el derecho de eliminar Contenido de Usuario sin previo aviso, en caso de que existan dudas acerca del cumplimiento de las presentes condiciones de uso.
 
-## 9.2 Política de privacidad
+## 11.2 Política de privacidad
 
 En esta declaración de privacidad te explicamos qué datos personales recogemos de nuestros usuarios y cómo los utilizamos. Te animamos a leer detenidamente estos términos antes de facilitar tus datos personales en esta web.
 
@@ -222,7 +221,7 @@ En esta declaración de privacidad te explicamos qué datos personales recogemos
 
 La utilización de la Página Web no está dirigida a menores de 14 años y, por consiguiente, éstos deberán abstenerse de facilitar cualquier información de carácter personal. En este sentido, AVMaster recomienda la utilización de su Página Web a personas mayores de 18 años. Si eres menor de trece años y has accedido a este sitio web sin avisar a tus padres no debes registrarte como usuario.
         
-A   VMaster se reserva el derecho a comprobar en cualquier momento la edad de los usuarios de su Página Web.
+AVMaster se reserva el derecho a comprobar en cualquier momento la edad de los usuarios de su Página Web.
 
 ### Legitimación para el tratamiento de tus datos
         
@@ -234,21 +233,21 @@ Le informamos que cuando a través de nuestra Página Web realice algún comenta
 
 ### Datos recabados
 
-    > Nombre de usuario: No es necesario que se corresponda a nombre y apellidos reales, solo lo necesitamos para que puedas acceder y para dirigirnos a ti de alguna forma.
+>   Nombre de usuario: No es necesario que se corresponda a nombre y apellidos reales, solo lo necesitamos para que puedas acceder y para dirigirnos a ti de alguna forma.
 
-    > Correo electrónico: Para poder ponernos en contacto con usted en caso de que sea necesario y la cual no se visualiza en el modo de perfil público.
+>   Correo electrónico: Para poder ponernos en contacto con usted en caso de que sea necesario y la cual no se visualiza en el modo de perfil público.
 
-    > Contraseña: Encriptada y a la que no tenemos acceso, tampoco se mostrará en modo de perfil público.
+>   Contraseña: Encriptada y a la que no tenemos acceso, tampoco se mostrará en modo de perfil público.
 
 ### ¿Con qué finalidad tratamos tus datos personales?
 
 En el caso que usted se haya registrado en nuestra página Web, las finalidades para las cuales trataremos sus Datos de carácter personal son:
             
-    > Gestionar su alta y sus preferencias de usuario, así como para prestarle los servicios de nuestra página Web que Usted haya solicitado. La base de legitimación que habilita a AVMaster a tratar sus datos para la presente finalidad es su solicitud de registro.
+>   Gestionar su alta y sus preferencias de usuario, así como para prestarle los servicios de nuestra página Web que Usted haya solicitado. La base de legitimación que habilita a AVMaster a tratar sus datos para la presente finalidad es su solicitud de registro.
             
-    > Gestionar las quejas y consultas sobre nuestra Página Web
+>   Gestionar las quejas y consultas sobre nuestra Página Web
 
-    > Centralización o interconexión entre los distintos productos y servicios de AVMaster.
+>   Centralización o interconexión entre los distintos productos y servicios de AVMaster.
         
 Para velar por el buen uso de nuestros servicios y productos, impidiendo que se lleven a cabo usos ilícitos o contrarios a nuestra política y valores, pudiendo incluso darle de baja como usuario registrado. La base legitimadora de dicho tratamiento es el cumplimiento por parte de AVMaster de determinadas obligaciones legales, así como el interés legítimo de proteger nuestros servicios y productos.
 
@@ -256,13 +255,13 @@ Para velar por el buen uso de nuestros servicios y productos, impidiendo que se 
             
 Si usted NO se ha registrado en nuestra página web
 
-    > Los datos personales relativos a sus hábitos de navegación o de consumo que podamos haber obtenido de terceros serán mantenidos mientras usted no revoque el consentimiento otorgado a estos terceros.
+>   Los datos personales relativos a sus hábitos de navegación o de consumo que podamos haber obtenido de terceros serán mantenidos mientras usted no revoque el consentimiento otorgado a estos terceros.
             
 Si usted se ha registrado en nuestra página web
 
-    > Los Datos personales que tratamos se conservarán mientras Usted no cancele su cuenta.
+>   Los Datos personales que tratamos se conservarán mientras Usted no cancele su cuenta.
                 
-    > Los datos personales recabados para velar por el buen uso de nuestros servicios o resolver una consulta o incidencia se conservarán hasta que se haya resuelto la consulta o incidencia correspondiente.
+>   Los datos personales recabados para velar por el buen uso de nuestros servicios o resolver una consulta o incidencia se conservarán hasta que se haya resuelto la consulta o incidencia correspondiente.
         
 ### ¿A qué destinatarios se comunicarán tus datos?
 
@@ -276,19 +275,19 @@ Para prestar los servicios necesarios para poder gestionar y ofrecerles a nuestr
 
 Las personas interesadas tienen derecho a:
 
-    > Derecho de acceso: Tienes derecho a confirmar que estamos tratando tus datos personales y, si en caso afirmativo, a obtener una copia de dichos datos e información completa sobre el tratamiento.
+>   Derecho de acceso: Tienes derecho a confirmar que estamos tratando tus datos personales y, si en caso afirmativo, a obtener una copia de dichos datos e información completa sobre el tratamiento.
 
-    > Derecho de rectificación: Tienes derecho a corregir errores, modificar los datos inexactos o incompletos y garantizar la certeza de la información objeto de tratamiento.
+>   Derecho de rectificación: Tienes derecho a corregir errores, modificar los datos inexactos o incompletos y garantizar la certeza de la información objeto de tratamiento.
                 
-    > Derecho de supresión:Tienes derecho a solicitar la supresión de tus datos sin dilación indebida, en caso que el tratamiento sea ilícito o la finalidad que motivó su tratamiento o recogida hubiera desaparecido.
+>   Derecho de supresión:Tienes derecho a solicitar la supresión de tus datos sin dilación indebida, en caso que el tratamiento sea ilícito o la finalidad que motivó su tratamiento o recogida hubiera desaparecido.
                 
-    > Derecho de limitación del tratamiento:Tienes derecho a solicitar la suspensión del tratamiento en caso de que éste sea ilícito o la exactitud de los datos haya sido impugnada.
+>   Derecho de limitación del tratamiento:Tienes derecho a solicitar la suspensión del tratamiento en caso de que éste sea ilícito o la exactitud de los datos haya sido impugnada.
                 
-    > Derecho de oposición:Tienes derecho a oponerte al tratamiento de tus datos cuando tenga por objeto el marketing directo o cuando deba cesar el tratamiento por motivos relacionados con tu situación personal, salvo que se acredite un interés legítimo o sea necesario para el ejercicio o defensa de reclamaciones.
+>   Derecho de oposición:Tienes derecho a oponerte al tratamiento de tus datos cuando tenga por objeto el marketing directo o cuando deba cesar el tratamiento por motivos relacionados con tu situación personal, salvo que se acredite un interés legítimo o sea necesario para el ejercicio o defensa de reclamaciones.
         
 ### Última Actualización: 11/11/2023
 
-## 9.3 Datos legales y contacto
+## 11.3 Datos legales y contacto
 
 Índice:
     1.- Presencia en redes sociales externas:
@@ -477,13 +476,12 @@ AVMaster no reconoce como válido el actual modelo de clasificación de redes so
         Zepeto:.........@AVMaster
 
 ###     Dirección fiscal:
+**AVMaster**
+c./RueDelPercebe, 13, Quinto C, 
 
-    AV Master
-    c./RueDelPercebe, 13, Quinto C, 
+Información actualizada a: 11/11/2023.
 
-    Información actualizada a: 11/11/2023.
-
-## 9.4 Política de coockies
+## 11.4 Política de coockies
 AVMaster informa acerca del uso de las cookies en sus páginas webs
 
 ###  ¿Qué son las cookies?
@@ -527,12 +525,7 @@ Tienes la opción de permitir, bloquear o eliminar las cookies instaladas en tu 
 La forma de deshabilitar las cookies es diferente para cada navegador, pero normalmente puede hacerse desde el menú Herramientas u Opciones. También puede consultarse el menú de Ayuda del navegador dónde puedes encontrar instrucciones. El usuario podrá en cualquier momento elegir qué cookies quiere que funcionen en este sitio web.
 
 Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:
-
-    · Microsoft Internet Explorer o Microsoft Edge: http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies
-    · Mozilla Firefox: http://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-sus-preferencia
-    · Chrome: https://support.google.com/accounts/answer/61416?hl=es
-    · Safari: http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/
-    · Opera: http://help.opera.com/Linux/10.60/es-ES/cookies.html
+    ![Vivaldi](https://img.shields.io/badge/Vivaldi-EF3939?style=for-the-badge&logo=Vivaldi&logoColor=white) ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white) ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white) ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white) ![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white) ![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white) ![Tor](https://img.shields.io/badge/Tor-7D4698?style=for-the-badge&logo=Tor-Browser&logoColor=white)
         
 Además, también puede gestionar el almacén de cookies en su navegador a través de herramientas como las siguientes
 
@@ -570,6 +563,14 @@ Si se desea realizar una solicitud de eliminación de contenido, queja DMCA o cu
 
 ***
 
-## Agradecimientos
+##12.- Agradecimientos
 
 Agradecimientos a la familia y amigos en estos momentos dificiles de desarrollo.
+
+##13.- Estadísticas
+
+### Datos del proyecto
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AGuyLearningCode)](https://github.com/AGuyLearningCode)
+
+### Datos de autor
+[![AGuyLearningCode's GitHub stats](https://github-readme-stats.vercel.app/api?username=AGuyLearningCode)](https://github.com/AGuyLearningCode/github-readme-stats)
