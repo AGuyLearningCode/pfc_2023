@@ -354,7 +354,7 @@ AVMaster no reconoce como válido el actual modelo de clasificación de redes so
         About.me:.......@AVMaster
         Ning:...........@AVMaster
         Meetup:.........@AVMaster
-        Podio:..........@AVMaster
+        Koo:............@AVMaster
 
     Fotografia/Imagen:
         DevianART:......@AVMaster
@@ -531,7 +531,7 @@ Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo me
         
 Además, también puede gestionar el almacén de cookies en su navegador a través de herramientas como las siguientes
 
-    ·   Ghostery: www.ghostery.com/
+![Ghostery Badge](https://img.shields.io/badge/Ghostery-00AEF0?logo=ghostery&logoColor=fff&style=for-the-badge)
         
 ###  Cookies utilizadas
 
