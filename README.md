@@ -43,6 +43,8 @@
   - [Cookies utilizadas](#cookies-utilizadas)
   - [Aceptación de la Política de cookies](#aceptación-de-la-política-de-cookies)
   - [Última Actualización: 11/11/2023](#última-actualización-11112023-1)
+- [12.- Agradecimientos](#12--agradecimientos)
+- [13.- Estadísticas](#13--estadísticas)
   - [Datos del proyecto](#datos-del-proyecto)
   - [Datos de autor](#datos-de-autor)
 
@@ -561,13 +563,11 @@ Ante esta información es posible llevar a cabo las siguientes acciones:
 
 Si se desea realizar una solicitud de eliminación de contenido, queja DMCA o cualquier otra duda, sugerencia o queja, envíanos un email a avmaster@avmaster.com y atenderemos tu solicitud con la mayor brevedad posible.
 
-***
-
-##12.- Agradecimientos
+## 12.- Agradecimientos
 
 Agradecimientos a la familia y amigos en estos momentos dificiles de desarrollo.
 
-##13.- Estadísticas
+## 13.- Estadísticas
 
 ### Datos del proyecto
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AGuyLearningCode)](https://github.com/AGuyLearningCode)
