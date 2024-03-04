@@ -386,7 +386,7 @@ export const banderaPais = {
         "icono": "🇭🇳",
         "bandera": "/imagenes/banderas/Honduras.svg.png"
     },
-    "Hong kong":{
+    "Hong Kong":{
         "icono": "🇭🇰",
         "bandera": "/imagenes/banderas/Hong_Kong.svg.png"
     },

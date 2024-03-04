@@ -305,3 +305,13 @@
 
 #   </DICIEMBRE>
 #   ============
+
+#   2024
+
+#   <MARZO>
+#   ===========
+#       (21) Lunes 04/11/2023: 
+*           ·   Resuelto error de carga en películas de Hong Kong.
+
+#   </MARZO>
+#   ============
