@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import logo from '../assets/imagenes/logo-web.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
@@ -39,7 +38,7 @@ const MainLayout = () => {
 
   return (
     <div>
-      <header className="header">
+      <header className="header"> 
         <Navbar expand="lg" className='w-100'>
             <Navbar.Brand href="/">
               <img
@@ -53,7 +52,6 @@ const MainLayout = () => {
                 <Row>
                   <Col xs={12} lg={6} >
                 <InputGroup>
-                  {/* {busqueda.length>0 && ( */}
                   <Form.Control
                     placeholder="Buscar..."
                     aria-label="Buscar"
@@ -61,7 +59,6 @@ const MainLayout = () => {
                     value={busqueda} onChange={cambioBusqueda} onKeyDown={busqueda.length>0 ? eventoIntroBusqueda : undefined}
                   />
                   <InputGroup.Text id="basic-addon1" onClick={busqueda.length>0 ? clickBotonSearch : undefined} className='cursor-pointer'>🔍</InputGroup.Text>
-                  {/*})}*/}
                 </InputGroup>
                 </Col>
                 <Col xs={12} lg={6}>
