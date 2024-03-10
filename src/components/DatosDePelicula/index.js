@@ -220,7 +220,7 @@ const DatosDePelicula = (props) => {
                         </Row>
                         <Row>
                             {/* PAIS */}
-                            <div className="mt-4">
+                            <div className="mt-4"> 
                                 <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <BanderaPais pais={e} key={e.iso_3166_1} /> })}</ul>
                             </div>
                         </Row>

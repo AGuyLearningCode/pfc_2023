@@ -1,6 +1,3 @@
-
-
-
 export const banderaPais = {
     "Afghanistan":{
         "icono": "🇦🇫",
@@ -1026,7 +1023,7 @@ export const banderaPais = {
 
 Object.freeze(banderaPais);
 
-// VERSIÓN YANKI:
+// VERSIÓN INGLESA:
 
 // "Afghanistan": "🇦🇫",
 // "Åland": "🇦🇽",

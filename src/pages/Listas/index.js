@@ -2,9 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
 import { ListasManager } from '../../helpers/ListasManager';
-import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import ItemFavorito from '../../components/ItemFavorito';
 
 const Listas = () => {

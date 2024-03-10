@@ -65,7 +65,7 @@ const MainLayout = () => {
                 <InputGroup>
                   <Row>
                   <Col xs={6} lg={12} >
-                  <Form.Check type="radio" label="Peliculas" value="peliculas" checked={tipo === "peliculas"} onChange={eventoCambiarTipo} />
+                  <Form.Check type="radio" label="Películas" value="peliculas" checked={tipo === "peliculas"} onChange={eventoCambiarTipo} />
                   </Col>
                   <Col xs={6} lg={12} >
                   <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo} />
@@ -77,7 +77,7 @@ const MainLayout = () => {
               </Form>
               <Nav className={styles.whiteLink}>
                 <Nav.Link href="/Cartelera">Cartelera</Nav.Link>
-                <Nav.Link href="/Proximamente">Proximamente</Nav.Link>
+                <Nav.Link href="/Proximamente">Próximamente</Nav.Link>
                 <Nav.Link href="/Listas">Listas</Nav.Link>
 
               </Nav>

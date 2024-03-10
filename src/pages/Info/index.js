@@ -39,9 +39,6 @@ const Info = () => {
 
   // https://api.themoviedb.org/3/movie/{movie_id}/credits
 
-
-
-
   return (
     <div>
       <div className={styles.info}>
