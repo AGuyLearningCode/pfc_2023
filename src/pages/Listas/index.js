@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
 import { ListasManager } from '../../helpers/ListasManager';
 import ItemFavorito from '../../components/ItemFavorito';
-
+/**
+ * Aquí se determina el diseño de la página de favoritos.
+ */
 const Listas = () => {
     const listasManager = new ListasManager();
     const [favoritos, setFavoritos] = useState(listasManager.getFavoritos());

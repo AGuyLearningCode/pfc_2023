@@ -3,7 +3,10 @@ import DatosDePelicula from '../../components/DatosDePelicula';
 import { useParams } from 'react-router-dom';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './info.module.css';
-
+/**
+ * Pagina con el diseño de los detalles de una pelicula o serie.
+ * 
+ */
 const Info = () => {
 
   const { tipo, idPelicula } = useParams();

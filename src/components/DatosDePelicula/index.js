@@ -18,6 +18,9 @@ ChartJS.register(
     Legend
 );
 
+/**
+ * Este componente determina el diseño de la página en donde se muestran los datos del item a cargar desde la API.
+ */
 const DatosDePelicula = (props) => {
     // VARIABLES DE ESTADO
     const [recaudacion, setRecaudacion] = useState({

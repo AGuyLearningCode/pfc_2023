@@ -6,6 +6,10 @@ import styles from './proximamente.module.css';
 import { mapPelicula, mapSerieProximamente } from '../../helpers/mapHelpers';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
 
+
+/**
+ * Aquí se determina el diseño de la página que muestro los items que se lanzarán próximamente.
+ */
 const Proximamente = () => {
 
     const [proxima, setProxima] = useState([]);

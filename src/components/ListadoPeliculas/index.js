@@ -3,6 +3,11 @@ import styles from './listadoPeliculas.module.css';
 import ItemResultadoBusqueda from '../ItemResultadoBusqueda';
 import { useNavigate } from "react-router-dom";
 
+
+/*
+ * En este componente se determina una cuadrícula sobre la cual cargar todos los resultados
+ * de la búsqueda.
+ */
 const ListadoPeliculas = (props) => {
     const navigate = useNavigate();
     return (

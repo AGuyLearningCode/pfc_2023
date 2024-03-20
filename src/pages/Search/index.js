@@ -4,12 +4,12 @@ import { useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
 import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
-
+/**
+ * Aquí se determina el diseño de la página de resultados.
+ */
 const Search = () => {
   const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
   const [seriesEncontradas, setSeriesEncontradas] = useState([])
-  const [busqueda, setBusqueda] = useState("")
-
   const { tipo, consulta } = useParams();
   const [resultadoFinal, setResultadoFinal] = useState([]);
 
