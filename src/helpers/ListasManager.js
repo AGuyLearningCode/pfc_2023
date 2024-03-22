@@ -1,5 +1,9 @@
 const LISTA_FAVORITOS_KEY = "favs"
 
+
+/**
+ * Es un objeto que sirve para gestionar los favoritos en el LocalStorage del navegador del usuario.
+ */
 class ListasManager{
 
     getFavoritos() {

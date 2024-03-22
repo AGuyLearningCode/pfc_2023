@@ -1,3 +1,7 @@
+/*
+* En esta constante se determinan las equidades correspondientes a cada uno de los paises
+* posibles que tenga el item.
+*/
 export const banderaPais = {
     "Afghanistan":{
         "icono": "🇦🇫",

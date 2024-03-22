@@ -2,7 +2,17 @@ import React from 'react';
 import styles from "./ItemResultadoBusqueda.module.css"
 import placeholder from '../../assets/imagenes/Item-placeholder_3.png'
 import degradado from '../../assets/imagenes/item-degradado.png'
+
+
+/**
+ * En este componente se diseña cómo se muestran cada uno de los elementos resultantes de la búsqueda.
+ * Cargándose el wallpaper del item si lo hay en la API y sino, mostrando una imagen placeholder.
+ * Y aparte también se carga una imagen transparente con un degradado para que el título y el año
+ * se lean mejor.
+ */
 const ItemResultadoBusqueda = (props) => {
+
+  // Función auxiliar para devolver la fecha según el formato solicitado.
   const dateFormat = (date) => {
     if(!date){
       return ""

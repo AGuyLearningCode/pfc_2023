@@ -1,3 +1,9 @@
+
+/**
+ * Estas son funciones de mapeo(filtrado de campos) para que 
+ * nos entregue los valores solo con los campos que se usan 
+ * en la función maps de los arrays de películas/series.
+ */
 const mapPelicula = (pelicula) =>({
     "original_title": pelicula.title,
     "release_date": pelicula.release_date,

@@ -2,6 +2,10 @@ import React from 'react'
 import { banderaPais } from '../../helpers/banderasPaises';
 import styles from './BanderaPais.module.css'
 
+/**
+ * Mostramos una imagen con la badera del pais.
+ * Lo usamos principalmente en la pantalla de descripcion de la pelicula para mostrar el pais de origan.
+ */
 const BanderaPais = ({ pais }) => {
     let bandera;
     let icono;

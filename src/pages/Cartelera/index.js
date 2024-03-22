@@ -7,10 +7,14 @@ import { useEffect } from 'react';
 import styles from './cartelera.module.css';
 import ListadoPeliculas from '../../components/ListadoPeliculas';
 import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
+
+/**
+ * Aquí se determina el diseño de la página donde se muestran las series/películas que están
+ * en emisión/cartelera actualmente.
+ */
 const Cartelera = () => {
 
     const [peliculas, setPeliculas] = useState([]);
-    const navigate = useNavigate();
     const [tipo, setTipo]=useState(`p`);
 
     useEffect(() => {

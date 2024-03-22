@@ -3,10 +3,18 @@ import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
 import { ListasManager } from '../../helpers/ListasManager';
 import ItemFavorito from '../../components/ItemFavorito';
-
+/**
+ * Aquí se determina el diseño de la página de favoritos.
+ */
 const Listas = () => {
     const listasManager = new ListasManager();
     const [favoritos, setFavoritos] = useState(listasManager.getFavoritos());
+    /*
+    filtrosPeliculas y filtrosSeries sirven para listar todas las categorías de películas y series que tenemos
+    disponibles de acuerdo con nuestros favoritos.
+    filtrosActivosPeliculas y filtrosActivosSeries son las listas en donde se almacenan cuales 
+    son las categorías que el usuario está filtrando.
+    */
     const [filtrosPeliculas, setFiltrosPeliculas] = useState([])
     const [filtrosActivosPeliculas, setFiltrosActivosPeliculas] = useState([])
     const [filtrosSeries, setFiltrosSeries] = useState([])

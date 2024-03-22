@@ -9,7 +9,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import styles from './mainlayout.module.css'
 import { Col, Row } from 'react-bootstrap';
 
-
+/**
+ * Este componente determina el diseño de la barra superior de la web.
+ * Gran parte del diseño es de la barra de la cabecera donde hay la búsqueda y el menúm
+ * sin embargo, donde está el outlet se meterá la parte que falta de la página.
+ * El layout es común para todas las páginas, y de echo, es lo primero que se carga en ellas.
+ */
 const MainLayout = () => {
   // VARIABLES DE ESTADO
   const navigate = useNavigate();
@@ -87,6 +92,7 @@ const MainLayout = () => {
       </header>
       <hr />
       <main>
+        {/* Aquí viene el contenido principal de la página. */ }
         <Outlet />
       </main>
     </div>
