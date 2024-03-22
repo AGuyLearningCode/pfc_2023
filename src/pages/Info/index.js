@@ -9,6 +9,9 @@ import styles from './info.module.css';
  */
 const Info = () => {
 
+  /* Usamos UseParams para recibir el tipo de item que has solicitado y su identificador a través
+  *  de la URL.
+  */
   const { tipo, idPelicula } = useParams();
 
   const [pelicula, setPelicula] = useState({});
@@ -39,8 +42,6 @@ const Info = () => {
     }
     
   }, [idPelicula])
-
-  // https://api.themoviedb.org/3/movie/{movie_id}/credits
 
   return (
     <div>

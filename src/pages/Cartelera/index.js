@@ -15,7 +15,6 @@ import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 const Cartelera = () => {
 
     const [peliculas, setPeliculas] = useState([]);
-    const navigate = useNavigate();
     const [tipo, setTipo]=useState(`p`);
 
     useEffect(() => {

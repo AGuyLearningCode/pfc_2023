@@ -13,6 +13,9 @@ const Search = () => {
   const { tipo, consulta } = useParams();
   const [resultadoFinal, setResultadoFinal] = useState([]);
 
+  /**
+   * Al encontrar películas o series cambiamos la variable de estado y por ende cambia el estado en la página.
+   */
   useEffect(() => {
     if (peliculasEncontradas.length) {
       setResultadoFinal(peliculasEncontradas);
@@ -21,6 +24,9 @@ const Search = () => {
     }
   }, [seriesEncontradas, peliculasEncontradas])
 
+  /**
+   * Aquí es donde hacemos la búsqueda cada vez que realizamos una consulta nueva.
+   */
   useEffect(() => {
     const params = {
       query: consulta,

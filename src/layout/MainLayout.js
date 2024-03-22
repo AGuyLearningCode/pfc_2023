@@ -92,6 +92,7 @@ const MainLayout = () => {
       </header>
       <hr />
       <main>
+        {/* Aquí viene el contenido principal de la página. */ }
         <Outlet />
       </main>
     </div>

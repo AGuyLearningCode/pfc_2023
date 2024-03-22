@@ -6,8 +6,12 @@ import MainLayout from "./layout/MainLayout";
 import Cartelera from "./pages/Cartelera";
 import Proximamente from "./pages/Proximamente";
 import Lista from "./pages/Listas";
+
+/**
+ * Punto de entrada de la aplicación. Todas las páginas pasan por aquí.
+ */
 function App() {
-  // JSX
+  // Queda pendiente poner la página de error.
   return (
     <div className="App">
       <BrowserRouter>

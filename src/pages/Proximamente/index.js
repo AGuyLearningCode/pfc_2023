@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
@@ -13,7 +12,6 @@ import ListadoPeliculas from '../../components/ListadoPeliculas';
 const Proximamente = () => {
 
     const [proxima, setProxima] = useState([]);
-    const navigate = useNavigate();
     const [tipo, setTipo] = useState(`p`);
 
     useEffect(() => {

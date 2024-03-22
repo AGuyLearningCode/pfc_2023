@@ -11,6 +11,8 @@ import degradado from '../../assets/imagenes/item-degradado.png'
  * se lean mejor.
  */
 const ItemResultadoBusqueda = (props) => {
+
+  // Función auxiliar para devolver la fecha según el formato solicitado.
   const dateFormat = (date) => {
     if(!date){
       return ""
