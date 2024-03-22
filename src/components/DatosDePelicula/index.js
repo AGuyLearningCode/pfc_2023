@@ -7,7 +7,7 @@ import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler,
 import { Radar } from 'react-chartjs-2';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { ListasManager } from '../../helpers/ListasManager';
-import BanderaPais from '../BanderaPais';
+import CountryFlag from '../CountryFlag';
 
 /*Llamada de registro de ChartJS
 * Este es el único componente que usa el ChartJS y el método register debe ser llamado solo una
@@ -232,7 +232,7 @@ const DatosDePelicula = (props) => {
                         <Row>
                             {/* PAIS */}
                             <div className="mt-4"> 
-                                <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <BanderaPais pais={e} key={e.iso_3166_1} /> })}</ul>
+                                <p>País: </p>  <ul>{props.pelicula.production_countries && props.pelicula.production_countries.map(e => { return <CountryFlag country={e} key={e.iso_3166_1} /> })}</ul>
                             </div>
                         </Row>
                         <Row>
