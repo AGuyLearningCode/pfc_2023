@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import DatosDePelicula from '../../components/DatosDePelicula';
+import MovieData from '../../components/MovieData';
 import { useParams } from 'react-router-dom';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './info.module.css';
@@ -46,7 +46,7 @@ const Info = () => {
   return (
     <div>
       <div className={styles.info}>
-        <DatosDePelicula pelicula={pelicula} actores={actores} tipo={tipo}/>
+        <MovieData movie ={pelicula} actores={actores} type={tipo}/>
       </div>
     </div>
   )
