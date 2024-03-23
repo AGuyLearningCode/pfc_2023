@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
 import { ListasManager } from '../../helpers/ListasManager';
-import ItemFavorito from '../../components/ItemFavorito';
+import ItemFavorito from '../../components/FavouriteItem';
 /**
  * Aquí se determina el diseño de la página de favoritos.
  */

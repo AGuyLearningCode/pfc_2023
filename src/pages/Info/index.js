@@ -46,7 +46,7 @@ const Info = () => {
   return (
     <div>
       <div className={styles.info}>
-        <MovieData movie ={pelicula} actores={actores} type={tipo}/>
+        <MovieData movie ={pelicula} actors={actores} type={tipo}/>
       </div>
     </div>
   )

@@ -316,7 +316,7 @@ const MovieData = (props) => {
                             <div className={styles.director}>
                                 <h2> {
                                     props.type === "p" ?
-                                        (props.actores.crew && props.actores.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
+                                        (props.actors.crew && props.actors.crew.filter(a => a.job === "Director").map(e => `Director: ${e.name}`).join(", "))
                                         :
                                         props.movie.created_by && `Creador: ${props.movie.created_by.map(p => `${p.name}`).join(", ")}`
                                 }</h2>
@@ -333,9 +333,9 @@ const MovieData = (props) => {
                         </Row>
                         <Row>
                             <details>
-                                <summary>Actores</summary>
+                                <summary>actors</summary>
                                 <ul>
-                                    {props.actores.cast && props.actores.cast.map(
+                                    {props.actors.cast && props.actors.cast.map(
                                         e => {
                                             return <li key={e.id}>
                                                 {e.name}
