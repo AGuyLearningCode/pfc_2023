@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import styles from './cartelera.module.css';
 import MovieList from '../../components/MovieList';
-import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
+import { mapMovie, mapSeries } from '../../helpers/mapHelpers';
 
 /**
  * Aquí se determina el diseño de la página donde se muestran las series/películas que están
@@ -18,11 +18,11 @@ const Cartelera = () => {
     useEffect(() => {
         if (tipo==="p"){
             getURL("movie/now_playing").then(resultado => {
-                setPeliculas(resultado.results.map(mapPelicula));
+                setPeliculas(resultado.results.map(mapMovie));
             });
         }else if(tipo==="s"){
             getURL("tv/on_the_air").then(resultado => {
-                setPeliculas(resultado.results.map(mapSerie));
+                setPeliculas(resultado.results.map(mapSeries));
             });
         }
         

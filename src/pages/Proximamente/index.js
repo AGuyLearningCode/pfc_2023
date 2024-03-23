@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
-import { mapPelicula, mapSerieProximamente } from '../../helpers/mapHelpers';
+import { mapMovie, mapSeriesCommingSoon } from '../../helpers/mapHelpers';
 import MovieList from '../../components/MovieList';
 
 
@@ -17,7 +17,7 @@ const Proximamente = () => {
     useEffect(() => {
         if (tipo === "p") {
             getURL("movie/upcoming").then(resultado => {
-                setProxima(resultado.results.map(mapPelicula));
+                setProxima(resultado.results.map(mapMovie));
             });
         } else if (tipo === "s") {
             const fechaActual = new Date();
@@ -30,7 +30,7 @@ const Proximamente = () => {
             }).then(resultado => {
                 return Promise.all(resultado.results.map(serie => getURL(`tv/${serie.id}`))  )                
             }).then(resultado => {
-                setProxima(resultado.map(mapSerieProximamente));
+                setProxima(resultado.map(mapSeriesCommingSoon));
             });
         }
 

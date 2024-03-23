@@ -3,7 +3,7 @@
  * Esta es una función auxiliar para hacer las peticiones a los Endpoints de TheMovieDB.com
  */
 export const getURL = (endpoint, params = {}) => {
-    const query = Object.entries(params).map(([clave, valor]) => `${clave}=${valor}`).join("&")
+    const query = Object.entries(params).map(([key, value]) => `${key}=${value}`).join("&")
 
     return fetch(`https://api.themoviedb.org/3/${endpoint}?language=es&${query}`, {
         headers: {

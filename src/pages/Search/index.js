@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
 import MovieList from '../../components/MovieList';
-import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
+import { mapMovie, mapSeries } from '../../helpers/mapHelpers';
 /**
  * Aquí se determina el diseño de la página de resultados.
  */
@@ -37,14 +37,14 @@ const Search = () => {
     if (tipo === "peliculas") {
       getURL(`search/movie`, params)
         .then(data => {
-          let peliculas = data.results.map(mapPelicula);
+          let peliculas = data.results.map(mapMovie);
           setPeliculasEncontradas(peliculas);
           setSeriesEncontradas([]);
         })
     } else if (tipo === "serie") {
       getURL(`search/tv`, params)
         .then(data => {
-          let series = data.results.map(mapSerie);
+          let series = data.results.map(mapSeries);
           setSeriesEncontradas(series);
           setPeliculasEncontradas([]);
         })
