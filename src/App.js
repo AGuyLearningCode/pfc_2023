@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Navigate to="Cartelera" />} />
             <Route path='Buscador/:tipo/:consulta' element={<Search />} />
-            <Route path='Info/:tipo/:idPelicula' element={<Info />} />
+            <Route path='Info/:type/:movieID' element={<Info />} />
             <Route path='Cartelera' element={<Billboard />} />
             <Route path='Proximamente' element={<Proximamente />} />
             <Route path='Listas' element={<Lista/>} />
