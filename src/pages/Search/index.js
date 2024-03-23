@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { getURL } from '../../helpers/fetchHelpers';
-import ListadoPeliculas from '../../components/ListadoPeliculas';
+import MovieList from '../../components/MovieList';
 import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 /**
  * Aquí se determina el diseño de la página de resultados.
@@ -55,7 +55,7 @@ const Search = () => {
   return (
 
 
-    <ListadoPeliculas peliculas={resultadoFinal} tipo={tipo} dateFormat="year" />
+    <MovieList movies={resultadoFinal} type={tipo} dateFormat="year" />
 
   )
 }

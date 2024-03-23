@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getURL } from '../../helpers/fetchHelpers';
 import styles from './proximamente.module.css';
 import { mapPelicula, mapSerieProximamente } from '../../helpers/mapHelpers';
-import ListadoPeliculas from '../../components/ListadoPeliculas';
+import MovieList from '../../components/MovieList';
 
 
 /**
@@ -49,7 +49,7 @@ const Proximamente = () => {
             <label><input type="radio" value="s" checked={tipo == "s"} onChange={cambioTipo}></input> Series</label>
             <br />
             <br />
-            <ListadoPeliculas peliculas={proxima} tipo={tipo === "p" ? "peliculas" : "series"}></ListadoPeliculas>
+            <MovieList movies={proxima} type={tipo === "p" ? "peliculas" : "series"}></MovieList>
         </div>
     )
 }

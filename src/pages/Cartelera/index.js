@@ -3,7 +3,7 @@ import { getURL } from '../../helpers/fetchHelpers'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import styles from './cartelera.module.css';
-import ListadoPeliculas from '../../components/ListadoPeliculas';
+import MovieList from '../../components/MovieList';
 import { mapPelicula, mapSerie } from '../../helpers/mapHelpers';
 
 /**
@@ -39,7 +39,7 @@ const Cartelera = () => {
             <label><input type="radio" value="s" checked={tipo=="s"} onChange={cambioTipo}></input> Series</label>
             <br/>
             <br/>
-            <ListadoPeliculas peliculas={peliculas} tipo={tipo==="p" ? "peliculas" : "series"}></ListadoPeliculas>
+            <MovieList movies={peliculas} type={tipo==="p" ? "peliculas" : "series"}></MovieList>
         </div>
     )
 }
