@@ -22,7 +22,7 @@ function App() {
             <Route path='Info/:type/:movieID' element={<Info />} />
             <Route path='Cartelera' element={<Billboard />} />
             <Route path='Proximamente' element={<ComingSoon />} />
-            <Route path='Listas' element={<Favourites/>} />
+            <Route path='Favoritos' element={<Favourites/>} />
           </Route>
         </Routes>
       </BrowserRouter>

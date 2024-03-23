@@ -83,7 +83,7 @@ const MainLayout = () => {
               <Nav className={styles.whiteLink}>
                 <Nav.Link href="/Cartelera">Cartelera</Nav.Link>
                 <Nav.Link href="/Proximamente">Próximamente</Nav.Link>
-                <Nav.Link href="/Listas">Listas</Nav.Link>
+                <Nav.Link href="/Favoritos">Favoritos</Nav.Link>
 
               </Nav>
             </Navbar.Collapse>
