@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
 import { ListasManager } from '../../helpers/ListasManager';
-import ItemFavorito from '../../components/FavouriteItem';
+import FavouriteItem from '../../components/FavouriteItem';
 /**
  * Aquí se determina el diseño de la página de favoritos.
  */
@@ -70,7 +70,7 @@ const Listas = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favoritos.filter(f => f.tipo === "p").filter(p => filtrosActivosPeliculas.length === 0 || filtrosActivosPeliculas.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <ItemFavorito favorito={f} eliminarFavorito={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
+                {favoritos.filter(f => f.tipo === "p").filter(p => filtrosActivosPeliculas.length === 0 || filtrosActivosPeliculas.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
             </div>
             <br/>
             <h1>Series Favoritas</h1>
@@ -81,7 +81,7 @@ const Listas = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favoritos.filter(f => f.tipo === "s").filter(p => filtrosActivosSeries.length === 0 || filtrosActivosSeries.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <ItemFavorito favorito={f} eliminarFavorito={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
+                {favoritos.filter(f => f.tipo === "s").filter(p => filtrosActivosSeries.length === 0 || filtrosActivosSeries.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={eliminarFavorito} key={ `${f.tipo}${f.id}`} />)}
             </div>
 
         </div>

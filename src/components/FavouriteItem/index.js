@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import itemplaceholder from '../../assets/imagenes/Item-placeholder_3.png';
-import styles from './ItemFavorito.module.css';
+import styles from './FavouriteItem.module.css';
 
 
 /**
@@ -11,21 +11,20 @@ import styles from './ItemFavorito.module.css';
  * Este componente sirve tanto para ver la información del item como para 
  * dar la opción de eliminarlo de la lista de favoritos.
  */
-const ItemFavorito = ({ favorito, eliminarFavorito }) => {
+const FavouriteItem = ({ favourite, deleteFavourite }) => {
     return (
-        <div key={favorito.id} className={styles.favoritoId}>
-            <Link to={`/Info/${favorito.tipo}/${favorito.id}`} className={styles.noDeco}>
-                <img src={favorito.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + favorito.poster : itemplaceholder} />
+        <div key={favourite.id} className={styles.favouriteID}>
+            <Link to={`/Info/${favourite.tipo}/${favourite.id}`} className={styles.noDeco}>
+                <img src={favourite.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + favourite.poster : itemplaceholder} />
                 </Link>
-                <div className={styles.titulo}>
-                <Link to={`/Info/${favorito.tipo}/${favorito.id}`} className={styles.noDeco}>
-                    {favorito.nombre}
+                <div className={styles.title}>
+                <Link to={`/Info/${favourite.tipo}/${favourite.id}`} className={styles.noDeco}>
+                    {favourite.nombre}
                     </Link><br />
-                    <Button onClick={() => eliminarFavorito(favorito)} className='mt-2'>Eliminar</Button>
+                    <Button onClick={() => deleteFavourite(favourite)} className='mt-2'>Eliminar</Button>
                 </div>
-            
             </div>
     )
 }
 
-export default ItemFavorito
+export default FavouriteItem
