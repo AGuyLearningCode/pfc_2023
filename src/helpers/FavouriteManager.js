@@ -16,7 +16,7 @@ class FavouriteManager{
 
     isFavourite(favourite) {
         const favourites = this.getFavourites();
-        const filterList = favourites.filter(p => p.id === favourite.id && p.tipo === favourite.tipo)
+        const filterList = favourites.filter(p => p.id === favourite.id && p.type === favourite.type)
         return filterList.length > 0
     }
 
@@ -34,7 +34,7 @@ class FavouriteManager{
         if(!this.isFavourite(favourite)){
             return
         }
-        const favourites = this.getFavourites().filter(p => p.tipo != favourite.tipo || p.id != favourite.id)
+        const favourites = this.getFavourites().filter(p => p.type != favourite.type || p.id != favourite.id)
         localStorage[FAVOURITE_LIST_KEY] = JSON.stringify(favourites)
     }
 }

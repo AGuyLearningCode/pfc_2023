@@ -14,12 +14,12 @@ import styles from './FavouriteItem.module.css';
 const FavouriteItem = ({ favourite, deleteFavourite }) => {
     return (
         <div key={favourite.id} className={styles.favouriteID}>
-            <Link to={`/Info/${favourite.tipo}/${favourite.id}`} className={styles.noDeco}>
+            <Link to={`/Info/${favourite.type}/${favourite.id}`} className={styles.noDeco}>
                 <img src={favourite.poster ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + favourite.poster : itemplaceholder} />
                 </Link>
                 <div className={styles.title}>
-                <Link to={`/Info/${favourite.tipo}/${favourite.id}`} className={styles.noDeco}>
-                    {favourite.nombre}
+                <Link to={`/Info/${favourite.type}/${favourite.id}`} className={styles.noDeco}>
+                    {favourite.name}
                     </Link><br />
                     <Button onClick={() => deleteFavourite(favourite)} className='mt-2'>Eliminar</Button>
                 </div>

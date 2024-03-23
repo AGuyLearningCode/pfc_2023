@@ -79,8 +79,12 @@ const MovieData = (props) => {
      */
     const toggleFavorito = (evt) => {
         const listManager = new FavouriteManager();
-        const favourite = { tipo: props.type, id: props.movie.id, nombre: props.movie.title || props.movie.name,
-             poster: props.movie.poster_path, generos: props.movie.genres }
+        const favourite = { 
+            type: props.type, 
+            id: props.movie.id, 
+            name: props.movie.title || props.movie.name,
+            poster: props.movie.poster_path, 
+            genrers: props.movie.genres }
         if (!isFavourite) {
             listManager.insertFavourite(favourite)
         } else {
@@ -95,7 +99,7 @@ const MovieData = (props) => {
             return;
         }
         const listManager = new FavouriteManager();
-        const favourite = { tipo: props.type, id: props.movie.id }
+        const favourite = { type: props.type, id: props.movie.id }
         setIsFavourite(listManager.isFavourite(favourite))
     }, [props.movie])
 
@@ -292,7 +296,7 @@ const MovieData = (props) => {
                         */}
                         <Row>
                             <div className={styles.title}>
-                                <h1 className="titulo_nombre">{
+                                <h1>{
                                     props.type === "p" ?
                                         props.movie.title
                                         :
@@ -307,7 +311,7 @@ const MovieData = (props) => {
                         </Row>
                         <Row>
                             <div>
-                                <h1 className="titulo_ano">
+                                <h1>
                                     [{props.type === "p" ? props.movie.release_date : props.movie.first_air_date}]
                                 </h1>
                             </div>

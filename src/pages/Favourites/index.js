@@ -22,10 +22,10 @@ const Favourites = () => {
 
 
     useEffect(() => {
-        const movieGenrer = favourites.filter(p => p.tipo === "p").flatMap((f) => f.generos).filter((g, i, a) => a.slice(0, i).map(e => e.id).indexOf(g.id) === -1)
+        const movieGenrer = favourites.filter(p => p.type === "p").flatMap((f) => f.genrers).filter((g, i, a) => a.slice(0, i).map(e => e.id).indexOf(g.id) === -1)
         setMovieFilters(movieGenrer)
 
-        const seriesGenrer = favourites.filter(p => p.tipo === "s").flatMap((f) => f.generos).filter((g, i, a) => a.slice(0, i).map(e => e.id).indexOf(g.id) === -1)
+        const seriesGenrer = favourites.filter(p => p.type === "s").flatMap((f) => f.genrers).filter((g, i, a) => a.slice(0, i).map(e => e.id).indexOf(g.id) === -1)
         setSeriesFilters(seriesGenrer)
 
     }, [favourites])
@@ -70,7 +70,7 @@ const Favourites = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favourites.filter(f => f.tipo === "p").filter(p => activeMovieFilters.length === 0 || activeMovieFilters.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={deleteFavourite} key={ `${f.tipo}${f.id}`} />)}
+                {favourites.filter(f => f.type === "p").filter(p => activeMovieFilters.length === 0 || activeMovieFilters.filter(f => p.genrers.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={deleteFavourite} key={ `${f.type}${f.id}`} />)}
             </div>
             <br/>
             <h1>Series Favoritas</h1>
@@ -81,7 +81,7 @@ const Favourites = () => {
                 }
             </div>
             <div className="d-flex flex-wrap">
-                {favourites.filter(f => f.tipo === "s").filter(p => seriesActiveFilters.length === 0 || seriesActiveFilters.filter(f => p.generos.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={deleteFavourite} key={ `${f.tipo}${f.id}`} />)}
+                {favourites.filter(f => f.type === "s").filter(p => seriesActiveFilters.length === 0 || seriesActiveFilters.filter(f => p.genrers.map(p => p.id).includes(f)).length > 0).map(f => <FavouriteItem favourite={f} deleteFavourite={deleteFavourite} key={ `${f.type}${f.id}`} />)}
             </div>
 
         </div>
