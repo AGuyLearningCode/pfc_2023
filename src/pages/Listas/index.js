@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import styles from './listas.module.css';
-import { ListasManager } from '../../helpers/ListasManager';
+import { FavouriteManager } from '../../helpers/FavouriteManager';
 import FavouriteItem from '../../components/FavouriteItem';
 /**
  * Aquí se determina el diseño de la página de favoritos.
  */
 const Listas = () => {
-    const listasManager = new ListasManager();
-    const [favoritos, setFavoritos] = useState(listasManager.getFavoritos());
+    const listasManager = new FavouriteManager();
+    const [favoritos, setFavoritos] = useState(listasManager.getFavourites());
     /*
     filtrosPeliculas y filtrosSeries sirven para listar todas las categorías de películas y series que tenemos
     disponibles de acuerdo con nuestros favoritos.
@@ -31,8 +31,8 @@ const Listas = () => {
     }, [favoritos])
 
     const eliminarFavorito = (favorito) => {
-        listasManager.eliminarFavorito(favorito)
-        setFavoritos(listasManager.getFavoritos())
+        listasManager.deleteFavourite(favorito)
+        setFavoritos(listasManager.getFavourites())
     }
 
     const cambiarFiltroPelicula = (id) => {

@@ -6,7 +6,7 @@ import styles from './movieData.module.css';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend, } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { ListasManager } from '../../helpers/ListasManager';
+import { FavouriteManager } from '../../helpers/FavouriteManager';
 import CountryFlag from '../CountryFlag';
 
 /*Llamada de registro de ChartJS
@@ -78,13 +78,13 @@ const MovieData = (props) => {
      * @param {*} evt 
      */
     const toggleFavorito = (evt) => {
-        const listManager = new ListasManager();
+        const listManager = new FavouriteManager();
         const favourite = { tipo: props.type, id: props.movie.id, nombre: props.movie.title || props.movie.name,
              poster: props.movie.poster_path, generos: props.movie.genres }
         if (!isFavourite) {
-            listManager.insertarFavorito(favourite)
+            listManager.insertFavourite(favourite)
         } else {
-            listManager.eliminarFavorito(favourite)
+            listManager.deleteFavourite(favourite)
         }
 
         setIsFavourite(!isFavourite)
@@ -94,9 +94,9 @@ const MovieData = (props) => {
         if (!props.movie) {
             return;
         }
-        const listManager = new ListasManager();
+        const listManager = new FavouriteManager();
         const favourite = { tipo: props.type, id: props.movie.id }
-        setIsFavourite(listManager.esFavorito(favourite))
+        setIsFavourite(listManager.isFavourite(favourite))
     }, [props.movie])
 
 
