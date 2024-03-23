@@ -18,27 +18,27 @@ import { Col, Row } from 'react-bootstrap';
 const MainLayout = () => {
   // VARIABLES DE ESTADO
   const navigate = useNavigate();
-  const [busqueda, setBusqueda] = useState("");
-  const [tipo, setTipo] = useState("peliculas");
+  const [research, setResearch] = useState("");
+  const [type, seType] = useState("peliculas");
   // FUNCIONES
-  const cambioBusqueda = evt => {
-    const elemento = evt.currentTarget;
-    const nuevoValor = elemento.value;
-    setBusqueda(nuevoValor);
+  const searchChange = evt => {
+    const element = evt.currentTarget;
+    const newValue = element.value;
+    setResearch(newValue);
   }
-  const eventoIntroBusqueda = (evt) => {
+  const enterSearchEvent = (evt) => {
     if (evt.keyCode == 13) {
       evt.preventDefault();
-      clickBotonSearch()
+      clickSearchButton()
     }
   }
 
-  const clickBotonSearch = () => {
-    navigate(`/Buscador/${tipo}/${busqueda}`)
+  const clickSearchButton = () => {
+    navigate(`/Buscador/${type}/${research}`)
   }
 
-  const eventoCambiarTipo = (evt) => {
-    setTipo(evt.target.value);
+  const changeTypeEvent = (evt) => {
+    seType(evt.target.value);
   }
 
   return (
@@ -52,7 +52,7 @@ const MainLayout = () => {
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className={ styles.menuExpandido }>
+            <Navbar.Collapse id="basic-navbar-nav" className={ styles.expandedMenu }>
               <Form>
                 <Row>
                   <Col xs={12} lg={6} >
@@ -61,19 +61,19 @@ const MainLayout = () => {
                     placeholder="Buscar..."
                     aria-label="Buscar"
                     aria-describedby="basic-addon1"
-                    value={busqueda} onChange={cambioBusqueda} onKeyDown={busqueda.length>0 ? eventoIntroBusqueda : undefined}
+                    value={research} onChange={searchChange} onKeyDown={research.length>0 ? enterSearchEvent : undefined}
                   />
-                  <InputGroup.Text id="basic-addon1" onClick={busqueda.length>0 ? clickBotonSearch : undefined} className='cursor-pointer'>🔍</InputGroup.Text>
+                  <InputGroup.Text id="basic-addon1" onClick={research.length>0 ? clickSearchButton : undefined} className='cursor-pointer'>🔍</InputGroup.Text>
                 </InputGroup>
                 </Col>
                 <Col xs={12} lg={6}>
                 <InputGroup>
                   <Row>
                   <Col xs={6} lg={12} >
-                  <Form.Check type="radio" label="Películas" value="peliculas" checked={tipo === "peliculas"} onChange={eventoCambiarTipo} />
+                  <Form.Check type="radio" label="Películas" value="peliculas" checked={type === "peliculas"} onChange={changeTypeEvent} />
                   </Col>
                   <Col xs={6} lg={12} >
-                  <Form.Check type='radio' label="Series" value="serie" checked={tipo === "serie"} onChange={eventoCambiarTipo} />
+                  <Form.Check type='radio' label="Series" value="serie" checked={type === "serie"} onChange={changeTypeEvent} />
                   </Col>
                   </Row>
                 </InputGroup>
