@@ -3,7 +3,7 @@ import { Routes, BrowserRouter, Route, Navigate } from "react-router-dom";
 import Search from "./pages/Search";
 import Info from "./pages/Info";
 import MainLayout from "./layout/MainLayout";
-import Cartelera from "./pages/Cartelera";
+import Billboard from "./pages/Billboard";
 import Proximamente from "./pages/Proximamente";
 import Lista from "./pages/Listas";
 
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Navigate to="Cartelera" />} />
             <Route path='Buscador/:tipo/:consulta' element={<Search />} />
             <Route path='Info/:tipo/:idPelicula' element={<Info />} />
-            <Route path='Cartelera' element={<Cartelera />} />
+            <Route path='Cartelera' element={<Billboard />} />
             <Route path='Proximamente' element={<Proximamente />} />
             <Route path='Listas' element={<Lista/>} />
           </Route>
