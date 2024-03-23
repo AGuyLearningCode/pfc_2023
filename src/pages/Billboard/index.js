@@ -2,7 +2,7 @@ import React from 'react'
 import { getURL } from '../../helpers/fetchHelpers'
 import { useState } from 'react';
 import { useEffect } from 'react';
-import styles from './billboard.module.css';
+import styles from './Billboard.module.css';
 import MovieList from '../../components/MovieList';
 import { mapMovie, mapSeries } from '../../helpers/mapHelpers';
 
@@ -33,7 +33,7 @@ const Billboard = () => {
     });
     
     return (
-        <div className={styles.cartelera}>
+        <div className={styles.billboard}>
             <h1>{type==="p" && `En cartelera`}{type==="s" && 'En Emisión'}</h1>
             <label><input type="radio" value="p" checked={type=="p"} onChange={changeType}></input> Películas </label> &nbsp;
             <label><input type="radio" value="s" checked={type=="s"} onChange={changeType}></input> Series</label>
