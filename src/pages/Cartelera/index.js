@@ -1,8 +1,6 @@
 import React from 'react'
 import { getURL } from '../../helpers/fetchHelpers'
-import ItemResultadoBusqueda from '../../components/ItemResultadoBusqueda';
 import { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import styles from './cartelera.module.css';
 import ListadoPeliculas from '../../components/ListadoPeliculas';

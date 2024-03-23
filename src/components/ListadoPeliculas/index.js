@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './listadoPeliculas.module.css';
-import ItemResultadoBusqueda from '../ItemResultadoBusqueda';
+import SearchResultItem from '../SearchResultItem';
 import { useNavigate } from "react-router-dom";
 
 
@@ -14,7 +14,7 @@ const ListadoPeliculas = (props) => {
         <div className={styles.resultados}>
             {!!(props.peliculas) &&
                 props.peliculas.map(
-                    item => <ItemResultadoBusqueda
+                    item => <SearchResultItem
                         onClick={
                             e => navigate(`/Info/${props.tipo === "peliculas" ? "p" : "s"}/${item.id}`)
                         }
