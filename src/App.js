@@ -4,7 +4,7 @@ import Search from "./pages/Search";
 import Info from "./pages/Info";
 import MainLayout from "./layout/MainLayout";
 import Billboard from "./pages/Billboard";
-import Proximamente from "./pages/Proximamente";
+import ComingSoon from "./pages/ComingSoon";
 import Favourites from "./pages/Favourites";
 
 /**
@@ -21,7 +21,7 @@ function App() {
             <Route path='Buscador/:tipo/:consulta' element={<Search />} />
             <Route path='Info/:type/:movieID' element={<Info />} />
             <Route path='Cartelera' element={<Billboard />} />
-            <Route path='Proximamente' element={<Proximamente />} />
+            <Route path='Proximamente' element={<ComingSoon />} />
             <Route path='Listas' element={<Favourites/>} />
           </Route>
         </Routes>
