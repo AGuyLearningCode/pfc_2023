@@ -1,7 +1,7 @@
-.banderaPais {
+.countryFlag {
     display: inline;
     padding-right: 5px;
 }
-.banderaPais img{
+.countryFlag img{
     width:40px;
 }

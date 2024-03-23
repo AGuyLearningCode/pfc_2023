@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./ItemResultadoBusqueda.module.css"
+import styles from "./SearchResultItem.module.css"
 import placeholder from '../../assets/imagenes/Item-placeholder_3.png'
 import degradado from '../../assets/imagenes/item-degradado.png'
 
@@ -10,7 +10,7 @@ import degradado from '../../assets/imagenes/item-degradado.png'
  * Y aparte también se carga una imagen transparente con un degradado para que el título y el año
  * se lean mejor.
  */
-const ItemResultadoBusqueda = (props) => {
+const SearchResultItem = (props) => {
 
   // Función auxiliar para devolver la fecha según el formato solicitado.
   const dateFormat = (date) => {
@@ -27,8 +27,8 @@ const ItemResultadoBusqueda = (props) => {
 
 
   return (
-    <div className={styles.resultado} onClick={ props.onClick }>
-      <div className={styles.imagenplaceholder}>
+    <div className={styles.result} onClick={ props.onClick }>
+      <div className={styles.imagePlaceholder}>
         {props.img!=null &&
         <img src={
           "https://www.themoviedb.org/t/p/w300_and_h450_bestv2"
@@ -43,10 +43,10 @@ const ItemResultadoBusqueda = (props) => {
         
           
         }
-        <div className={styles.degradadoPelicula}>
+        <div className={styles.movieGradient}>
           <img src={degradado}/>
         </div>
-        <div className={styles.tituloPelicula}>
+        <div className={styles.movieTitle}>
           <h1>{props.title}</h1>
           <h1>{dateFormat(props.date)}</h1>
         </div>
@@ -56,4 +56,4 @@ const ItemResultadoBusqueda = (props) => {
   );
 }
 
-export default ItemResultadoBusqueda; 
+export default SearchResultItem; 

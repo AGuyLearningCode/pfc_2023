@@ -1,4 +1,4 @@
-.datosdepelicula {
+.movieData {
     background-image: url('./../../assets/imagenes/Background.png');
     background-repeat: repeat-y;
     background-size: 100%;
@@ -10,7 +10,7 @@
     font-weight: bolder;
 }
 /* FILA SUPERIOR: .filaSup */
-.colIzq {
+.colLeft {
     background: rgb(236, 225, 225);
     border-radius: 5px;
     padding: 25px;
@@ -51,7 +51,7 @@
 }
 
 /* COLUMNA DERECHA: .colDer */
-.colDer{
+.colRight{
     background: rgb(236, 225, 225);
     border-radius: 5px;
     padding: 25px;
@@ -60,7 +60,7 @@
 
 }
 /* caso de películas */
-.graficoEconomico{
+.economicGraph{
     background-color: rgb(224, 224, 224);
     border-radius: 50px;
 }
@@ -69,7 +69,7 @@
 /* prueba */
 
 
-.coronaCircular {
+.circularCrown {
     fill: none;
     margin-left: 20%;
     display: flex;
@@ -79,16 +79,16 @@
     transition: all 5000ms;
   }
   
-  .coronaSvg {
+  .crownSvg {
     position: absolute;
   }
   
-  .coronaValoracion {
+  .avarageCrown {
     transform: rotate(-90deg);
     transform-origin: 50%;
   }
   
-  .coronaPopularidad {
+  .popularityCrown {
     transform: rotate(-90deg);
     transform-origin: 50%;
   }
@@ -98,7 +98,7 @@
     font-weight: bold;
   }
 
-  .tituloGraficos{
+  .graphTitle{
     display:flex;
 
     font-size: 20px;

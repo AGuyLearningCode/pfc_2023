@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import DatosDePelicula from '../../components/DatosDePelicula';
+import MovieData from '../../components/MovieData';
 import { useParams } from 'react-router-dom';
 import { getURL } from '../../helpers/fetchHelpers';
-import styles from './info.module.css';
 /**
  * Pagina con el diseño de los detalles de una pelicula o serie.
  * 
@@ -12,41 +11,41 @@ const Info = () => {
   /* Usamos UseParams para recibir el tipo de item que has solicitado y su identificador a través
   *  de la URL.
   */
-  const { tipo, idPelicula } = useParams();
+  const { type, movieID } = useParams();
 
-  const [pelicula, setPelicula] = useState({});
+  const [movie, setMovie] = useState({});
   useEffect(() => {
-    if (tipo === "p") {
-      getURL(`movie/${idPelicula}`).then((data) => {
-        setPelicula(data);
+    if (type === "p") {
+      getURL(`movie/${movieID}`).then((data) => {
+        setMovie(data);
       })
-    }else if(tipo==="s"){
-      getURL(`tv/${idPelicula}`).then((data) => {
-        setPelicula(data);
+    }else if(type==="s"){
+      getURL(`tv/${movieID}`).then((data) => {
+        setMovie(data);
       })
     }
 
 
-  }, [idPelicula])
+  }, [movieID])
 
-  const [actores, setActores] = useState({});
+  const [actors, setActors] = useState({});
   useEffect(() => {
-    if (tipo==="p"){
-      getURL(`movie/${idPelicula}/credits`).then((data) => {
-        setActores(data);
+    if (type==="p"){
+      getURL(`movie/${movieID}/credits`).then((data) => {
+        setActors(data);
       })
-    }else if(tipo ==="s"){
-      getURL(`tv/${idPelicula}/credits`).then((data) => {
-        setActores(data);
+    }else if(type ==="s"){
+      getURL(`tv/${movieID}/credits`).then((data) => {
+        setActors(data);
       })
     }
     
-  }, [idPelicula])
+  }, [movieID])
 
   return (
     <div>
-      <div className={styles.info}>
-        <DatosDePelicula pelicula={pelicula} actores={actores} tipo={tipo}/>
+      <div>
+        <MovieData movie ={movie} actors={actors} type={type}/>
       </div>
     </div>
   )
