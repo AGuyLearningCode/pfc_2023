@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Navigate to="Cartelera" />} />
-            <Route path='Buscador/:tipo/:consulta' element={<Search />} />
+            <Route path='Buscador/:type/:query' element={<Search />} />
             <Route path='Info/:type/:movieID' element={<Info />} />
             <Route path='Cartelera' element={<Billboard />} />
             <Route path='Proximamente' element={<ComingSoon />} />

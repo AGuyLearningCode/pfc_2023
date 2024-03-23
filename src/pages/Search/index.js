@@ -8,54 +8,54 @@ import { mapMovie, mapSeries } from '../../helpers/mapHelpers';
  * Aquí se determina el diseño de la página de resultados.
  */
 const Search = () => {
-  const [peliculasEncontradas, setPeliculasEncontradas] = useState([])
-  const [seriesEncontradas, setSeriesEncontradas] = useState([])
-  const { tipo, consulta } = useParams();
-  const [resultadoFinal, setResultadoFinal] = useState([]);
+  const [moviesFound, setMoviesFound] = useState([])
+  const [seriesFound, setSeriesFound] = useState([])
+  const { type, query } = useParams();
+  const [finalResult, setFinalResult] = useState([]);
 
   /**
    * Al encontrar películas o series cambiamos la variable de estado y por ende cambia el estado en la página.
    */
   useEffect(() => {
-    if (peliculasEncontradas.length) {
-      setResultadoFinal(peliculasEncontradas);
-    } else if (seriesEncontradas.length) {
-      setResultadoFinal(seriesEncontradas)
+    if (moviesFound.length) {
+      setFinalResult(moviesFound);
+    } else if (seriesFound.length) {
+      setFinalResult(seriesFound)
     }
-  }, [seriesEncontradas, peliculasEncontradas])
+  }, [seriesFound, moviesFound])
 
   /**
    * Aquí es donde hacemos la búsqueda cada vez que realizamos una consulta nueva.
    */
   useEffect(() => {
     const params = {
-      query: consulta,
+      query: query,
       include_adult: false,
       page: 1
     }
 
-    if (tipo === "peliculas") {
+    if (type === "peliculas") {
       getURL(`search/movie`, params)
         .then(data => {
-          let peliculas = data.results.map(mapMovie);
-          setPeliculasEncontradas(peliculas);
-          setSeriesEncontradas([]);
+          let movies = data.results.map(mapMovie);
+          setMoviesFound(movies);
+          setSeriesFound([]);
         })
-    } else if (tipo === "serie") {
+    } else if (type === "serie") {
       getURL(`search/tv`, params)
         .then(data => {
           let series = data.results.map(mapSeries);
-          setSeriesEncontradas(series);
-          setPeliculasEncontradas([]);
+          setSeriesFound(series);
+          setMoviesFound([]);
         })
     }
 
-  }, [tipo, consulta]);
+  }, [type, query]);
 
   return (
 
 
-    <MovieList movies={resultadoFinal} type={tipo} dateFormat="year" />
+    <MovieList movies={finalResult} type={type} dateFormat="year" />
 
   )
 }
