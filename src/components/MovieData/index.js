@@ -280,7 +280,7 @@ const MovieData = (props) => {
                         </Row>
                         <Row>
                             {props.type === "s" &&
-                                props.movie.status === "Returning Series" ? "En emision" : "Ya Terminada"
+                                (props.movie.status === "Returning Series" ? "En emision" : "Ya Terminada")
                             }
                         </Row>
 
