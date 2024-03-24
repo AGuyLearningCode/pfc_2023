@@ -127,3 +127,11 @@ footer {
   background-color: #333;
   color: #fff;
 }
+
+.navbar-toggler {
+  background-color: white !important;
+}
+.navbar-toggler:hover {
+  background-color: red !important;
+  transition: 300ms;
+}
